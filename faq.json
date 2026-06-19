@@ -1,0 +1,498 @@
+[
+  {
+    "question": "¿En qué consiste la alianza entre Aveonline y Alegra?",
+    "answer": "La alianza entre Aveonline y Alegra integra la operación logística de tu eCommerce con un software de facturación electrónica y administración líder en Colombia. A través de esta alianza, los clientes de Aveonline acceden a un 15% de descuento permanente en Alegra y pueden ordenar su facturación, contabilidad e inventario en un mismo ecosistema."
+  },
+  {
+    "question": "¿Cómo obtengo el 15% de descuento en Alegra a través de Aveonline?",
+    "answer": "El 15% de descuento se activa al registrarte en Alegra desde el link de Aveonline o al solicitar la alianza desde el panel de la plataforma. Una vez activado, el descuento se aplica de forma permanente a tu cuenta, mientras mantengas la suscripción vigente, sin necesidad de renovar el beneficio cada año."
+  },
+  {
+    "question": "¿Qué capacidades incluye Alegra para mi eCommerce en Colombia?",
+    "answer": "Alegra incluye facturación electrónica avalada por la DIAN, gestión de inventarios, cuentas por cobrar y pagar, conciliación bancaria, reportes financieros, integración con bancos colombianos y módulos de POS. Para un eCommerce, esto significa cumplir con la normativa fiscal y tener una visión financiera consolidada de tu operación."
+  },
+  {
+    "question": "¿Necesito tener una cuenta previa en Alegra para acceder al beneficio?",
+    "answer": "No. Puedes crear tu cuenta nueva en Alegra desde el link de la alianza y el descuento del 15% se activa automáticamente. Si ya tienes una cuenta previa, puedes solicitar la migración al beneficio comunicándote con el equipo de Aveonline para validar las condiciones aplicables."
+  },
+  {
+    "question": "¿La integración entre Alegra y Aveonline es automática?",
+    "answer": "Aveonline y Alegra se integran a través de sus respectivas APIs y conectores nativos, lo que te permite sincronizar los pedidos de tu eCommerce con la facturación electrónica de forma automática. Esto reduce errores manuales y elimina el tiempo dedicado a digitar facturas una por una."
+  },
+  {
+    "question": "¿Puedo facturar electrónicamente mis ventas a [NOMBRE_MUNICIPIO] desde Alegra?",
+    "answer": "Sí. Alegra emite facturas electrónicas válidas ante la DIAN para cualquier venta en territorio colombiano, incluyendo ventas a [NOMBRE_MUNICIPIO]. Al integrar Aveonline con Alegra, cada pedido despachado puede generar automáticamente su factura electrónica con los datos del cliente final."
+  },
+  {
+    "question": "¿Alegra soporta facturación electrónica DIAN para eCommerce?",
+    "answer": "Sí. Alegra es un proveedor tecnológico autorizado por la DIAN para la emisión de facturación electrónica en Colombia, incluyendo notas crédito, notas débito y documentos soporte. Esto te permite cumplir la normativa fiscal sin tener que contratar un proveedor adicional."
+  },
+  {
+    "question": "¿Se sincronizan automáticamente mis pedidos de Aveonline con Alegra?",
+    "answer": "Sí, mediante la integración configurada los pedidos despachados a través de Aveonline pueden sincronizarse automáticamente con Alegra para generar la factura electrónica correspondiente, actualizar inventarios y registrar el ingreso contable, sin necesidad de cargar datos manualmente."
+  },
+  {
+    "question": "¿El 15% de descuento es permanente o por tiempo limitado?",
+    "answer": "El 15% de descuento que ofrece la alianza Aveonline + Alegra es permanente: se mantiene mientras conserves la suscripción activa en Alegra y no esté condicionado a renovaciones anuales ni a planes específicos. Es uno de los beneficios diferenciales de esta alianza."
+  },
+  {
+    "question": "¿Qué reportes financieros puedo generar con Alegra para mi tienda online?",
+    "answer": "Alegra te permite generar reportes de ventas por canal, estado de resultados, balance general, flujo de caja, cuentas por cobrar, rotación de inventario y trazabilidad de facturación electrónica. Estos reportes son clave para tomar decisiones financieras informadas en tu eCommerce y para responder a auditorías o requerimientos de la DIAN."
+  },
+  {
+    "question": "¿Qué beneficios ofrece la alianza con Alegra?",
+    "answer": "La alianza con Alegra ofrece un 15% de descuento en sus planes, simplificando la contabilidad y administración de tu negocio con herramientas integradas de facturación y gestión administrativa."
+  },
+  {
+    "question": "¿Cómo puedo aprovechar el descuento de la alianza con Alegra?",
+    "answer": "Para aprovechar el descuento, regístrate en Alegra a través del link <a href=\"https://app.alegra.com/user/register/country/colombia?coupon=ALZAVEONLINE\"><span style=\"font-weight: 400\">https://app.alegra.com/user/register/country/colombia?coupon=ALZAVEONLINE</span></a> proporcionado en nuestra plataforma y aplica el descuento disponible para los usuarios de Aveonline."
+  },
+  {
+    "question": "¿Qué servicios incluye Alegra como parte de la alianza?",
+    "answer": "Alegra incluye servicios de facturación, gestión de inventarios, reportes financieros y más, todos integrados para facilitar la administración de tu negocio."
+  },
+  {
+    "question": "¿Alegra se integra con otras herramientas que uso en mi negocio?",
+    "answer": "Sí, Alegra se integra con varias herramientas populares de gestión empresarial y plataformas de eCommerce, facilitando la sincronización de datos y la gestión eficiente de tu negocio."
+  },
+  {
+    "question": "¿Qué tipo de soporte ofrece Alegra a sus usuarios?",
+    "answer": "Alegra ofrece soporte técnico y asesoramiento a través de su plataforma, incluyendo tutoriales en línea, guías detalladas y asistencia personalizada."
+  },
+  {
+    "question": "¿Qué es el anticipo de recaudo y cómo funciona?",
+    "answer": "El anticipo de recaudo es un servicio financiero de Aveonline que te permite recibir en minutos el dinero de tus ventas contraentrega que ya fueron entregadas efectivamente, en lugar de esperar los 7 a 14 días tradicionales del corte de la transportadora. Esto te da liquidez inmediata para reinvertir en inventario, pauta o crecimiento, sin depender del ciclo de pago del operador logístico."
+  },
+  {
+    "question": "¿Cuánto tiempo demora recibir mi anticipo de recaudo de ventas a [NOMBRE_MUNICIPIO]?",
+    "answer": "Una vez confirmada la entrega efectiva del pedido en [NOMBRE_MUNICIPIO] y validada la solicitud en el panel, el desembolso del anticipo se realiza en minutos en tu cuenta bancaria registrada. Esto te permite tener el dinero disponible casi en tiempo real, sin esperar los cortes habituales de la transportadora."
+  },
+  {
+    "question": "¿Cuál es la comisión del anticipo de recaudo?",
+    "answer": "La comisión del anticipo de recaudo depende del volumen de operaciones de tu eCommerce, el monto anticipado y el plazo del corte de la transportadora con la que opera. Desde el simulador de anticipos en la página puedes calcular exactamente cuánto recibirás y cuánto pagarás de comisión antes de solicitar el servicio, sin sorpresas."
+  },
+  {
+    "question": "¿Puedo anticipar el dinero de mis ventas contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. El servicio de anticipo de recaudo aplica para todas las ventas contraentrega entregadas efectivamente, incluyendo las despachadas a [NOMBRE_MUNICIPIO], independientemente de la transportadora aliada con la que se haya despachado el pedido (Servientrega, Coordinadora, Interrapidísimo, Envia, TCC, entre otras)."
+  },
+  {
+    "question": "¿El anticipo de recaudo aplica a envíos con todas las transportadoras?",
+    "answer": "Sí. El anticipo de recaudo de Aveonline funciona con todas las transportadoras aliadas integradas en la plataforma, lo que te permite unificar tus desembolsos en un solo flujo sin importar con cuál transportadora despachaste cada pedido."
+  },
+  {
+    "question": "¿Cómo solicito un anticipo de recaudo desde la plataforma Aveonline?",
+    "answer": "Desde el panel de Aveonline puedes seleccionar las guías entregadas efectivamente que deseas anticipar, validar el monto y la comisión en el simulador, y solicitar el desembolso. El proceso es 100% digital, sin papeleo, y el dinero llega a tu cuenta en minutos."
+  },
+  {
+    "question": "¿Es seguro el anticipo de recaudo con Aveonline?",
+    "answer": "Sí. El anticipo de recaudo opera con respaldo financiero, validación de las entregas efectivas reportadas por las transportadoras y trazabilidad completa de cada operación. Toda la información queda registrada en el panel para auditoría y conciliación contable."
+  },
+  {
+    "question": "¿Cómo el anticipo de recaudo mejora mi flujo de caja vendiendo a [NOMBRE_MUNICIPIO]?",
+    "answer": "Al recibir en minutos el dinero de tus ventas contraentrega a [NOMBRE_MUNICIPIO], puedes reinvertir en inventario, pauta digital o gastos operativos sin esperar los cortes de la transportadora. Esto rompe el cuello de botella de liquidez típico del eCommerce contraentrega y te permite escalar más rápido."
+  },
+  {
+    "question": "¿Qué es el servicio de anticipo de recaudo de Aveonline?",
+    "answer": "El servicio de anticipo de recaudo de Aveonline te permite recibir el pago de tus ventas el mismo día de la entrega, ayudándote a mantener el flujo de caja y a seguir operando sin interrupciones.\nPregunta 2: Políticas del Servicio de Anticipos\nUso de Saldo Disponible: Si tienes saldo disponible en el módulo de Billetera, puedes utilizarlo cuando lo necesites. Este valor ya tiene descontado el interés y las facturas en cartera.\nCobro por Anticipo: Se cobrará un 0.1% sobre el valor del recaudo por cada día de anticipación. Este cobro se aplicará diariamente hasta la fecha real de pago de la guía.\nExclusión de Saferbo: Las guías de Saferbo no aplican para este servicio. Con esta transportadora, debes esperar el corte real del pago.\nValor Total del Recaudo: Se anticipará el valor total del recaudo de una o varias guías; no se permiten anticipos parciales.\nGuía Entregada: La guía debe estar en estado entregada al destinatario para poder solicitar el anticipo del pago."
+  },
+  {
+    "question": "¿Qué beneficios ofrece el servicio de anticipo de recaudo?",
+    "answer": "Los beneficios incluyen un flujo de caja mejorado, la capacidad de reinvertir rápidamente en tu negocio y la eliminación de la espera habitual para recibir pagos."
+  },
+  {
+    "question": "¿El servicio de anticipo de recaudo tiene algún costo adicional?",
+    "answer": "Sí, Se cobrará un 0.1% sobre el valor del recaudo por cada día de anticipación. Este cobro se aplicará diariamente hasta la fecha real de pago de la guía."
+  },
+  {
+    "question": "¿Puedo usar el servicio de anticipo de recaudo para todos mis envíos?",
+    "answer": "No, las guías de Saferbo no aplican para este servicio. Con esta transportadora, debes esperar al corte real del pago. Sin embargo, puedes utilizar el servicio sin problema con las demás transportadoras."
+  },
+  {
+    "question": "¿Qué es AveMetrics?",
+    "answer": "AveMetrics es una herramienta de análisis y optimización de datos en tiempo real diseñada para ayudar a los negocios de eCommerce a tomar decisiones inteligentes basadas en datos ."
+  },
+  {
+    "question": "¿Qué tipo de información se puede obtener con AveMetrics?",
+    "answer": "Los paneles de control proporcionan métricas clave como ventas, conversiones, tráfico y comportamiento del cliente, además de análisis segmentados por producto, categoría y campañas de marketing​​ ."
+  },
+  {
+    "question": "¿Qué necesito para comenzar a usar AveMetrics?",
+    "answer": "Para comenzar a usar AveMetrics, necesitas acceso a tu cuenta de Google Analytics 4 y la integración con tu plataforma de eCommerce. Dependiendo del paquete, también puede ser necesaria la integración con Google Ads, Google Search Console y Meta (Facebook e Instagram)​​ ."
+  },
+  {
+    "question": "¿AveMetrics ofrece soporte técnico y capacitación?",
+    "answer": "Sí, AveMetrics ofrece soporte técnico y capacitación para que puedas aprovechar al máximo tus paneles de control. También proporcionamos informes personalizables y visualizaciones claras para facilitar el análisis​​ ."
+  },
+  {
+    "question": "¿Cómo puedo personalizar los paneles de control de AveMetrics?",
+    "answer": "Los paneles de control de AveMetrics se pueden personalizar para conectar con diferentes fuentes de datos como CRM, plataformas de email marketing o sistemas de gestión de inventarios, según las necesidades específicas de tu negocio​​ ."
+  },
+  {
+    "question": "¿Qué incluye el servicio de bodegaje y fulfillment de Aveonline?",
+    "answer": "El servicio incluye almacenamiento de tu inventario, picking (selección del producto correcto), packing (empaque profesional), etiquetado, despacho nacional con las transportadoras aliadas, gestión de devoluciones, control de inventario en tiempo real e integración con tu tienda online para automatizar todo el flujo."
+  },
+  {
+    "question": "¿Cuánto cuesta el bodegaje y fulfillment para mi eCommerce?",
+    "answer": "El costo depende del volumen mensual de pedidos despachados, el espacio que ocupa tu inventario y los servicios adicionales que requieras (empaque especial, kits promocionales, manejo de devoluciones). El equipo de Aveonline construye una cotización personalizada según tu operación real, sin tarifas fijas no representativas."
+  },
+  {
+    "question": "¿Puedo enviar productos desde la bodega de Aveonline hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Desde la bodega asignada, Aveonline despacha pedidos a [NOMBRE_MUNICIPIO] y a cualquier municipio de Colombia con las transportadoras aliadas disponibles para esa ruta, optimizando tiempo y costo según el perfil de cada envío."
+  },
+  {
+    "question": "¿En cuánto tiempo se despacha un pedido desde la bodega de Aveonline a [NOMBRE_MUNICIPIO]?",
+    "answer": "Los pedidos confirmados se procesan y despachan generalmente en menos de 24 horas hábiles. A partir del despacho, el tiempo de entrega a [NOMBRE_MUNICIPIO] depende de la transportadora seleccionada y la ruta, oscilando entre 24 y 72 horas hábiles en rutas principales."
+  },
+  {
+    "question": "¿Aveonline maneja el picking, packing y etiquetado por mí?",
+    "answer": "Sí. El equipo operativo de Aveonline ejecuta el picking (selección del producto correcto), el packing (empaque seguro con materiales adecuados), el etiquetado con la guía de la transportadora y la consolidación final del pedido antes del despacho. Todo bajo protocolos de control de calidad para minimizar errores."
+  },
+  {
+    "question": "¿Puedo monitorear mi inventario en tiempo real?",
+    "answer": "Sí. Desde el panel de Aveonline tienes visibilidad en tiempo real de tu inventario disponible, productos reservados, productos despachados, alertas de stock bajo y rotación por SKU. Esto te permite tomar decisiones de reposición sin depender de inventarios manuales."
+  },
+  {
+    "question": "¿Qué pasa con los productos que llevan mucho tiempo sin rotar?",
+    "answer": "Aveonline genera reportes de rotación que identifican los SKUs con baja salida, lo que te permite tomar decisiones comerciales (promociones, descuentos, kits, retiro de bodega) antes de que el costo de almacenamiento erosione tu margen. Esto es clave para mantener una operación de bodegaje eficiente."
+  },
+  {
+    "question": "¿Cómo funciona el pago contraentrega para eCommerce en [NOMBRE_MUNICIPIO]?",
+    "answer": "El pago contraentrega permite que tu cliente en [NOMBRE_MUNICIPIO] pague el valor del producto al momento de recibirlo, en lugar de pagar por adelantado en tu tienda online. Aveonline coordina con la transportadora aliada el recaudo del dinero al momento de la entrega, lo administra y posteriormente lo consigna en tu cuenta bancaria."
+  },
+  {
+    "question": "¿Qué transportadoras ofrecen pago contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "Aveonline integra las principales transportadoras que ofrecen servicio contraentrega en [NOMBRE_MUNICIPIO], incluyendo Servientrega, Coordinadora, Interrapidísimo, Envia y TCC. Al consolidarlas en una sola plataforma, puedes elegir la opción con mejor cobertura, menor comisión y mejores tiempos para cada zona."
+  },
+  {
+    "question": "¿Qué pasa si el cliente en [NOMBRE_MUNICIPIO] rechaza el paquete contraentrega?",
+    "answer": "Cuando un cliente en [NOMBRE_MUNICIPIO] rechaza el paquete o no se encuentra en el domicilio, la transportadora reporta la novedad y Aveonline coordina la devolución del producto a tu bodega de origen, sin que tengas que asumir trámites adicionales con el operador."
+  },
+  {
+    "question": "¿Cuál es la comisión por recaudo contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "La comisión depende de la transportadora y, en algunos casos, del valor recaudado. Aveonline negocia tarifas preferenciales gracias al volumen consolidado de miles de eCommerce y las traslada a sus usuarios, lo que te permite acceder a comisiones más competitivas."
+  },
+  {
+    "question": "¿Cómo se consigna el dinero recaudado a mi cuenta bancaria?",
+    "answer": "Aveonline consigna el dinero recaudado en la cuenta bancaria que registres en la plataforma, según los cortes definidos por cada transportadora. Recibes la consignación con un soporte detallado de las guías incluidas, lo que facilita la conciliación contable."
+  },
+  {
+    "question": "¿Puedo configurar el contraentrega desde mi tienda Shopify o WooCommerce para clientes en [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Aveonline ofrece integraciones nativas con Shopify y WooCommerce, Esto te permite habilitar el pago contraentrega como opción en el checkout para clientes en [NOMBRE_MUNICIPIO] y centralizar el recaudo desde un solo panel."
+  },
+  {
+    "question": "¿Hay un monto máximo o mínimo para envíos contraentrega a [NOMBRE_MUNICIPIO]?",
+    "answer": "Cada transportadora establece sus propios montos mínimos y máximos para recaudo contraentrega en [NOMBRE_MUNICIPIO]. Aveonline te muestra los límites aplicables al momento de cotizar, para que elijas la transportadora que mejor se adapte al ticket promedio de tu tienda online."
+  },
+  {
+    "question": "¿Cómo reduzco el riesgo de fraude o rechazo contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "Para reducir rechazos en [NOMBRE_MUNICIPIO], Aveonline recomienda validar el pedido por WhatsApp o llamada antes del despacho, mantener actualizados los datos de contacto del cliente y revisar el historial de rechazos por zona en el panel. Puedes definir reglas de bloqueo automático para clientes con múltiples rechazos previos."
+  },
+  {
+    "question": "¿Cómo funciona el Servicio Contraentrega?",
+    "answer": "Nuestra operación de envíos contraentrega funciona de la siguiente manera:\nCuando generas una guía desde nuestra plataforma, tienes la opción de seleccionar si el destinatario pagará el envío y si deseas que la transportadora recoja el valor de tu producto en su entrega. Una vez que la transportadora completa la entrega y recauda los dineros, procedemos a realizar una consignación a tu cuenta. Esta consignación puede ocurrir de dos maneras:\nSi decides descontar el valor del envío de los dineros recaudados, te consignamos el saldo restante.\nSi el destinatario paga el envío por separado, te consignamos el monto total correspondiente a tu producto."
+  },
+  {
+    "question": "¿Qué pasa si un cliente no tiene el dinero al momento de la entrega?",
+    "answer": "Si la transportadora llega a realizar la entrega y el cliente no cuenta con el dinero, la guía se pone en novedad. Esto permite un nuevo intento de entrega, siempre y cuando el cliente notifique su interés en recibir el paquete y aún exista la posibilidad de solucionar la guía para un nuevo ofrecimiento. Nota: es importante informar a los destinatarios que lo ideal es que se tenga el dinero completo, ya que en ocasiones los operadores de las transportadoras no cuentan con cambio, tampoco es posible pagar con monedas,pues los operadores tienen un tiempo promedio para entregar y recibir el dinero y si es con monedas le tomará más tiempo contar para poder finalizar la entrega."
+  },
+  {
+    "question": "¿Puedo ofrecer pago contraentrega en todas las zonas de Colombia?",
+    "answer": "Esto depende de la transportadora, algunas tienen restricciones y prestan servicios de entrega solo a crédito, es importante validar el cubrimiento en el validador de trayectos de Aveonline, y si aun así se tiene duda validar con su asesor logístico el cubrimiento que se necesita validar en el momento."
+  },
+  {
+    "question": "¿Cómo se realiza el seguimiento de un envío con pago contra entrega?",
+    "answer": "En nuestra plataforma se encuentra la trazabilidad de la guía y el estado que presenta en el momento, desde mis envíos se puede visualizar esta información. o por el link <a href=\"https://aveonline.co/rastrear-guia/\"><span style=\"font-weight: 400\">https://aveonline.co/rastrear-guia/</span></a>"
+  },
+  {
+    "question": "¿Cuáles son los cortes de pago de recaudo?",
+    "answer": "Cada transportadora tiene un corte de pago, a continuación te mostramos qué días estarás recibiendo el dinero según la transportadora por la que hiciste los despachos.\n<ul>\n    <li>Envíos con TCC: Recibirás tu recaudo de 4 a 6 días hábiles.</li>\n    <li>Envíos con Envía, Servientrega, Saferbo e Interrapidisimo: Recibirás tu recaudo de 7 a 11 días hábiles.</li>\n    <li>Envíos con Domina: Recibirás tu recaudo de 4 a 6 días hábiles.</li>\n    <li>Envíos con Coordinadora: Recibirás tu recaudo de 5 a 11 días hábiles</li>\n</ul>\nEl reembolso de los recaudos se realizarán en los siguientes días de la semana según la\ntransportadora:\n<ul>\n    <li>TCC y Domina: Los días martes (en caso de que el lunes sea festivo, se pagará los miércoles) y los viernes según el corte correspondiente. Es decir los martes con corte al miércoles anterior y los viernes con corte al lunes de la misma semana.</li>\n    <li>Envía, servientrega, interrapidisimo, Saferbo : Los días viernes de cada semana según</li>\n</ul>\nel corte correspondiente, es decir, los viernes se paga con corte al miércoles de la\nsemana anterior.\n<ul>\n    <li>Coordinadora: Se paga 3 veces al mes, si es fin de semana, se paga el anterior día hábil, es decir con los siguientes cortes, del 1-10 el 15 de cada mes, del 11-20 el 25 de cada mes y del 21-31 el 5 del mes siguiente.</li>\n</ul>"
+  },
+  {
+    "question": "¿Cómo funciona el proceso de devoluciones con Aveonline desde [NOMBRE_MUNICIPIO]?",
+    "answer": "Cuando un cliente en [NOMBRE_MUNICIPIO] solicita una devolución, Aveonline coordina automáticamente la recolección con la transportadora aliada, genera la guía de retorno y hace seguimiento hasta que el paquete llega a tu bodega de origen. Todo el proceso queda registrado en la plataforma."
+  },
+  {
+    "question": "¿Cuánto tiempo tarda una devolución desde [NOMBRE_MUNICIPIO] hasta mi bodega?",
+    "answer": "Las devoluciones desde [NOMBRE_MUNICIPIO] toman generalmente entre 3 y 7 días hábiles, dependiendo de la ruta y la transportadora seleccionada. Desde el panel de Aveonline puedes hacer seguimiento en tiempo real al estado de cada devolución."
+  },
+  {
+    "question": "¿Qué transportadoras gestionan devoluciones en [NOMBRE_MUNICIPIO]?",
+    "answer": "Aveonline integra a las principales transportadoras del país para gestionar devoluciones en [NOMBRE_MUNICIPIO], incluyendo Servientrega, Coordinadora, Interrapidísimo, Envia, TCC. Esto te permite elegir la opción con mejor cobertura y tarifa en cada zona."
+  },
+  {
+    "question": "¿Puedo programar la recolección de una devolución en casa de mi cliente en [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Aveonline coordina recolecciones a domicilio en [NOMBRE_MUNICIPIO], evitando que tu cliente tenga que desplazarse a un punto de la transportadora. Esto mejora la experiencia post-venta y aumenta la probabilidad de fidelización."
+  },
+  {
+    "question": "¿Cómo hago seguimiento al estado de una devolución desde [NOMBRE_MUNICIPIO]?",
+    "answer": "Desde el panel de Aveonline puedes hacer seguimiento centralizado con estados claros: recolección agendada, en tránsito, en bodega de origen, recibido y validado. Puedes compartir el link de rastreo con tu cliente final."
+  },
+  {
+    "question": "¿Qué pasa si el producto devuelto desde [NOMBRE_MUNICIPIO] llega en mal estado o incompleto?",
+    "answer": "Aveonline registra el estado en que se recibe cada devolución, lo que te permite documentar reclamaciones ante la transportadora si el producto desde [NOMBRE_MUNICIPIO] llegó dañado, o aplicar tus políticas internas si el cliente lo devolvió incompleto."
+  },
+  {
+    "question": "¿Cómo reduzco la tasa de devoluciones en mis ventas a [NOMBRE_MUNICIPIO]?",
+    "answer": "Aveonline te entrega reportes con las causales más frecuentes de devolución en [NOMBRE_MUNICIPIO] (talla, color, expectativa vs. producto, daño en transporte), lo que te permite atacar la raíz del problema: mejorar fichas de producto, reforzar empaque o ajustar transportadora."
+  },
+  {
+    "question": "¿Qué es el servicio de dropshipping de Aveonline?",
+    "answer": "El servicio de dropshipping de Aveonline permite a los emprendedores vender productos sin necesidad de mantener inventarios. Nos encargamos de toda la logística para que puedas centrarte en las ventas."
+  },
+  {
+    "question": "¿Qué beneficios ofrece el dropshipping con Aveonline?",
+    "answer": "Los beneficios incluyen la eliminación de costos de inventario y almacenamiento, una mayor eficiencia logística, y la posibilidad de enfocarte en la promoción y venta de tus productos."
+  },
+  {
+    "question": "¿Qué tipo de productos puedo vender mediante dropshipping?",
+    "answer": "Puedes vender una amplia variedad de productos mediante dropshipping, siempre y cuando cumplan con nuestras políticas de mercancía de prohibido transporte"
+  },
+  {
+    "question": "¿Cómo se gestionan las devoluciones en el modelo de dropshipping?",
+    "answer": "Las devoluciones se gestionan de acuerdo con las políticas de devolución de Aveonline. Nosotros coordinamos con el proveedor para manejar la devolución y asegurar una experiencia satisfactoria para el cliente."
+  },
+  {
+    "question": "¿Aveonline ofrece soporte para marketing y ventas en dropshipping?",
+    "answer": "Sí, Aveonline ofrece herramientas y soporte para marketing y ventas, ayudándote a optimizar tus campañas y aumentar tus conversiones."
+  },
+  {
+    "question": "¿Cómo funciona el servicio de transporte internacional de Aveonline?",
+    "answer": "Nuestros envíos internacionales se gestionan a través de nuestra plataforma y se llevan a cabo con la colaboración de la transportadora DHL. El proceso es sencillo:\nCuando realizas una cotización y generas la guía en nuestra plataforma, se te mostrará el costo total del envío y recibirás la factura correspondiente en tu correo electrónico.\nEs importante efectuar el pago de la factura de inmediato y notificarlo en la misma página. Esto permitirá que el sistema te habilite para imprimir la guía y, de forma automática, generará la solicitud de recogida del paquete.\nLos documentos que debes imprimir para el despacho son la guía, la factura y la carta de responsabilidad. Puedes generar las proformas directamente desde nuestra plataforma."
+  },
+  {
+    "question": "¿Manejan el servicio de pago contraentrega para envíos internacionales?",
+    "answer": "No, la opción de contraentrega no está disponible para el servicio internacional. Los mensajeros de DHL se encargan de la entrega de los paquetes sin realizar cobros adicionales."
+  },
+  {
+    "question": "¿Cuáles son los destinos disponibles para el transporte internacional?",
+    "answer": "Aveonline ofrece envíos internacionales a una amplia variedad de destinos con DHL. Puedes consultar los destinos específicos con nuestro equipo de servicio al cliente."
+  },
+  {
+    "question": "¿Qué documentos necesito para enviar paquetes internacionalmente?",
+    "answer": "La transportadora exigirá estos documentos diligenciados al momento de recibir la mercancía.\nFactura comercial\nCarta de responsabilidad\nGuia y rótulo"
+  },
+  {
+    "question": "¿Cómo puedo rastrear mi envío con DHL ?",
+    "answer": "Puedes ingresar al siguiente link y digitar el número de guía que te proporcionamos. <a href=\"https://www.dhl.com/co-es/home/rastreo.html\"><span style=\"font-weight: 400\">https://www.dhl.com/co-es/home/rastreo.html</span></a>"
+  },
+  {
+    "question": "¿Qué tarifas aplican para el servicio de transporte internacional?",
+    "answer": "Las tarifas de transporte internacional varían según el destino, el peso y las dimensiones del paquete. Puedes obtener una cotización exacta utilizando nuestra calculadora de tarifas en la plataforma. link:"
+  },
+  {
+    "question": "¿Qué tipo de Mercancía es considerada Prohibido Transporte?",
+    "answer": "Alimentos sin invima\nRopa Usada\nPiedras Preciosas\nAnimales vivos o muertos\nLingotes de oro o plata\nArtículos ilegales tales como marfil y narcóticos (Está clasificado como sustancia tóxica)\nNingún equipo de tecnología, son todos aquellos recursos como: computadoras, teléfonos móviles, televisores, reproductores portátiles de audio y video o consolas de juego, por una restricción en importación y exportación por el manejo de baterías de litio.\nPregunta 8: Restricciones adicionales.\nLos envíos de alimentos, productos de uso humano o contacto humano para todos los países debe tener registro Invima, si no los tiene se puede enviar pero bajo la responsabilidad del cliente.\n.Para los artículos que son medicados como shampoo, cremas, tratamientos capilares etc, a parte del registro Invima debe tener ficha técnica.\nCafé: Para la exportación de café los clientes deben tener un permiso de exportación de la FEDERACIÓN COLOMBIANA DE CAFETEROS. A parte del registro invima\n.AveOnline y DHL no tienen ninguna incidencia en los procesos realizados por la DIAN de cada país, estamos sujetos a pago de impuestos y documentos adicionales que soliciten para el ingreso de la mercancía."
+  },
+  {
+    "question": "¿Qué transportadoras aliadas están disponibles para envíos en [NOMBRE_MUNICIPIO]?",
+    "answer": "En Aveonline integramos a las principales transportadoras del país en una sola plataforma, incluyendo Servientrega, Coordinadora, Interrapidísimo, Envía, TCC, entre otras. Esto te permite cotizar y despachar tus envíos a [NOMBRE_MUNICIPIO] eligiendo la mejor tarifa y tiempo de entrega sin tener que negociar contratos individuales con cada operador."
+  },
+  {
+    "question": "¿Cómo funciona el pago contraentrega en envíos hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "El pago contraentrega permite que tu cliente en [NOMBRE_MUNICIPIO] pague el valor del producto al momento de recibirlo, en efectivo o por medios digitales según la transportadora. Aveonline gestiona el recaudo y lo consigna directamente en tu cuenta bancaria, eliminando el riesgo de envíos no pagados y aumentando la conversión de tu tienda online."
+  },
+  {
+    "question": "¿Cuáles son los cortes de recaudo contraentrega para envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Los cortes de recaudo se realizan de forma periódica según la transportadora, generalmente entre 3 y 8 días hábiles después de la entrega efectiva en [NOMBRE_MUNICIPIO]. En Aveonline puedes consultar en tiempo real el estado de tus recaudos desde el panel de control y programar consignaciones automáticas a tu cuenta bancaria."
+  },
+  {
+    "question": "¿Cómo cotizo un envío nacional hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Desde la plataforma Aveonline puedes cotizar envíos a [NOMBRE_MUNICIPIO] en segundos: solo ingresas el peso, las dimensiones y el valor declarado del producto, y el sistema te muestra las tarifas de todas las transportadoras aliadas en una sola pantalla, para que elijas la opción que mejor se adapte al margen de tu eCommerce."
+  },
+  {
+    "question": "¿Aveonline maneja logística inversa o devoluciones desde [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Si un cliente en [NOMBRE_MUNICIPIO] rechaza el pedido o solicita una devolución, Aveonline coordina la logística inversa con la transportadora correspondiente para que el paquete regrese a tu bodega de origen, sin necesidad de contratar un servicio adicional ni asumir trámites extra con cada operador."
+  },
+  {
+    "question": "¿Qué pasa si mi paquete se pierde o llega en mal estado a [NOMBRE_MUNICIPIO]?",
+    "answer": "Todos los envíos gestionados por Aveonline hacia [NOMBRE_MUNICIPIO] cuentan con la cobertura y los protocolos de reposición que ofrece cada transportadora aliada, según el valor declarado del producto. Nuestro equipo de soporte hace seguimiento al caso para gestionar la reclamación y agilizar la respuesta."
+  },
+  {
+    "question": "¿Puedo integrar Aveonline con mi tienda online para automatizar envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Aveonline ofrece integraciones nativas con Shopify, WooCommerce, VTEX, Tiendanube y Mercado Libre, además de una API abierta. Esto te permite generar guías, cotizar y despachar pedidos a [NOMBRE_MUNICIPIO] de forma automática desde tu eCommerce."
+  },
+  {
+    "question": "¿Cuánto cuesta enviar un paquete a [NOMBRE_MUNICIPIO] con Aveonline?",
+    "answer": "El costo depende del peso, dimensiones, valor declarado y transportadora seleccionada. Al consolidar el volumen de miles de eCommerce, Aveonline negocia tarifas preferenciales con las transportadoras y las traslada a sus usuarios, permitiéndote acceder a fletes más competitivos para envíos a [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Puedo hacer seguimiento en tiempo real de mis envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Desde el panel de Aveonline puedes hacer seguimiento centralizado de todos tus envíos a [NOMBRE_MUNICIPIO], sin importar la transportadora elegida. Recibes actualizaciones del estado del paquete y puedes compartir el link de rastreo con tu cliente final."
+  },
+  {
+    "question": "¿Cómo es la facturación de los Envíos de Mensajería y/o Paquetería hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Cada miércoles de la semana, emitiremos una factura que contendrá el valor de todos los costos logísticos incurridos en ese período para envíos a [NOMBRE_MUNICIPIO]. El plazo para realizar el pago de estas facturas será de 8 días calendario o, alternativamente, podrás realizar el pago por cruce de recaudos."
+  },
+  {
+    "question": "¿Cuál es el embalaje adecuado para la Mercancía según las Empresas de Transporte de Carga o Transportadoras que operan en [NOMBRE_MUNICIPIO]?",
+    "answer": "No existe un embalaje universal para todos los tipos de mercancía, ya que las características de los productos varían. En Aveonline, te ofreceremos asesoramiento personalizado basado en las particularidades de tus artículos y el destino en [NOMBRE_MUNICIPIO], recomendándote la mejor opción de embalaje.\nEs fundamental recordar que las empresas de transporte de carga y las compañías de mensajería raramente se hacen responsables de las posibles averías en la mercancía transportada. Esto se debe a que argumentan que la responsabilidad del embalaje recae en el remitente. Por lo tanto, es esencial que consideres que, dado que la mercancía se transporta en vehículos con diferentes tipos de embalajes, pesos y dimensiones hacia [NOMBRE_MUNICIPIO], puede estar expuesta a daños. Para evitar estos inconvenientes, asegúrate de que tus productos estén adecuadamente embalados y protegidos para el proceso de transporte."
+  },
+  {
+    "question": "¿Qué es el Peso Volumen para los envíos hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "El peso volumen es el espacio que ocupa tu mercancía cuando es transportada hacia [NOMBRE_MUNICIPIO]. Esta se mide en kilogramos.\nPara calcular el peso volumen, necesitamos algunos datos a la mano: primero saber cuánto pesa mi producto si lo peso en una báscula (peso muerto) y segundo las dimensiones de ese paquete que deseas enviar a [NOMBRE_MUNICIPIO]. Tomamos el alto, largo y ancho del paquete, que seguramente está en centímetros y lo cambiamos a metros, por lo tanto tomamos las dimensiones en centímetros y las dividimos entre 100. Con las dimensiones expresadas en metros las multiplicamos entre sí y su resultado lo multiplicaremos por el factor volumen que varía según la transportadora; este puede ser 222 o 400.\nPara la transportadora Envía:\nMensajería: 222\nPaquetería: 400\nPara la transportadora TCC:\nMensajería y Paquetería: 400\nPara el peso muerto se liquida a partir de un kilo y será en kilos enteros. Ejemplo: 1kilo, 2 kilos, 3 kilos…\nSe liquida el mayor, entre el peso muerto y el peso volumen, el cálculo del volumen se debe aproximar siempre por encima en mensajería y en paquetería al más próximo, ya sea por debajo o por encima. Ejemplo:\nEJEMPLO MENSAJERÍA (aplicable a [NOMBRE_MUNICIPIO]):\nPaso 1: Mide el paquete\nLargo: 20 cm, Ancho: 15 cm, Alto: 25 cm\nPaso 2: Pasos las dimensiones del paquete a metros y los multiplicas entre sí.\n0,20 X 0,15 X 0,25 = 0,0075\nPaso 3: Tomo el resultado de esa multiplicación y lo multiplico por su factor volumen.\n0.0075 X 222 = 1,665 → Se aproxima a 2 kilos\nComo resultado tenemos que el paquete tiene un peso volumen de 2 kilos.\nTen en cuenta que si el paquete no pesa más de 5 kilos y alguno de sus lados no miden más de 50 centímetros, puedes estar seguro que el paquete es mensajería o si no cumple con estas condiciones es considerado como servicio de paquetería hacia [NOMBRE_MUNICIPIO].\nEJEMPLO PAQUETERIA (aplicable a [NOMBRE_MUNICIPIO]):\nPaso 1: Mido el paquete\nLargo: 50 cm, Ancho: 60 cm, Alto: 20 cm\nPaso 2: Pasos las dimensiones del paquete a metros y los multiplico entre sí.\n0,50 X 0,60 X 0,20 = 0,06\nPaso 3: Tomo el resultado de esa multiplicación y lo multiplico por su factor volumen.\n0.06 X 400 = 24"
+  },
+  {
+    "question": "¿Cómo puedo calcular el Peso Volumen de los Envíos de Mensajería y/o Paquetería que envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "El peso volumen es el espacio que ocupa tu mercancía cuando es transportada a [NOMBRE_MUNICIPIO]. Esta se mide en kilogramos.\nPara calcular el peso volumen, necesitamos algunos datos a la mano: primero saber cuánto pesa mi producto si lo peso en una báscula (peso muerto) y segundo las dimensiones de ese paquete que deseas enviar a [NOMBRE_MUNICIPIO]. Tomamos el alto, largo y ancho del paquete, que seguramente está en centímetros y lo cambiamos a metros, por lo tanto tomamos las dimensiones en centímetros y las dividimos entre 100. Con las dimensiones expresadas en metros las multiplicamos entre sí y su resultado lo multiplicaremos por el factor volumen que varía según la transportadora; este puede ser 222 o 400.\nPara la transportadora Envía:\nMensajería: 222\nPaquetería: 400\nPara la transportadora TCC:\nMensajería y Paquetería: 400\nPara el peso muerto se liquida a partir de un kilo y será en kilos enteros. Ejemplo: 1kilo, 2 kilos, 3 kilos…\nSe liquida el mayor, entre el peso muerto y el peso volumen, el cálculo del volumen se debe aproximar siempre por encima en mensajería y en paquetería al más próximo, ya sea por debajo o por encima. Ejemplo:\n[Incluye los ejemplos anteriores con la referencia a [NOMBRE_MUNICIPIO]]"
+  },
+  {
+    "question": "¿Cómo sé si un paquete es de Mensajería o Paquetería para envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Si tu envío no pesa más de 5 kilos, no contiene más de 1 unidad y ninguno de sus lados mide más de 50 centímetros, puedes estar seguro de que tu paquete es categorizado como mensajería para [NOMBRE_MUNICIPIO]. En caso de que tu envío no cumpla con alguna de estas condiciones, se considerará como servicio de paquetería."
+  },
+  {
+    "question": "¿Qué tipo de Mercancía es considerada Prohibido Transporte hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Si tu paquete está en las siguientes categorías, es considerado mercancía de prohibido transporte, independientemente del municipio de destino, incluyendo [NOMBRE_MUNICIPIO]:\n<ul>\n    <li>Materiales tóxicos</li>\n    <li>Materiales venenosos</li>\n    <li>Materiales contaminantes</li>\n    <li>Materiales corrosivos</li>\n    <li>Materiales inflamables</li>\n    <li>Obras de arte</li>\n    <li>Líquidos</li>\n    <li>Vidrios</li>\n    <li>Tambores</li>\n    <li>Canecas metálicas mayores de 5 galones</li>\n    <li>Menajes domésticos</li>\n    <li>Joyas</li>\n    <li>Títulos valores</li>\n    <li>Dinero</li>\n</ul>\nY todo lo contemplado como elementos de prohibido transporte estipulados en el Código de Comercio y por el Régimen de Servicios Postales \"Ley 1369 de 2009\"."
+  },
+  {
+    "question": "¿Cuál es el Valor Declarado de un Envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "El valor declarado corresponde a la cantidad establecida por el remitente para la mercancía enviada a través de una guía de cualquiera de las empresas de transporte que utilizamos para entregas en [NOMBRE_MUNICIPIO]. Este valor actúa como la base sobre la cual se puede realizar una reclamación en caso de pérdida de la mercancía.\nEs importante tener en cuenta que, además de considerar el valor declarado, la aseguradora de la empresa transportadora también verifica el valor comercial del artículo. Esto significa que el monto del reembolso estará sujeto a la validación de ambas variables para envíos dirigidos a [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Cuáles son los costos de las Empresas de Transporte que prestan el servicio de Mensajería y Paquetería a [NOMBRE_MUNICIPIO]?",
+    "answer": "Las tarifas de transporte para [NOMBRE_MUNICIPIO] tienen varios rubros en su costo, lo que requiere una serie de información para cotizar el costo de transporte. A continuación, detallaremos la estructura de costo de un envío de mensajería y paquetería:\nMENSAJERÍA (aplicable a [NOMBRE_MUNICIPIO]):\nServicio legislado por el ministerio de comunicaciones, quien define que este servicio aplica para todos los envíos que,\n<ul>\n    <li>No contengan más de una unidad de empaque para la misma dirección en [NOMBRE_MUNICIPIO]</li>\n    <li>Ninguno de los lados de la unidad de empaque mida más de 50 cm</li>\n    <li>La unidad de empaque debe pesar máximo 5 Kilos</li>\n</ul>\nPAQUETERÍA (aplicable a [NOMBRE_MUNICIPIO]):\nServicio legislado por el ministerio de transporte, quien define que este servicio de transporte de Mercancías aplica para todos los envíos a [NOMBRE_MUNICIPIO] que,\n<ul>\n    <li>Pesen más de 5 kilos</li>\n    <li>Que alguno de los lados de las unidades de empaque midan más de 50cm</li>\n</ul>"
+  },
+  {
+    "question": "¿Qué es una cuota de Manejo para envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "La cuota de manejo equivale al costo del seguro de la mercancía que será enviada a [NOMBRE_MUNICIPIO], el cual es calculado basado en un porcentaje que la empresa de mensajería y paquetería o de transporte define y este se multiplica por el valor declarado del costo de la mercancía, hallando así el costo de manejo.\nDebido a que la información requerida para presentar los costos de mensajería y paquetería en [NOMBRE_MUNICIPIO] requiere un extenso documento y acompañamiento por parte de nuestros asesores comerciales, nos aseguramos de que comprendas bien los costos. Por este motivo, te sugerimos nos contactes para brindarte esta información personalizada."
+  },
+  {
+    "question": "¿Realizan envíos de Mensajería y Paquetería puerta a puerta en [NOMBRE_MUNICIPIO]?",
+    "answer": "Para Aveonline, todos los envíos a [NOMBRE_MUNICIPIO] son puerta a puerta: la transportadora recoge en tu domicilio, empresa o local y se lleva a través de la transportadora que elegiste hacia [NOMBRE_MUNICIPIO]. Ten en cuenta que este servicio debe ser solicitado por medio de la plataforma (Solicitud de recogida)."
+  },
+  {
+    "question": "¿Si me recogen el paquete en el domicilio para enviarlo a [NOMBRE_MUNICIPIO], tiene costo adicional?",
+    "answer": "No, porque el servicio de recolección de las empresas de transporte para entregas en [NOMBRE_MUNICIPIO] viene incluido en la tarifa de envío."
+  },
+  {
+    "question": "¿Cuánto tiempo se demora la transportadora para actualizar el estado de una guía enviada a [NOMBRE_MUNICIPIO]?",
+    "answer": "El tiempo que se demora una transportadora en actualizar el estado de una guía dirigida a [NOMBRE_MUNICIPIO] puede variar según varios factores, incluyendo:\n<ul>\n    <li>La política interna de la transportadora</li>\n    <li>La eficiencia de sus sistemas de seguimiento</li>\n    <li>La complejidad de la logística involucrada para [NOMBRE_MUNICIPIO]</li>\n</ul>\nEn general, las transportadoras suelen actualizar el estado de las guías en tiempo real o con una frecuencia regular para proporcionar información actualizada a los remitentes y destinatarios de [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Qué son novedades operativas en envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Las \"novedades operativas\" en el contexto de las transportadoras que operan en [NOMBRE_MUNICIPIO] se refieren a eventos o situaciones específicas que afectan el proceso de envío y entrega de paquetes. Estas se notifican cuando hay retrasos en las entregas a [NOMBRE_MUNICIPIO] y son solucionadas por la transportadora correspondiente."
+  },
+  {
+    "question": "¿Que es una reexpedición hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Una reexpedición se refiere a un destino (como [NOMBRE_MUNICIPIO]) al que la transportadora no realiza entregas directas. En lugar de ello, se recurre a un tercero para llevar a cabo la entrega en esa población específica. Esto significa que las empresas transportadoras no cubren directamente estos destinos con su propia flota de vehículos, sino que utilizan terceros para llevar a cabo las entregas.\nComo resultado de este proceso, las reexpediciones a [NOMBRE_MUNICIPIO] suelen tener un costo un poco más elevado en el flete y un tiempo de entrega estimado más largo, generalmente entre 8 y 10 días hábiles."
+  },
+  {
+    "question": "¿Cuales son los tiempos de entrega para [NOMBRE_MUNICIPIO]?",
+    "answer": "Los tiempos de entrega de las transportadoras hacia [NOMBRE_MUNICIPIO] pueden variar significativamente según varios factores:\n<ul>\n    <li>El tipo de servicio</li>\n    <li>La distancia entre el origen y [NOMBRE_MUNICIPIO]</li>\n    <li>Las políticas específicas de cada transportadora</li>\n    <li>Las diferentes dificultades logísticas como: tráfico, clima, fallas mecánicas entre otros que se puedan presentar en [NOMBRE_MUNICIPIO]</li>\n</ul>\nEstos tiempos de entrega son estimados más no garantizados. Te recomendamos consultar con tu asesor logístico los tiempos específicos para [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Entregan en veredas de [NOMBRE_MUNICIPIO]?",
+    "answer": "No, las transportadoras no realizan entregas en las siguientes zonas de [NOMBRE_MUNICIPIO]: Veredas, batallones, corregimientos, hospitales, ni fincas. Para envíos a estas zonas, es necesario utilizar un servicio especial o acordar un punto de entrega alternativo. Consulta con tu asesor logístico en Aveonline para conocer opciones especiales si necesitas envíos a estas áreas de [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Cómo hago una reclamación para un envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "En caso de pérdida, avería o faltante de un paquete enviado a [NOMBRE_MUNICIPIO], es importante que te pongas en contacto con tu asesora logística lo antes posible, ya que para que una reclamación sea procedente se debe hacer la notificación de 24 a 48 horas máximo. Debes canalizar tu reclamación a través de este canal y no directamente con la transportadora. Esto garantizará una mejor trazabilidad y te brindará más posibilidades de obtener ayuda con la gestión de tu reclamo en [NOMBRE_MUNICIPIO].\nPara presentar una reclamación efectiva:\n<ul>\n    <li>Proporciona la relación de envíos firmada: Asegúrate de tener la relación de envíos firmada por la transportadora que recibió tu paquete destinado a [NOMBRE_MUNICIPIO]. Este documento es crucial para demostrar que el paquete estaba en buenas condiciones antes de ser entregado a la transportadora.</li>\n    <li>Describe el contenido y embalaje: Proporciona una breve descripción del contenido interno del paquete y cómo fue embalado. Esto ayudará a evaluar la causa de la pérdida o daño en el envío a [NOMBRE_MUNICIPIO].</li>\n    <li>Proporciona evidencia fotográfica: Si tienes fotografías que respalden tu reclamo (imágenes del paquete antes de ser enviado a [NOMBRE_MUNICIPIO], fotos de daños o evidencia visual relevante), asegúrate de compartirlas. Las imágenes pueden ser útiles para respaldar tu caso.</li>\n</ul>"
+  },
+  {
+    "question": "¿Qué es \"solucionada en malla\" para un envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "Cuando la guía de tu envío a [NOMBRE_MUNICIPIO] se encuentra solucionada en malla, es porque ya se reportó la solución de la novedad a la transportadora. Así que estaríamos esperando que se ejecute la solución y que vuelvan a sacar la unidad a reparto en [NOMBRE_MUNICIPIO].\nDebes tener presente que la transportadora tiene de 24 a 48 horas para dar la solución y salir de nuevo a reparto en [NOMBRE_MUNICIPIO].\nal ofrecer el envío al cliente este se niega a recibirlo o no cuenta con el dinero del recaudo, el paquete se devuelve al remitente.\nRecomendación: Cuando se presente una novedad en [NOMBRE_MUNICIPIO], se comunique con el cliente antes de tomar una decisión sobre cómo resolverla.\n✓ Reemplaza [NOMBRE_MUNICIPIO] por el municipio específico (Medellín, Bogotá, Cali, Barranquilla, Bucaramanga, etc.)\n✓ Las preguntas ahora están optimizadas para SEO local con palabras clave específicas de cada municipio\n✓ Se mantiene coherencia en toda la FAQ para que sea actualizable de forma sistemática\n✓ Cada sección agrupa temas relacionados para mejor experiencia del usuario\n✓ El formato es adaptable a diferentes municipios sin perder integridad"
+  },
+  {
+    "question": "¿Con qué plataformas eCommerce se integra Aveonline?",
+    "answer": "Aveonline ofrece integraciones nativas con las principales plataformas eCommerce del mercado, incluyendo Shopify y WooCommerce. Adicionalmente, contamos con una API abierta para conectar tiendas construidas en plataformas no estándar o con desarrollos a la medida."
+  },
+  {
+    "question": "¿Cuánto tiempo toma integrar Aveonline con mi tienda online?",
+    "answer": "Las integraciones nativas suelen activarse en minutos, ya que solo requieren instalar el plugin o conectar las credenciales desde el panel de la plataforma. Para integraciones vía API, los tiempos dependen del alcance del desarrollo, pero contamos con documentación técnica detallada y soporte de nuestro equipo para reducir la curva de implementación."
+  },
+  {
+    "question": "¿Ofrece Aveonline una API abierta para desarrollos a la medida?",
+    "answer": "Sí. Aveonline cuenta con una API REST documentada que permite generar guías, cotizar envíos, gestionar contraentrega, consultar estados y administrar devoluciones de forma programática. Esto le da total flexibilidad a tu equipo de desarrollo para conectar la plataforma con cualquier sistema interno (ERP, OMS, WMS)."
+  },
+  {
+    "question": "¿Qué capacidades automatiza la integración con Aveonline?",
+    "answer": "La integración automatiza la cotización de envíos en el checkout, la generación de guías al confirmar el pedido, el envío de notificaciones de tracking al cliente, la sincronización del estado del envío con tu tienda, la activación de devoluciones, el recaudo contraentrega y la consolidación de reportes operativos en un solo panel."
+  },
+  {
+    "question": "¿Se puede integrar Aveonline con Shopify para envíos en Colombia?",
+    "answer": "Sí. Aveonline tiene una integración nativa con Shopify que permite cotizar tarifas en tiempo real durante el checkout, generar guías automáticamente, activar contraentrega como método de pago, sincronizar estados de envío y gestionar devoluciones, todo desde el panel de Shopify."
+  },
+  {
+    "question": "¿Tiene Aveonline documentación técnica disponible para los desarrolladores?",
+    "answer": "Sí. Contamos con documentación técnica completa que incluye guía de autenticación, endpoints, ejemplos de payload, códigos de error y SDKs en los lenguajes más comunes. Esta documentación está pensada como respaldo del proceso de integración, no como único punto de partida: nuestro equipo técnico acompaña la implementación."
+  },
+  {
+    "question": "¿La integración funciona para múltiples bodegas o solo para una?",
+    "answer": "Aveonline soporta operaciones multi-bodega, lo que te permite gestionar despachos desde diferentes orígenes según el inventario disponible, la ubicación del cliente final o reglas de negocio personalizadas. Esto es clave para eCommerce que operan con bodegas regionales o con fulfillment distribuido."
+  },
+  {
+    "question": "¿Hay soporte técnico durante el proceso de integración?",
+    "answer": "Sí. Durante la implementación, el equipo de Aveonline acompaña la integración con soporte técnico directo, sesiones de validación, ambiente de pruebas (sandbox) y revisión de los flujos críticos antes de pasar a producción. No te dejamos solo con la documentación."
+  },
+  {
+    "question": "¿Qué pasa si mi tienda está construida en una plataforma no estándar?",
+    "answer": "Si tu tienda usa una plataforma poco común o un desarrollo a la medida, puedes integrar a Aveonline mediante la API REST abierta. Adicionalmente, nuestro equipo puede acompañar el diseño de la arquitectura de integración para asegurar que los flujos críticos (guías, contraentrega, devoluciones) funcionen correctamente desde el día uno."
+  },
+  {
+    "question": "¿Qué incluye la automatización de Shopify con Aveonline?",
+    "answer": "Nuestra solución de automatización de Shopify incluye la gestión de inventarios, facturación, pagos contraentrega, y más, todo desde una sola plataforma para simplificar la operación de tu tienda."
+  },
+  {
+    "question": "¿Puedo personalizar las campañas de marketing con la automatización de Shopify?",
+    "answer": "Sí, puedes personalizar tus campañas de marketing, incluyendo notificaciones push y correos electrónicos, para maximizar el impacto de tus esfuerzos de marketing."
+  },
+  {
+    "question": "¿Puedo descargar Aveonline desde la APP de Shopify?",
+    "answer": "No, la integración se realiza mediante una API y es gestionada directamente por nuestro equipo técnico."
+  },
+  {
+    "question": "¿Qué tiendas puedo integrar con Aveonline?",
+    "answer": "Actualmente puedes integrar Tienda Nube y Shopify. Próximamente también será compatible con WooCommerce."
+  },
+  {
+    "question": "¿El inventario se actualiza automáticamente?",
+    "answer": "Por ahora, el inventario puede ser subido producto por producto o descargado desde tu ecommerce y luego subido masivamente a Aveonline. Próximamente, esta actualización será automática."
+  },
+  {
+    "question": "¿Dónde gestiono mi inventario con la integración de Aveonline?",
+    "answer": "Con la integración, tu inventario será gestionado a través de la plataforma de Aveonline."
+  },
+  {
+    "question": "Si tengo una integración con otra plataforma, ¿debo cancelarla para trabajar con Aveonline?",
+    "answer": "No, Aveonline permite mantener otras integraciones. Los pedidos ingresarán a ambas plataformas, y tú decides desde cuál enviarlos. Si eliges el otro operador, en Aveonline ese pedido aparecerá como \"despachado con otro operador\" para evitar envíos duplicados."
+  },
+  {
+    "question": "¿Puedo tener varias bodegas con Aveonline?",
+    "answer": "Sí, en Aveonline puedes gestionar múltiples bodegas."
+  },
+  {
+    "question": "¿Puedo tener varios usuarios con diferentes perfiles en Aveonline?",
+    "answer": "Sí, en Aveonline puedes crear diferentes usuarios con perfiles como logísticos, comerciales o administradores."
+  },
+  {
+    "question": "¿Puedo ver desde qué canal de venta está ingresando el pedido?",
+    "answer": "Sí, en Aveonline puedes validar desde qué canal de venta o agente proviene el pedido."
+  },
+  {
+    "question": "¿Puedo usar el CRM de Aveonline sin tener inventario propio?",
+    "answer": "Sí, puedes usar el sistema para generar o integrar tu ecommerce y que las órdenes lleguen directamente a tu proveedor, quien se encargará del despacho. El sistema puede configurarse para que, una vez entregado el producto, Aveonline gestione la dispersión del dinero."
+  },
+  {
+    "question": "Si soy proveedor, ¿puedo activar mis productos para que otros vendedores los ofrezcan?",
+    "answer": "Sí, puedes crear una lista de precios general o por vendedor para que ellos, una vez realizada la venta, puedan ingresar a su plataforma en Aveonline y ese pedido te llegue a ti como proveedor."
+  },
+  {
+    "question": "¿Qué ventajas ofrece el plugin de WooCommerce de Aveonline?",
+    "answer": "El plugin de WooCommerce te permite gestionar tus envíos directamente desde tu dashboard, eligiendo las mejores tarifas y servicios logísticos ajustados a tus necesidades, mejorando la eficiencia y reduciendo costos."
+  },
+  {
+    "question": "¿Cómo instalar el plugin de WooCommerce?",
+    "answer": "Instalarlo es muy fácil. Da clic en el siguiente enlace <a href=\"https://gitlab.com/franciscoblancojn/aveonline\"><span style=\"font-weight: 400\">https://gitlab.com/franciscoblancojn/aveonline</span></a>  para descargarlo, das clic en el boton “Code”  y clic en “zip”\nCuando lo hayas descargado sigue los pasos de instalación en este video tutorial: <a href=\"https://www.youtube.com/watch?v=TjcWCkQIzHk\"><span style=\"font-weight: 400\">https://www.youtube.com/watch?v=TjcWCkQIzHk</span></a>"
+  },
+  {
+    "question": "¿El plugin de WooCommerce es compatible con todas las versiones de WooCommerce?",
+    "answer": "Sí, nuestro plugin es compatible con todas las versiones actuales de WooCommerce. Recomendamos mantener tu plataforma actualizada para asegurar la mejor experiencia."
+  },
+  {
+    "question": "¿Puedo personalizar las opciones de envío con el plugin de WooCommerce?",
+    "answer": "Sí, puedes personalizar las opciones de envío para adaptarlas a las necesidades específicas de tu negocio y ofrecer a tus clientes las mejores tarifas y tiempos de entrega."
+  },
+  {
+    "question": "¿Cómo puedo obtener soporte técnico para el plugin de WooCommerce?",
+    "answer": "Ofrecemos soporte técnico a través de nuestra plataforma. Puedes contactar a nuestro equipo de analistas de servicio al cliente al número 3054202125."
+  }
+]
