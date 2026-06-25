@@ -23,6 +23,7 @@ The list have to have this format:
     <li>Item 4</li>
     ...
 </ul>
+Replace [NOMBRE_MUNICIPIO] by {{nombre_municipio}}
 
 ## Structure
 

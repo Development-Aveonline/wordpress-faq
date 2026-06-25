@@ -1,18 +1,18 @@
 [
   {
-    "question": "¿Cómo funciona el pago contraentrega para eCommerce en [NOMBRE_MUNICIPIO]?",
-    "answer": "El pago contraentrega permite que tu cliente en [NOMBRE_MUNICIPIO] pague el valor del producto al momento de recibirlo, en lugar de pagar por adelantado en tu tienda online. Aveonline coordina con la transportadora aliada el recaudo del dinero al momento de la entrega, lo administra y posteriormente lo consigna en tu cuenta bancaria."
+    "question": "¿Cómo funciona el pago contraentrega para eCommerce en {{nombre_municipio}}?",
+    "answer": "El pago contraentrega permite que tu cliente en {{nombre_municipio}} pague el valor del producto al momento de recibirlo, en lugar de pagar por adelantado en tu tienda online. Aveonline coordina con la transportadora aliada el recaudo del dinero al momento de la entrega, lo administra y posteriormente lo consigna en tu cuenta bancaria."
   },
   {
-    "question": "¿Qué transportadoras ofrecen pago contraentrega en [NOMBRE_MUNICIPIO]?",
-    "answer": "Aveonline integra las principales transportadoras que ofrecen servicio contraentrega en [NOMBRE_MUNICIPIO], incluyendo Servientrega, Coordinadora, Interrapidísimo, Envia y TCC. Al consolidarlas en una sola plataforma, puedes elegir la opción con mejor cobertura, menor comisión y mejores tiempos para cada zona."
+    "question": "¿Qué transportadoras ofrecen pago contraentrega en {{nombre_municipio}}?",
+    "answer": "Aveonline integra las principales transportadoras que ofrecen servicio contraentrega en {{nombre_municipio}}, incluyendo Servientrega, Coordinadora, Interrapidísimo, Envia y TCC. Al consolidarlas en una sola plataforma, puedes elegir la opción con mejor cobertura, menor comisión y mejores tiempos para cada zona."
   },
   {
-    "question": "¿Qué pasa si el cliente en [NOMBRE_MUNICIPIO] rechaza el paquete contraentrega?",
-    "answer": "Cuando un cliente en [NOMBRE_MUNICIPIO] rechaza el paquete o no se encuentra en el domicilio, la transportadora reporta la novedad y Aveonline coordina la devolución del producto a tu bodega de origen, sin que tengas que asumir trámites adicionales con el operador."
+    "question": "¿Qué pasa si el cliente en {{nombre_municipio}} rechaza el paquete contraentrega?",
+    "answer": "Cuando un cliente en {{nombre_municipio}} rechaza el paquete o no se encuentra en el domicilio, la transportadora reporta la novedad y Aveonline coordina la devolución del producto a tu bodega de origen, sin que tengas que asumir trámites adicionales con el operador."
   },
   {
-    "question": "¿Cuál es la comisión por recaudo contraentrega en [NOMBRE_MUNICIPIO]?",
+    "question": "¿Cuál es la comisión por recaudo contraentrega en {{nombre_municipio}}?",
     "answer": "La comisión depende de la transportadora y, en algunos casos, del valor recaudado. Aveonline negocia tarifas preferenciales gracias al volumen consolidado de miles de eCommerce y las traslada a sus usuarios, lo que te permite acceder a comisiones más competitivas."
   },
   {
@@ -20,16 +20,16 @@
     "answer": "Aveonline consigna el dinero recaudado en la cuenta bancaria que registres en la plataforma, según los cortes definidos por cada transportadora. Recibes la consignación con un soporte detallado de las guías incluidas, lo que facilita la conciliación contable."
   },
   {
-    "question": "¿Puedo configurar el contraentrega desde mi tienda Shopify o WooCommerce para clientes en [NOMBRE_MUNICIPIO]?",
-    "answer": "Sí. Aveonline ofrece integraciones nativas con Shopify y WooCommerce, Esto te permite habilitar el pago contraentrega como opción en el checkout para clientes en [NOMBRE_MUNICIPIO] y centralizar el recaudo desde un solo panel."
+    "question": "¿Puedo configurar el contraentrega desde mi tienda Shopify o WooCommerce para clientes en {{nombre_municipio}}?",
+    "answer": "Sí. Aveonline ofrece integraciones nativas con Shopify y WooCommerce, Esto te permite habilitar el pago contraentrega como opción en el checkout para clientes en {{nombre_municipio}} y centralizar el recaudo desde un solo panel."
   },
   {
-    "question": "¿Hay un monto máximo o mínimo para envíos contraentrega a [NOMBRE_MUNICIPIO]?",
-    "answer": "Cada transportadora establece sus propios montos mínimos y máximos para recaudo contraentrega en [NOMBRE_MUNICIPIO]. Aveonline te muestra los límites aplicables al momento de cotizar, para que elijas la transportadora que mejor se adapte al ticket promedio de tu tienda online."
+    "question": "¿Hay un monto máximo o mínimo para envíos contraentrega a {{nombre_municipio}}?",
+    "answer": "Cada transportadora establece sus propios montos mínimos y máximos para recaudo contraentrega en {{nombre_municipio}}. Aveonline te muestra los límites aplicables al momento de cotizar, para que elijas la transportadora que mejor se adapte al ticket promedio de tu tienda online."
   },
   {
-    "question": "¿Cómo reduzco el riesgo de fraude o rechazo contraentrega en [NOMBRE_MUNICIPIO]?",
-    "answer": "Para reducir rechazos en [NOMBRE_MUNICIPIO], Aveonline recomienda validar el pedido por WhatsApp o llamada antes del despacho, mantener actualizados los datos de contacto del cliente y revisar el historial de rechazos por zona en el panel. Puedes definir reglas de bloqueo automático para clientes con múltiples rechazos previos."
+    "question": "¿Cómo reduzco el riesgo de fraude o rechazo contraentrega en {{nombre_municipio}}?",
+    "answer": "Para reducir rechazos en {{nombre_municipio}}, Aveonline recomienda validar el pedido por WhatsApp o llamada antes del despacho, mantener actualizados los datos de contacto del cliente y revisar el historial de rechazos por zona en el panel. Puedes definir reglas de bloqueo automático para clientes con múltiples rechazos previos."
   },
   {
     "question": "¿Cómo funciona el Servicio Contraentrega?",

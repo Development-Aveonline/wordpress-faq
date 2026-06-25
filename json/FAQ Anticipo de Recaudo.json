@@ -4,16 +4,16 @@
     "answer": "El anticipo de recaudo es un servicio financiero de Aveonline que te permite recibir en minutos el dinero de tus ventas contraentrega que ya fueron entregadas efectivamente, en lugar de esperar los 7 a 14 días tradicionales del corte de la transportadora. Esto te da liquidez inmediata para reinvertir en inventario, pauta o crecimiento, sin depender del ciclo de pago del operador logístico."
   },
   {
-    "question": "¿Cuánto tiempo demora recibir mi anticipo de recaudo de ventas a [NOMBRE_MUNICIPIO]?",
-    "answer": "Una vez confirmada la entrega efectiva del pedido en [NOMBRE_MUNICIPIO] y validada la solicitud en el panel, el desembolso del anticipo se realiza en minutos en tu cuenta bancaria registrada. Esto te permite tener el dinero disponible casi en tiempo real, sin esperar los cortes habituales de la transportadora."
+    "question": "¿Cuánto tiempo demora recibir mi anticipo de recaudo de ventas a {{nombre_municipio}}?",
+    "answer": "Una vez confirmada la entrega efectiva del pedido en {{nombre_municipio}} y validada la solicitud en el panel, el desembolso del anticipo se realiza en minutos en tu cuenta bancaria registrada. Esto te permite tener el dinero disponible casi en tiempo real, sin esperar los cortes habituales de la transportadora."
   },
   {
     "question": "¿Cuál es la comisión del anticipo de recaudo?",
     "answer": "La comisión del anticipo de recaudo depende del volumen de operaciones de tu eCommerce, el monto anticipado y el plazo del corte de la transportadora con la que opera. Desde el simulador de anticipos en la página puedes calcular exactamente cuánto recibirás y cuánto pagarás de comisión antes de solicitar el servicio, sin sorpresas."
   },
   {
-    "question": "¿Puedo anticipar el dinero de mis ventas contraentrega en [NOMBRE_MUNICIPIO]?",
-    "answer": "Sí. El servicio de anticipo de recaudo aplica para todas las ventas contraentrega entregadas efectivamente, incluyendo las despachadas a [NOMBRE_MUNICIPIO], independientemente de la transportadora aliada con la que se haya despachado el pedido (Servientrega, Coordinadora, Interrapidísimo, Envia, TCC, entre otras)."
+    "question": "¿Puedo anticipar el dinero de mis ventas contraentrega en {{nombre_municipio}}?",
+    "answer": "Sí. El servicio de anticipo de recaudo aplica para todas las ventas contraentrega entregadas efectivamente, incluyendo las despachadas a {{nombre_municipio}}, independientemente de la transportadora aliada con la que se haya despachado el pedido (Servientrega, Coordinadora, Interrapidísimo, Envia, TCC, entre otras)."
   },
   {
     "question": "¿El anticipo de recaudo aplica a envíos con todas las transportadoras?",
@@ -28,8 +28,8 @@
     "answer": "Sí. El anticipo de recaudo opera con respaldo financiero, validación de las entregas efectivas reportadas por las transportadoras y trazabilidad completa de cada operación. Toda la información queda registrada en el panel para auditoría y conciliación contable."
   },
   {
-    "question": "¿Cómo el anticipo de recaudo mejora mi flujo de caja vendiendo a [NOMBRE_MUNICIPIO]?",
-    "answer": "Al recibir en minutos el dinero de tus ventas contraentrega a [NOMBRE_MUNICIPIO], puedes reinvertir en inventario, pauta digital o gastos operativos sin esperar los cortes de la transportadora. Esto rompe el cuello de botella de liquidez típico del eCommerce contraentrega y te permite escalar más rápido."
+    "question": "¿Cómo el anticipo de recaudo mejora mi flujo de caja vendiendo a {{nombre_municipio}}?",
+    "answer": "Al recibir en minutos el dinero de tus ventas contraentrega a {{nombre_municipio}}, puedes reinvertir en inventario, pauta digital o gastos operativos sin esperar los cortes de la transportadora. Esto rompe el cuello de botella de liquidez típico del eCommerce contraentrega y te permite escalar más rápido."
   },
   {
     "question": "¿Qué es el servicio de anticipo de recaudo de Aveonline?",

@@ -8,12 +8,12 @@
     "answer": "El costo depende del volumen mensual de pedidos despachados, el espacio que ocupa tu inventario y los servicios adicionales que requieras (empaque especial, kits promocionales, manejo de devoluciones). El equipo de Aveonline construye una cotización personalizada según tu operación real, sin tarifas fijas no representativas."
   },
   {
-    "question": "¿Puedo enviar productos desde la bodega de Aveonline hacia [NOMBRE_MUNICIPIO]?",
-    "answer": "Sí. Desde la bodega asignada, Aveonline despacha pedidos a [NOMBRE_MUNICIPIO] y a cualquier municipio de Colombia con las transportadoras aliadas disponibles para esa ruta, optimizando tiempo y costo según el perfil de cada envío."
+    "question": "¿Puedo enviar productos desde la bodega de Aveonline hacia {{nombre_municipio}}?",
+    "answer": "Sí. Desde la bodega asignada, Aveonline despacha pedidos a {{nombre_municipio}} y a cualquier municipio de Colombia con las transportadoras aliadas disponibles para esa ruta, optimizando tiempo y costo según el perfil de cada envío."
   },
   {
-    "question": "¿En cuánto tiempo se despacha un pedido desde la bodega de Aveonline a [NOMBRE_MUNICIPIO]?",
-    "answer": "Los pedidos confirmados se procesan y despachan generalmente en menos de 24 horas hábiles. A partir del despacho, el tiempo de entrega a [NOMBRE_MUNICIPIO] depende de la transportadora seleccionada y la ruta, oscilando entre 24 y 72 horas hábiles en rutas principales."
+    "question": "¿En cuánto tiempo se despacha un pedido desde la bodega de Aveonline a {{nombre_municipio}}?",
+    "answer": "Los pedidos confirmados se procesan y despachan generalmente en menos de 24 horas hábiles. A partir del despacho, el tiempo de entrega a {{nombre_municipio}} depende de la transportadora seleccionada y la ruta, oscilando entre 24 y 72 horas hábiles en rutas principales."
   },
   {
     "question": "¿Aveonline maneja el picking, packing y etiquetado por mí?",

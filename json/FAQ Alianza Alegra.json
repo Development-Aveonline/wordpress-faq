@@ -20,8 +20,8 @@
     "answer": "Aveonline y Alegra se integran a través de sus respectivas APIs y conectores nativos, lo que te permite sincronizar los pedidos de tu eCommerce con la facturación electrónica de forma automática. Esto reduce errores manuales y elimina el tiempo dedicado a digitar facturas una por una."
   },
   {
-    "question": "¿Puedo facturar electrónicamente mis ventas a [NOMBRE_MUNICIPIO] desde Alegra?",
-    "answer": "Sí. Alegra emite facturas electrónicas válidas ante la DIAN para cualquier venta en territorio colombiano, incluyendo ventas a [NOMBRE_MUNICIPIO]. Al integrar Aveonline con Alegra, cada pedido despachado puede generar automáticamente su factura electrónica con los datos del cliente final."
+    "question": "¿Puedo facturar electrónicamente mis ventas a {{nombre_municipio}} desde Alegra?",
+    "answer": "Sí. Alegra emite facturas electrónicas válidas ante la DIAN para cualquier venta en territorio colombiano, incluyendo ventas a {{nombre_municipio}}. Al integrar Aveonline con Alegra, cada pedido despachado puede generar automáticamente su factura electrónica con los datos del cliente final."
   },
   {
     "question": "¿Alegra soporta facturación electrónica DIAN para eCommerce?",
