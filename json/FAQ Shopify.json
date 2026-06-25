@@ -1,0 +1,50 @@
+[
+  {
+    "question": "¿Qué incluye la automatización de Shopify con Aveonline?",
+    "answer": "Nuestra solución de automatización de Shopify incluye la gestión de inventarios, facturación, pagos contraentrega, y más, todo desde una sola plataforma para simplificar la operación de tu tienda."
+  },
+  {
+    "question": "¿Puedo personalizar las campañas de marketing con la automatización de Shopify?",
+    "answer": "Sí, puedes personalizar tus campañas de marketing, incluyendo notificaciones push y correos electrónicos, para maximizar el impacto de tus esfuerzos de marketing."
+  },
+  {
+    "question": "¿Puedo descargar Aveonline desde la APP de Shopify?",
+    "answer": "No, la integración se realiza mediante una API y es gestionada directamente por nuestro equipo técnico."
+  },
+  {
+    "question": "¿Qué tiendas puedo integrar con Aveonline?",
+    "answer": "Actualmente puedes integrar Tienda Nube y Shopify. Próximamente también será compatible con WooCommerce."
+  },
+  {
+    "question": "¿El inventario se actualiza automáticamente?",
+    "answer": "Por ahora, el inventario puede ser subido producto por producto o descargado desde tu ecommerce y luego subido masivamente a Aveonline. Próximamente, esta actualización será automática."
+  },
+  {
+    "question": "¿Dónde gestiono mi inventario con la integración de Aveonline?",
+    "answer": "Con la integración, tu inventario será gestionado a través de la plataforma de Aveonline."
+  },
+  {
+    "question": "Si tengo una integración con otra plataforma, ¿debo cancelarla para trabajar con Aveonline?",
+    "answer": "No, Aveonline permite mantener otras integraciones. Los pedidos ingresarán a ambas plataformas, y tú decides desde cuál enviarlos. Si eliges el otro operador, en Aveonline ese pedido aparecerá como \"despachado con otro operador\" para evitar envíos duplicados."
+  },
+  {
+    "question": "¿Puedo tener varias bodegas con Aveonline?",
+    "answer": "Sí, en Aveonline puedes gestionar múltiples bodegas."
+  },
+  {
+    "question": "¿Puedo tener varios usuarios con diferentes perfiles en Aveonline?",
+    "answer": "Sí, en Aveonline puedes crear diferentes usuarios con perfiles como logísticos, comerciales o administradores."
+  },
+  {
+    "question": "¿Puedo ver desde qué canal de venta está ingresando el pedido?",
+    "answer": "Sí, en Aveonline puedes validar desde qué canal de venta o agente proviene el pedido."
+  },
+  {
+    "question": "¿Puedo usar el CRM de Aveonline sin tener inventario propio?",
+    "answer": "Sí, puedes usar el sistema para generar o integrar tu ecommerce y que las órdenes lleguen directamente a tu proveedor, quien se encargará del despacho. El sistema puede configurarse para que, una vez entregado el producto, Aveonline gestione la dispersión del dinero."
+  },
+  {
+    "question": "Si soy proveedor, ¿puedo activar mis productos para que otros vendedores los ofrezcan?",
+    "answer": "Sí, puedes crear una lista de precios general o por vendedor para que ellos, una vez realizada la venta, puedan ingresar a su plataforma en Aveonline y ese pedido te llegue a ti como proveedor."
+  }
+]

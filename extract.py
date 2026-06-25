@@ -5,7 +5,7 @@ import os
 import re
 
 FAQ_DIR = "faq"
-OUTPUT = "faq.json"
+OUTPUT_DIR = "json"
 
 def get_paragraphs(path):
     with zipfile.ZipFile(path) as z:
@@ -219,7 +219,36 @@ def parse_faq(paras):
     return items
 
 
-all_items = []
+def format_answer(text):
+    # Convert raw URLs to anchor tags
+    text = re.sub(
+        r'(https?://[^\s]+)',
+        r'<a href="\1"><span style="font-weight: 400">\1</span></a>',
+        text
+    )
+    # Convert dash-prefixed lines into <ul><li> groups
+    lines = text.split("\n")
+    result = []
+    i = 0
+    while i < len(lines):
+        line = lines[i]
+        if line.startswith("- "):
+            items = []
+            while i < len(lines) and lines[i].startswith("- "):
+                items.append(lines[i][2:].strip())
+                i += 1
+            result.append("<ul>")
+            for item in items:
+                result.append(f"    <li>{item}</li>")
+            result.append("</ul>")
+        else:
+            result.append(line)
+            i += 1
+    return "\n".join(result).strip()
+
+
+os.makedirs(OUTPUT_DIR, exist_ok=True)
+
 for fname in sorted(os.listdir(FAQ_DIR)):
     if not fname.endswith(".docx"):
         continue
@@ -227,19 +256,13 @@ for fname in sorted(os.listdir(FAQ_DIR)):
     print(f"Processing {fname}...")
     paras = get_paragraphs(fpath)
     items = parse_faq(paras)
+    for item in items:
+        item["answer"] = format_answer(item["answer"])
     print(f"  -> extracted {len(items)} Q&A pairs")
-    all_items.extend(items)
 
-# Remove potential duplicates based on question text
-seen_questions = set()
-unique_items = []
-for item in all_items:
-    q = item["question"].strip().lower()
-    if q not in seen_questions:
-        seen_questions.add(q)
-        unique_items.append(item)
+    outname = fname.replace(".docx", ".json")
+    outpath = os.path.join(OUTPUT_DIR, outname)
+    with open(outpath, "w", encoding="utf-8") as f:
+        json.dump(items, f, ensure_ascii=False, indent=2)
 
-with open(OUTPUT, "w", encoding="utf-8") as f:
-    json.dump(unique_items, f, ensure_ascii=False, indent=2)
-
-print(f"\nDone! Generated {OUTPUT} with {len(unique_items)} total Q&A pairs (from {len(all_items)} raw, {len(all_items) - len(unique_items)} duplicates removed).")
+print(f"\nDone! Generated {len([n for n in os.listdir(FAQ_DIR) if n.endswith('.docx')])} JSON files in {OUTPUT_DIR}/.")

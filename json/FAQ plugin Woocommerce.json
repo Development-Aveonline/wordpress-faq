@@ -1,0 +1,22 @@
+[
+  {
+    "question": "¿Qué ventajas ofrece el plugin de WooCommerce de Aveonline?",
+    "answer": "El plugin de WooCommerce te permite gestionar tus envíos directamente desde tu dashboard, eligiendo las mejores tarifas y servicios logísticos ajustados a tus necesidades, mejorando la eficiencia y reduciendo costos."
+  },
+  {
+    "question": "¿Cómo instalar el plugin de WooCommerce?",
+    "answer": "Instalarlo es muy fácil. Da clic en el siguiente enlace <a href=\"https://gitlab.com/franciscoblancojn/aveonline\"><span style=\"font-weight: 400\">https://gitlab.com/franciscoblancojn/aveonline</span></a>  para descargarlo, das clic en el boton “Code”  y clic en “zip”\nCuando lo hayas descargado sigue los pasos de instalación en este video tutorial: <a href=\"https://www.youtube.com/watch?v=TjcWCkQIzHk\"><span style=\"font-weight: 400\">https://www.youtube.com/watch?v=TjcWCkQIzHk</span></a>"
+  },
+  {
+    "question": "¿El plugin de WooCommerce es compatible con todas las versiones de WooCommerce?",
+    "answer": "Sí, nuestro plugin es compatible con todas las versiones actuales de WooCommerce. Recomendamos mantener tu plataforma actualizada para asegurar la mejor experiencia."
+  },
+  {
+    "question": "¿Puedo personalizar las opciones de envío con el plugin de WooCommerce?",
+    "answer": "Sí, puedes personalizar las opciones de envío para adaptarlas a las necesidades específicas de tu negocio y ofrecer a tus clientes las mejores tarifas y tiempos de entrega."
+  },
+  {
+    "question": "¿Cómo puedo obtener soporte técnico para el plugin de WooCommerce?",
+    "answer": "Ofrecemos soporte técnico a través de nuestra plataforma. Puedes contactar a nuestro equipo de analistas de servicio al cliente al número 3054202125."
+  }
+]

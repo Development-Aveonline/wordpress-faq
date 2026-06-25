@@ -1,0 +1,30 @@
+[
+  {
+    "question": "¿Cómo funciona el proceso de devoluciones con Aveonline desde [NOMBRE_MUNICIPIO]?",
+    "answer": "Cuando un cliente en [NOMBRE_MUNICIPIO] solicita una devolución, Aveonline coordina automáticamente la recolección con la transportadora aliada, genera la guía de retorno y hace seguimiento hasta que el paquete llega a tu bodega de origen. Todo el proceso queda registrado en la plataforma."
+  },
+  {
+    "question": "¿Cuánto tiempo tarda una devolución desde [NOMBRE_MUNICIPIO] hasta mi bodega?",
+    "answer": "Las devoluciones desde [NOMBRE_MUNICIPIO] toman generalmente entre 3 y 7 días hábiles, dependiendo de la ruta y la transportadora seleccionada. Desde el panel de Aveonline puedes hacer seguimiento en tiempo real al estado de cada devolución."
+  },
+  {
+    "question": "¿Qué transportadoras gestionan devoluciones en [NOMBRE_MUNICIPIO]?",
+    "answer": "Aveonline integra a las principales transportadoras del país para gestionar devoluciones en [NOMBRE_MUNICIPIO], incluyendo Servientrega, Coordinadora, Interrapidísimo, Envia, TCC. Esto te permite elegir la opción con mejor cobertura y tarifa en cada zona."
+  },
+  {
+    "question": "¿Puedo programar la recolección de una devolución en casa de mi cliente en [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Aveonline coordina recolecciones a domicilio en [NOMBRE_MUNICIPIO], evitando que tu cliente tenga que desplazarse a un punto de la transportadora. Esto mejora la experiencia post-venta y aumenta la probabilidad de fidelización."
+  },
+  {
+    "question": "¿Cómo hago seguimiento al estado de una devolución desde [NOMBRE_MUNICIPIO]?",
+    "answer": "Desde el panel de Aveonline puedes hacer seguimiento centralizado con estados claros: recolección agendada, en tránsito, en bodega de origen, recibido y validado. Puedes compartir el link de rastreo con tu cliente final."
+  },
+  {
+    "question": "¿Qué pasa si el producto devuelto desde [NOMBRE_MUNICIPIO] llega en mal estado o incompleto?",
+    "answer": "Aveonline registra el estado en que se recibe cada devolución, lo que te permite documentar reclamaciones ante la transportadora si el producto desde [NOMBRE_MUNICIPIO] llegó dañado, o aplicar tus políticas internas si el cliente lo devolvió incompleto."
+  },
+  {
+    "question": "¿Cómo reduzco la tasa de devoluciones en mis ventas a [NOMBRE_MUNICIPIO]?",
+    "answer": "Aveonline te entrega reportes con las causales más frecuentes de devolución en [NOMBRE_MUNICIPIO] (talla, color, expectativa vs. producto, daño en transporte), lo que te permite atacar la raíz del problema: mejorar fichas de producto, reforzar empaque o ajustar transportadora."
+  }
+]

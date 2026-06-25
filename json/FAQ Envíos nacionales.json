@@ -1,0 +1,110 @@
+[
+  {
+    "question": "¿Qué transportadoras aliadas están disponibles para envíos en [NOMBRE_MUNICIPIO]?",
+    "answer": "En Aveonline integramos a las principales transportadoras del país en una sola plataforma, incluyendo Servientrega, Coordinadora, Interrapidísimo, Envía, TCC, entre otras. Esto te permite cotizar y despachar tus envíos a [NOMBRE_MUNICIPIO] eligiendo la mejor tarifa y tiempo de entrega sin tener que negociar contratos individuales con cada operador."
+  },
+  {
+    "question": "¿Cómo funciona el pago contraentrega en envíos hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "El pago contraentrega permite que tu cliente en [NOMBRE_MUNICIPIO] pague el valor del producto al momento de recibirlo, en efectivo o por medios digitales según la transportadora. Aveonline gestiona el recaudo y lo consigna directamente en tu cuenta bancaria, eliminando el riesgo de envíos no pagados y aumentando la conversión de tu tienda online."
+  },
+  {
+    "question": "¿Cuáles son los cortes de recaudo contraentrega para envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Los cortes de recaudo se realizan de forma periódica según la transportadora, generalmente entre 3 y 8 días hábiles después de la entrega efectiva en [NOMBRE_MUNICIPIO]. En Aveonline puedes consultar en tiempo real el estado de tus recaudos desde el panel de control y programar consignaciones automáticas a tu cuenta bancaria."
+  },
+  {
+    "question": "¿Cómo cotizo un envío nacional hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Desde la plataforma Aveonline puedes cotizar envíos a [NOMBRE_MUNICIPIO] en segundos: solo ingresas el peso, las dimensiones y el valor declarado del producto, y el sistema te muestra las tarifas de todas las transportadoras aliadas en una sola pantalla, para que elijas la opción que mejor se adapte al margen de tu eCommerce."
+  },
+  {
+    "question": "¿Aveonline maneja logística inversa o devoluciones desde [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Si un cliente en [NOMBRE_MUNICIPIO] rechaza el pedido o solicita una devolución, Aveonline coordina la logística inversa con la transportadora correspondiente para que el paquete regrese a tu bodega de origen, sin necesidad de contratar un servicio adicional ni asumir trámites extra con cada operador."
+  },
+  {
+    "question": "¿Qué pasa si mi paquete se pierde o llega en mal estado a [NOMBRE_MUNICIPIO]?",
+    "answer": "Todos los envíos gestionados por Aveonline hacia [NOMBRE_MUNICIPIO] cuentan con la cobertura y los protocolos de reposición que ofrece cada transportadora aliada, según el valor declarado del producto. Nuestro equipo de soporte hace seguimiento al caso para gestionar la reclamación y agilizar la respuesta."
+  },
+  {
+    "question": "¿Puedo integrar Aveonline con mi tienda online para automatizar envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Aveonline ofrece integraciones nativas con Shopify, WooCommerce, VTEX, Tiendanube y Mercado Libre, además de una API abierta. Esto te permite generar guías, cotizar y despachar pedidos a [NOMBRE_MUNICIPIO] de forma automática desde tu eCommerce."
+  },
+  {
+    "question": "¿Cuánto cuesta enviar un paquete a [NOMBRE_MUNICIPIO] con Aveonline?",
+    "answer": "El costo depende del peso, dimensiones, valor declarado y transportadora seleccionada. Al consolidar el volumen de miles de eCommerce, Aveonline negocia tarifas preferenciales con las transportadoras y las traslada a sus usuarios, permitiéndote acceder a fletes más competitivos para envíos a [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Puedo hacer seguimiento en tiempo real de mis envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Desde el panel de Aveonline puedes hacer seguimiento centralizado de todos tus envíos a [NOMBRE_MUNICIPIO], sin importar la transportadora elegida. Recibes actualizaciones del estado del paquete y puedes compartir el link de rastreo con tu cliente final."
+  },
+  {
+    "question": "¿Cómo es la facturación de los Envíos de Mensajería y/o Paquetería hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Cada miércoles de la semana, emitiremos una factura que contendrá el valor de todos los costos logísticos incurridos en ese período para envíos a [NOMBRE_MUNICIPIO]. El plazo para realizar el pago de estas facturas será de 8 días calendario o, alternativamente, podrás realizar el pago por cruce de recaudos."
+  },
+  {
+    "question": "¿Cuál es el embalaje adecuado para la Mercancía según las Empresas de Transporte de Carga o Transportadoras que operan en [NOMBRE_MUNICIPIO]?",
+    "answer": "No existe un embalaje universal para todos los tipos de mercancía, ya que las características de los productos varían. En Aveonline, te ofreceremos asesoramiento personalizado basado en las particularidades de tus artículos y el destino en [NOMBRE_MUNICIPIO], recomendándote la mejor opción de embalaje.\nEs fundamental recordar que las empresas de transporte de carga y las compañías de mensajería raramente se hacen responsables de las posibles averías en la mercancía transportada. Esto se debe a que argumentan que la responsabilidad del embalaje recae en el remitente. Por lo tanto, es esencial que consideres que, dado que la mercancía se transporta en vehículos con diferentes tipos de embalajes, pesos y dimensiones hacia [NOMBRE_MUNICIPIO], puede estar expuesta a daños. Para evitar estos inconvenientes, asegúrate de que tus productos estén adecuadamente embalados y protegidos para el proceso de transporte."
+  },
+  {
+    "question": "¿Qué es el Peso Volumen para los envíos hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "El peso volumen es el espacio que ocupa tu mercancía cuando es transportada hacia [NOMBRE_MUNICIPIO]. Esta se mide en kilogramos.\nPara calcular el peso volumen, necesitamos algunos datos a la mano: primero saber cuánto pesa mi producto si lo peso en una báscula (peso muerto) y segundo las dimensiones de ese paquete que deseas enviar a [NOMBRE_MUNICIPIO]. Tomamos el alto, largo y ancho del paquete, que seguramente está en centímetros y lo cambiamos a metros, por lo tanto tomamos las dimensiones en centímetros y las dividimos entre 100. Con las dimensiones expresadas en metros las multiplicamos entre sí y su resultado lo multiplicaremos por el factor volumen que varía según la transportadora; este puede ser 222 o 400.\nPara la transportadora Envía:\nMensajería: 222\nPaquetería: 400\nPara la transportadora TCC:\nMensajería y Paquetería: 400\nPara el peso muerto se liquida a partir de un kilo y será en kilos enteros. Ejemplo: 1kilo, 2 kilos, 3 kilos…\nSe liquida el mayor, entre el peso muerto y el peso volumen, el cálculo del volumen se debe aproximar siempre por encima en mensajería y en paquetería al más próximo, ya sea por debajo o por encima. Ejemplo:\nEJEMPLO MENSAJERÍA (aplicable a [NOMBRE_MUNICIPIO]):\nPaso 1: Mide el paquete\nLargo: 20 cm, Ancho: 15 cm, Alto: 25 cm\nPaso 2: Pasos las dimensiones del paquete a metros y los multiplicas entre sí.\n0,20 X 0,15 X 0,25 = 0,0075\nPaso 3: Tomo el resultado de esa multiplicación y lo multiplico por su factor volumen.\n0.0075 X 222 = 1,665 → Se aproxima a 2 kilos\nComo resultado tenemos que el paquete tiene un peso volumen de 2 kilos.\nTen en cuenta que si el paquete no pesa más de 5 kilos y alguno de sus lados no miden más de 50 centímetros, puedes estar seguro que el paquete es mensajería o si no cumple con estas condiciones es considerado como servicio de paquetería hacia [NOMBRE_MUNICIPIO].\nEJEMPLO PAQUETERIA (aplicable a [NOMBRE_MUNICIPIO]):\nPaso 1: Mido el paquete\nLargo: 50 cm, Ancho: 60 cm, Alto: 20 cm\nPaso 2: Pasos las dimensiones del paquete a metros y los multiplico entre sí.\n0,50 X 0,60 X 0,20 = 0,06\nPaso 3: Tomo el resultado de esa multiplicación y lo multiplico por su factor volumen.\n0.06 X 400 = 24"
+  },
+  {
+    "question": "¿Cómo puedo calcular el Peso Volumen de los Envíos de Mensajería y/o Paquetería que envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "El peso volumen es el espacio que ocupa tu mercancía cuando es transportada a [NOMBRE_MUNICIPIO]. Esta se mide en kilogramos.\nPara calcular el peso volumen, necesitamos algunos datos a la mano: primero saber cuánto pesa mi producto si lo peso en una báscula (peso muerto) y segundo las dimensiones de ese paquete que deseas enviar a [NOMBRE_MUNICIPIO]. Tomamos el alto, largo y ancho del paquete, que seguramente está en centímetros y lo cambiamos a metros, por lo tanto tomamos las dimensiones en centímetros y las dividimos entre 100. Con las dimensiones expresadas en metros las multiplicamos entre sí y su resultado lo multiplicaremos por el factor volumen que varía según la transportadora; este puede ser 222 o 400.\nPara la transportadora Envía:\nMensajería: 222\nPaquetería: 400\nPara la transportadora TCC:\nMensajería y Paquetería: 400\nPara el peso muerto se liquida a partir de un kilo y será en kilos enteros. Ejemplo: 1kilo, 2 kilos, 3 kilos…\nSe liquida el mayor, entre el peso muerto y el peso volumen, el cálculo del volumen se debe aproximar siempre por encima en mensajería y en paquetería al más próximo, ya sea por debajo o por encima. Ejemplo:\n[Incluye los ejemplos anteriores con la referencia a [NOMBRE_MUNICIPIO]]"
+  },
+  {
+    "question": "¿Cómo sé si un paquete es de Mensajería o Paquetería para envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Si tu envío no pesa más de 5 kilos, no contiene más de 1 unidad y ninguno de sus lados mide más de 50 centímetros, puedes estar seguro de que tu paquete es categorizado como mensajería para [NOMBRE_MUNICIPIO]. En caso de que tu envío no cumpla con alguna de estas condiciones, se considerará como servicio de paquetería."
+  },
+  {
+    "question": "¿Qué tipo de Mercancía es considerada Prohibido Transporte hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Si tu paquete está en las siguientes categorías, es considerado mercancía de prohibido transporte, independientemente del municipio de destino, incluyendo [NOMBRE_MUNICIPIO]:\n<ul>\n    <li>Materiales tóxicos</li>\n    <li>Materiales venenosos</li>\n    <li>Materiales contaminantes</li>\n    <li>Materiales corrosivos</li>\n    <li>Materiales inflamables</li>\n    <li>Obras de arte</li>\n    <li>Líquidos</li>\n    <li>Vidrios</li>\n    <li>Tambores</li>\n    <li>Canecas metálicas mayores de 5 galones</li>\n    <li>Menajes domésticos</li>\n    <li>Joyas</li>\n    <li>Títulos valores</li>\n    <li>Dinero</li>\n</ul>\nY todo lo contemplado como elementos de prohibido transporte estipulados en el Código de Comercio y por el Régimen de Servicios Postales \"Ley 1369 de 2009\"."
+  },
+  {
+    "question": "¿Cuál es el Valor Declarado de un Envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "El valor declarado corresponde a la cantidad establecida por el remitente para la mercancía enviada a través de una guía de cualquiera de las empresas de transporte que utilizamos para entregas en [NOMBRE_MUNICIPIO]. Este valor actúa como la base sobre la cual se puede realizar una reclamación en caso de pérdida de la mercancía.\nEs importante tener en cuenta que, además de considerar el valor declarado, la aseguradora de la empresa transportadora también verifica el valor comercial del artículo. Esto significa que el monto del reembolso estará sujeto a la validación de ambas variables para envíos dirigidos a [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Cuáles son los costos de las Empresas de Transporte que prestan el servicio de Mensajería y Paquetería a [NOMBRE_MUNICIPIO]?",
+    "answer": "Las tarifas de transporte para [NOMBRE_MUNICIPIO] tienen varios rubros en su costo, lo que requiere una serie de información para cotizar el costo de transporte. A continuación, detallaremos la estructura de costo de un envío de mensajería y paquetería:\nMENSAJERÍA (aplicable a [NOMBRE_MUNICIPIO]):\nServicio legislado por el ministerio de comunicaciones, quien define que este servicio aplica para todos los envíos que,\n<ul>\n    <li>No contengan más de una unidad de empaque para la misma dirección en [NOMBRE_MUNICIPIO]</li>\n    <li>Ninguno de los lados de la unidad de empaque mida más de 50 cm</li>\n    <li>La unidad de empaque debe pesar máximo 5 Kilos</li>\n</ul>\nPAQUETERÍA (aplicable a [NOMBRE_MUNICIPIO]):\nServicio legislado por el ministerio de transporte, quien define que este servicio de transporte de Mercancías aplica para todos los envíos a [NOMBRE_MUNICIPIO] que,\n<ul>\n    <li>Pesen más de 5 kilos</li>\n    <li>Que alguno de los lados de las unidades de empaque midan más de 50cm</li>\n</ul>"
+  },
+  {
+    "question": "¿Qué es una cuota de Manejo para envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "La cuota de manejo equivale al costo del seguro de la mercancía que será enviada a [NOMBRE_MUNICIPIO], el cual es calculado basado en un porcentaje que la empresa de mensajería y paquetería o de transporte define y este se multiplica por el valor declarado del costo de la mercancía, hallando así el costo de manejo.\nDebido a que la información requerida para presentar los costos de mensajería y paquetería en [NOMBRE_MUNICIPIO] requiere un extenso documento y acompañamiento por parte de nuestros asesores comerciales, nos aseguramos de que comprendas bien los costos. Por este motivo, te sugerimos nos contactes para brindarte esta información personalizada."
+  },
+  {
+    "question": "¿Realizan envíos de Mensajería y Paquetería puerta a puerta en [NOMBRE_MUNICIPIO]?",
+    "answer": "Para Aveonline, todos los envíos a [NOMBRE_MUNICIPIO] son puerta a puerta: la transportadora recoge en tu domicilio, empresa o local y se lleva a través de la transportadora que elegiste hacia [NOMBRE_MUNICIPIO]. Ten en cuenta que este servicio debe ser solicitado por medio de la plataforma (Solicitud de recogida)."
+  },
+  {
+    "question": "¿Si me recogen el paquete en el domicilio para enviarlo a [NOMBRE_MUNICIPIO], tiene costo adicional?",
+    "answer": "No, porque el servicio de recolección de las empresas de transporte para entregas en [NOMBRE_MUNICIPIO] viene incluido en la tarifa de envío."
+  },
+  {
+    "question": "¿Cuánto tiempo se demora la transportadora para actualizar el estado de una guía enviada a [NOMBRE_MUNICIPIO]?",
+    "answer": "El tiempo que se demora una transportadora en actualizar el estado de una guía dirigida a [NOMBRE_MUNICIPIO] puede variar según varios factores, incluyendo:\n<ul>\n    <li>La política interna de la transportadora</li>\n    <li>La eficiencia de sus sistemas de seguimiento</li>\n    <li>La complejidad de la logística involucrada para [NOMBRE_MUNICIPIO]</li>\n</ul>\nEn general, las transportadoras suelen actualizar el estado de las guías en tiempo real o con una frecuencia regular para proporcionar información actualizada a los remitentes y destinatarios de [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Qué son novedades operativas en envíos a [NOMBRE_MUNICIPIO]?",
+    "answer": "Las \"novedades operativas\" en el contexto de las transportadoras que operan en [NOMBRE_MUNICIPIO] se refieren a eventos o situaciones específicas que afectan el proceso de envío y entrega de paquetes. Estas se notifican cuando hay retrasos en las entregas a [NOMBRE_MUNICIPIO] y son solucionadas por la transportadora correspondiente."
+  },
+  {
+    "question": "¿Que es una reexpedición hacia [NOMBRE_MUNICIPIO]?",
+    "answer": "Una reexpedición se refiere a un destino (como [NOMBRE_MUNICIPIO]) al que la transportadora no realiza entregas directas. En lugar de ello, se recurre a un tercero para llevar a cabo la entrega en esa población específica. Esto significa que las empresas transportadoras no cubren directamente estos destinos con su propia flota de vehículos, sino que utilizan terceros para llevar a cabo las entregas.\nComo resultado de este proceso, las reexpediciones a [NOMBRE_MUNICIPIO] suelen tener un costo un poco más elevado en el flete y un tiempo de entrega estimado más largo, generalmente entre 8 y 10 días hábiles."
+  },
+  {
+    "question": "¿Cuales son los tiempos de entrega para [NOMBRE_MUNICIPIO]?",
+    "answer": "Los tiempos de entrega de las transportadoras hacia [NOMBRE_MUNICIPIO] pueden variar significativamente según varios factores:\n<ul>\n    <li>El tipo de servicio</li>\n    <li>La distancia entre el origen y [NOMBRE_MUNICIPIO]</li>\n    <li>Las políticas específicas de cada transportadora</li>\n    <li>Las diferentes dificultades logísticas como: tráfico, clima, fallas mecánicas entre otros que se puedan presentar en [NOMBRE_MUNICIPIO]</li>\n</ul>\nEstos tiempos de entrega son estimados más no garantizados. Te recomendamos consultar con tu asesor logístico los tiempos específicos para [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Entregan en veredas de [NOMBRE_MUNICIPIO]?",
+    "answer": "No, las transportadoras no realizan entregas en las siguientes zonas de [NOMBRE_MUNICIPIO]: Veredas, batallones, corregimientos, hospitales, ni fincas. Para envíos a estas zonas, es necesario utilizar un servicio especial o acordar un punto de entrega alternativo. Consulta con tu asesor logístico en Aveonline para conocer opciones especiales si necesitas envíos a estas áreas de [NOMBRE_MUNICIPIO]."
+  },
+  {
+    "question": "¿Cómo hago una reclamación para un envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "En caso de pérdida, avería o faltante de un paquete enviado a [NOMBRE_MUNICIPIO], es importante que te pongas en contacto con tu asesora logística lo antes posible, ya que para que una reclamación sea procedente se debe hacer la notificación de 24 a 48 horas máximo. Debes canalizar tu reclamación a través de este canal y no directamente con la transportadora. Esto garantizará una mejor trazabilidad y te brindará más posibilidades de obtener ayuda con la gestión de tu reclamo en [NOMBRE_MUNICIPIO].\nPara presentar una reclamación efectiva:\n<ul>\n    <li>**Proporciona la relación de envíos firmada**: Asegúrate de tener la relación de envíos firmada por la transportadora que recibió tu paquete destinado a [NOMBRE_MUNICIPIO]. Este documento es crucial para demostrar que el paquete estaba en buenas condiciones antes de ser entregado a la transportadora.</li>\n    <li>**Describe el contenido y embalaje**: Proporciona una breve descripción del contenido interno del paquete y cómo fue embalado. Esto ayudará a evaluar la causa de la pérdida o daño en el envío a [NOMBRE_MUNICIPIO].</li>\n    <li>**Proporciona evidencia fotográfica**: Si tienes fotografías que respalden tu reclamo (imágenes del paquete antes de ser enviado a [NOMBRE_MUNICIPIO], fotos de daños o evidencia visual relevante), asegúrate de compartirlas. Las imágenes pueden ser útiles para respaldar tu caso.</li>\n</ul>"
+  },
+  {
+    "question": "¿Qué es \"solucionada en malla\" para un envío a [NOMBRE_MUNICIPIO]?",
+    "answer": "Cuando la guía de tu envío a [NOMBRE_MUNICIPIO] se encuentra solucionada en malla, es porque ya se reportó la solución de la novedad a la transportadora. Así que estaríamos esperando que se ejecute la solución y que vuelvan a sacar la unidad a reparto en [NOMBRE_MUNICIPIO].\nDebes tener presente que la transportadora tiene de 24 a 48 horas para dar la solución y salir de nuevo a reparto en [NOMBRE_MUNICIPIO].\nal ofrecer el envío al cliente este se niega a recibirlo o no cuenta con el dinero del recaudo, el paquete se devuelve al remitente.\n**Recomendación**: Cuando se presente una novedad en [NOMBRE_MUNICIPIO], se comunique con el cliente antes de tomar una decisión sobre cómo resolverla.\n✓ Reemplaza [NOMBRE_MUNICIPIO] por el municipio específico (Medellín, Bogotá, Cali, Barranquilla, Bucaramanga, etc.)\n✓ Las preguntas ahora están optimizadas para SEO local con palabras clave específicas de cada municipio\n✓ Se mantiene coherencia en toda la FAQ para que sea actualizable de forma sistemática\n✓ Cada sección agrupa temas relacionados para mejor experiencia del usuario\n✓ El formato es adaptable a diferentes municipios sin perder integridad"
+  }
+]

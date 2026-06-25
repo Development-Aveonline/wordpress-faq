@@ -1,0 +1,62 @@
+[
+  {
+    "question": "¿En qué consiste la alianza entre Aveonline y Alegra?",
+    "answer": "La alianza entre Aveonline y Alegra integra la operación logística de tu eCommerce con un software de facturación electrónica y administración líder en Colombia. A través de esta alianza, los clientes de Aveonline acceden a un 15% de descuento permanente en Alegra y pueden ordenar su facturación, contabilidad e inventario en un mismo ecosistema."
+  },
+  {
+    "question": "¿Cómo obtengo el 15% de descuento en Alegra a través de Aveonline?",
+    "answer": "El 15% de descuento se activa al registrarte en Alegra desde el link de Aveonline o al solicitar la alianza desde el panel de la plataforma. Una vez activado, el descuento se aplica de forma permanente a tu cuenta, mientras mantengas la suscripción vigente, sin necesidad de renovar el beneficio cada año."
+  },
+  {
+    "question": "¿Qué capacidades incluye Alegra para mi eCommerce en Colombia?",
+    "answer": "Alegra incluye facturación electrónica avalada por la DIAN, gestión de inventarios, cuentas por cobrar y pagar, conciliación bancaria, reportes financieros, integración con bancos colombianos y módulos de POS. Para un eCommerce, esto significa cumplir con la normativa fiscal y tener una visión financiera consolidada de tu operación."
+  },
+  {
+    "question": "¿Necesito tener una cuenta previa en Alegra para acceder al beneficio?",
+    "answer": "No. Puedes crear tu cuenta nueva en Alegra desde el link de la alianza y el descuento del 15% se activa automáticamente. Si ya tienes una cuenta previa, puedes solicitar la migración al beneficio comunicándote con el equipo de Aveonline para validar las condiciones aplicables."
+  },
+  {
+    "question": "¿La integración entre Alegra y Aveonline es automática?",
+    "answer": "Aveonline y Alegra se integran a través de sus respectivas APIs y conectores nativos, lo que te permite sincronizar los pedidos de tu eCommerce con la facturación electrónica de forma automática. Esto reduce errores manuales y elimina el tiempo dedicado a digitar facturas una por una."
+  },
+  {
+    "question": "¿Puedo facturar electrónicamente mis ventas a [NOMBRE_MUNICIPIO] desde Alegra?",
+    "answer": "Sí. Alegra emite facturas electrónicas válidas ante la DIAN para cualquier venta en territorio colombiano, incluyendo ventas a [NOMBRE_MUNICIPIO]. Al integrar Aveonline con Alegra, cada pedido despachado puede generar automáticamente su factura electrónica con los datos del cliente final."
+  },
+  {
+    "question": "¿Alegra soporta facturación electrónica DIAN para eCommerce?",
+    "answer": "Sí. Alegra es un proveedor tecnológico autorizado por la DIAN para la emisión de facturación electrónica en Colombia, incluyendo notas crédito, notas débito y documentos soporte. Esto te permite cumplir la normativa fiscal sin tener que contratar un proveedor adicional."
+  },
+  {
+    "question": "¿Se sincronizan automáticamente mis pedidos de Aveonline con Alegra?",
+    "answer": "Sí, mediante la integración configurada los pedidos despachados a través de Aveonline pueden sincronizarse automáticamente con Alegra para generar la factura electrónica correspondiente, actualizar inventarios y registrar el ingreso contable, sin necesidad de cargar datos manualmente."
+  },
+  {
+    "question": "¿El 15% de descuento es permanente o por tiempo limitado?",
+    "answer": "El 15% de descuento que ofrece la alianza Aveonline + Alegra es permanente: se mantiene mientras conserves la suscripción activa en Alegra y no esté condicionado a renovaciones anuales ni a planes específicos. Es uno de los beneficios diferenciales de esta alianza."
+  },
+  {
+    "question": "¿Qué reportes financieros puedo generar con Alegra para mi tienda online?",
+    "answer": "Alegra te permite generar reportes de ventas por canal, estado de resultados, balance general, flujo de caja, cuentas por cobrar, rotación de inventario y trazabilidad de facturación electrónica. Estos reportes son clave para tomar decisiones financieras informadas en tu eCommerce y para responder a auditorías o requerimientos de la DIAN."
+  },
+  {
+    "question": "¿Qué beneficios ofrece la alianza con Alegra?",
+    "answer": "La alianza con Alegra ofrece un 15% de descuento en sus planes, simplificando la contabilidad y administración de tu negocio con herramientas integradas de facturación y gestión administrativa."
+  },
+  {
+    "question": "¿Cómo puedo aprovechar el descuento de la alianza con Alegra?",
+    "answer": "Para aprovechar el descuento, regístrate en Alegra a través del link <a href=\"https://app.alegra.com/user/register/country/colombia?coupon=ALZAVEONLINE\"><span style=\"font-weight: 400\">https://app.alegra.com/user/register/country/colombia?coupon=ALZAVEONLINE</span></a> proporcionado en nuestra plataforma y aplica el descuento disponible para los usuarios de Aveonline."
+  },
+  {
+    "question": "¿Qué servicios incluye Alegra como parte de la alianza?",
+    "answer": "Alegra incluye servicios de facturación, gestión de inventarios, reportes financieros y más, todos integrados para facilitar la administración de tu negocio."
+  },
+  {
+    "question": "¿Alegra se integra con otras herramientas que uso en mi negocio?",
+    "answer": "Sí, Alegra se integra con varias herramientas populares de gestión empresarial y plataformas de eCommerce, facilitando la sincronización de datos y la gestión eficiente de tu negocio."
+  },
+  {
+    "question": "¿Qué tipo de soporte ofrece Alegra a sus usuarios?",
+    "answer": "Alegra ofrece soporte técnico y asesoramiento a través de su plataforma, incluyendo tutoriales en línea, guías detalladas y asistencia personalizada."
+  }
+]

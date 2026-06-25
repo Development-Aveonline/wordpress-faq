@@ -1,0 +1,50 @@
+[
+  {
+    "question": "¿Qué es el anticipo de recaudo y cómo funciona?",
+    "answer": "El anticipo de recaudo es un servicio financiero de Aveonline que te permite recibir en minutos el dinero de tus ventas contraentrega que ya fueron entregadas efectivamente, en lugar de esperar los 7 a 14 días tradicionales del corte de la transportadora. Esto te da liquidez inmediata para reinvertir en inventario, pauta o crecimiento, sin depender del ciclo de pago del operador logístico."
+  },
+  {
+    "question": "¿Cuánto tiempo demora recibir mi anticipo de recaudo de ventas a [NOMBRE_MUNICIPIO]?",
+    "answer": "Una vez confirmada la entrega efectiva del pedido en [NOMBRE_MUNICIPIO] y validada la solicitud en el panel, el desembolso del anticipo se realiza en minutos en tu cuenta bancaria registrada. Esto te permite tener el dinero disponible casi en tiempo real, sin esperar los cortes habituales de la transportadora."
+  },
+  {
+    "question": "¿Cuál es la comisión del anticipo de recaudo?",
+    "answer": "La comisión del anticipo de recaudo depende del volumen de operaciones de tu eCommerce, el monto anticipado y el plazo del corte de la transportadora con la que opera. Desde el simulador de anticipos en la página puedes calcular exactamente cuánto recibirás y cuánto pagarás de comisión antes de solicitar el servicio, sin sorpresas."
+  },
+  {
+    "question": "¿Puedo anticipar el dinero de mis ventas contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. El servicio de anticipo de recaudo aplica para todas las ventas contraentrega entregadas efectivamente, incluyendo las despachadas a [NOMBRE_MUNICIPIO], independientemente de la transportadora aliada con la que se haya despachado el pedido (Servientrega, Coordinadora, Interrapidísimo, Envia, TCC, entre otras)."
+  },
+  {
+    "question": "¿El anticipo de recaudo aplica a envíos con todas las transportadoras?",
+    "answer": "Sí. El anticipo de recaudo de Aveonline funciona con todas las transportadoras aliadas integradas en la plataforma, lo que te permite unificar tus desembolsos en un solo flujo sin importar con cuál transportadora despachaste cada pedido."
+  },
+  {
+    "question": "¿Cómo solicito un anticipo de recaudo desde la plataforma Aveonline?",
+    "answer": "Desde el panel de Aveonline puedes seleccionar las guías entregadas efectivamente que deseas anticipar, validar el monto y la comisión en el simulador, y solicitar el desembolso. El proceso es 100% digital, sin papeleo, y el dinero llega a tu cuenta en minutos."
+  },
+  {
+    "question": "¿Es seguro el anticipo de recaudo con Aveonline?",
+    "answer": "Sí. El anticipo de recaudo opera con respaldo financiero, validación de las entregas efectivas reportadas por las transportadoras y trazabilidad completa de cada operación. Toda la información queda registrada en el panel para auditoría y conciliación contable."
+  },
+  {
+    "question": "¿Cómo el anticipo de recaudo mejora mi flujo de caja vendiendo a [NOMBRE_MUNICIPIO]?",
+    "answer": "Al recibir en minutos el dinero de tus ventas contraentrega a [NOMBRE_MUNICIPIO], puedes reinvertir en inventario, pauta digital o gastos operativos sin esperar los cortes de la transportadora. Esto rompe el cuello de botella de liquidez típico del eCommerce contraentrega y te permite escalar más rápido."
+  },
+  {
+    "question": "¿Qué es el servicio de anticipo de recaudo de Aveonline?",
+    "answer": "El servicio de anticipo de recaudo de Aveonline te permite recibir el pago de tus ventas el mismo día de la entrega, ayudándote a mantener el flujo de caja y a seguir operando sin interrupciones.\nPregunta 2: Políticas del Servicio de Anticipos\nUso de Saldo Disponible: Si tienes saldo disponible en el módulo de Billetera, puedes utilizarlo cuando lo necesites. Este valor ya tiene descontado el interés y las facturas en cartera.\nCobro por Anticipo: Se cobrará un 0.1% sobre el valor del recaudo por cada día de anticipación. Este cobro se aplicará diariamente hasta la fecha real de pago de la guía.\nExclusión de Saferbo: Las guías de Saferbo no aplican para este servicio. Con esta transportadora, debes esperar el corte real del pago.\nValor Total del Recaudo: Se anticipará el valor total del recaudo de una o varias guías; no se permiten anticipos parciales.\nGuía Entregada: La guía debe estar en estado entregada al destinatario para poder solicitar el anticipo del pago."
+  },
+  {
+    "question": "¿Qué beneficios ofrece el servicio de anticipo de recaudo?",
+    "answer": "Los beneficios incluyen un flujo de caja mejorado, la capacidad de reinvertir rápidamente en tu negocio y la eliminación de la espera habitual para recibir pagos."
+  },
+  {
+    "question": "¿El servicio de anticipo de recaudo tiene algún costo adicional?",
+    "answer": "Sí, Se cobrará un 0.1% sobre el valor del recaudo por cada día de anticipación. Este cobro se aplicará diariamente hasta la fecha real de pago de la guía."
+  },
+  {
+    "question": "¿Puedo usar el servicio de anticipo de recaudo para todos mis envíos?",
+    "answer": "No, las guías de Saferbo no aplican para este servicio. Con esta transportadora, debes esperar al corte real del pago. Sin embargo, puedes utilizar el servicio sin problema con las demás transportadoras."
+  }
+]

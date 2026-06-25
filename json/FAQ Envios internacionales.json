@@ -1,0 +1,30 @@
+[
+  {
+    "question": "¿Cómo funciona el servicio de transporte internacional de Aveonline?",
+    "answer": "Nuestros envíos internacionales se gestionan a través de nuestra plataforma y se llevan a cabo con la colaboración de la transportadora DHL. El proceso es sencillo:\nCuando realizas una cotización y generas la guía en nuestra plataforma, se te mostrará el costo total del envío y recibirás la factura correspondiente en tu correo electrónico.\nEs importante efectuar el pago de la factura de inmediato y notificarlo en la misma página. Esto permitirá que el sistema te habilite para imprimir la guía y, de forma automática, generará la solicitud de recogida del paquete.\nLos documentos que debes imprimir para el despacho son la guía, la factura y la carta de responsabilidad. Puedes generar las proformas directamente desde nuestra plataforma."
+  },
+  {
+    "question": "¿Manejan el servicio de pago contraentrega para envíos internacionales?",
+    "answer": "No, la opción de contraentrega no está disponible para el servicio internacional. Los mensajeros de DHL se encargan de la entrega de los paquetes sin realizar cobros adicionales."
+  },
+  {
+    "question": "¿Cuáles son los destinos disponibles para el transporte internacional?",
+    "answer": "Aveonline ofrece envíos internacionales a una amplia variedad de destinos con DHL. Puedes consultar los destinos específicos con nuestro equipo de servicio al cliente."
+  },
+  {
+    "question": "¿Qué documentos necesito para enviar paquetes internacionalmente?",
+    "answer": "La transportadora exigirá estos documentos diligenciados al momento de recibir la mercancía.\nFactura comercial\nCarta de responsabilidad\nGuia y rótulo"
+  },
+  {
+    "question": "¿Cómo puedo rastrear mi envío con DHL ?",
+    "answer": "Puedes ingresar al siguiente link y digitar el número de guía que te proporcionamos. <a href=\"https://www.dhl.com/co-es/home/rastreo.html\"><span style=\"font-weight: 400\">https://www.dhl.com/co-es/home/rastreo.html</span></a>"
+  },
+  {
+    "question": "¿Qué tarifas aplican para el servicio de transporte internacional?",
+    "answer": "Las tarifas de transporte internacional varían según el destino, el peso y las dimensiones del paquete. Puedes obtener una cotización exacta utilizando nuestra calculadora de tarifas en la plataforma. link:"
+  },
+  {
+    "question": "¿Qué tipo de Mercancía es considerada Prohibido Transporte?",
+    "answer": "Alimentos sin invima\nRopa Usada\nPiedras Preciosas\nAnimales vivos o muertos\nLingotes de oro o plata\nArtículos ilegales tales como marfil y narcóticos (Está clasificado como sustancia tóxica)\nNingún equipo de tecnología, son todos aquellos recursos como: computadoras, teléfonos móviles, televisores, reproductores portátiles de audio y video o consolas de juego, por una restricción en importación y exportación por el manejo de baterías de litio.\nPregunta 8: Restricciones adicionales.\nLos envíos de alimentos, productos de uso humano o contacto humano para todos los países debe tener registro Invima, si no los tiene se puede enviar pero bajo la responsabilidad del cliente.\n.Para los artículos que son medicados como shampoo, cremas, tratamientos capilares etc, a parte del registro Invima debe tener ficha técnica.\nCafé: Para la exportación de café los clientes deben tener un permiso de exportación de la FEDERACIÓN COLOMBIANA DE CAFETEROS. A parte del registro invima\n.AveOnline y DHL no tienen ninguna incidencia en los procesos realizados por la DIAN de cada país, estamos sujetos a pago de impuestos y documentos adicionales que soliciten para el ingreso de la mercancía."
+  }
+]

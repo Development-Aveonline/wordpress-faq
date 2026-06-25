@@ -1,0 +1,54 @@
+[
+  {
+    "question": "¿Cómo funciona el pago contraentrega para eCommerce en [NOMBRE_MUNICIPIO]?",
+    "answer": "El pago contraentrega permite que tu cliente en [NOMBRE_MUNICIPIO] pague el valor del producto al momento de recibirlo, en lugar de pagar por adelantado en tu tienda online. Aveonline coordina con la transportadora aliada el recaudo del dinero al momento de la entrega, lo administra y posteriormente lo consigna en tu cuenta bancaria."
+  },
+  {
+    "question": "¿Qué transportadoras ofrecen pago contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "Aveonline integra las principales transportadoras que ofrecen servicio contraentrega en [NOMBRE_MUNICIPIO], incluyendo Servientrega, Coordinadora, Interrapidísimo, Envia y TCC. Al consolidarlas en una sola plataforma, puedes elegir la opción con mejor cobertura, menor comisión y mejores tiempos para cada zona."
+  },
+  {
+    "question": "¿Qué pasa si el cliente en [NOMBRE_MUNICIPIO] rechaza el paquete contraentrega?",
+    "answer": "Cuando un cliente en [NOMBRE_MUNICIPIO] rechaza el paquete o no se encuentra en el domicilio, la transportadora reporta la novedad y Aveonline coordina la devolución del producto a tu bodega de origen, sin que tengas que asumir trámites adicionales con el operador."
+  },
+  {
+    "question": "¿Cuál es la comisión por recaudo contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "La comisión depende de la transportadora y, en algunos casos, del valor recaudado. Aveonline negocia tarifas preferenciales gracias al volumen consolidado de miles de eCommerce y las traslada a sus usuarios, lo que te permite acceder a comisiones más competitivas."
+  },
+  {
+    "question": "¿Cómo se consigna el dinero recaudado a mi cuenta bancaria?",
+    "answer": "Aveonline consigna el dinero recaudado en la cuenta bancaria que registres en la plataforma, según los cortes definidos por cada transportadora. Recibes la consignación con un soporte detallado de las guías incluidas, lo que facilita la conciliación contable."
+  },
+  {
+    "question": "¿Puedo configurar el contraentrega desde mi tienda Shopify o WooCommerce para clientes en [NOMBRE_MUNICIPIO]?",
+    "answer": "Sí. Aveonline ofrece integraciones nativas con Shopify y WooCommerce, Esto te permite habilitar el pago contraentrega como opción en el checkout para clientes en [NOMBRE_MUNICIPIO] y centralizar el recaudo desde un solo panel."
+  },
+  {
+    "question": "¿Hay un monto máximo o mínimo para envíos contraentrega a [NOMBRE_MUNICIPIO]?",
+    "answer": "Cada transportadora establece sus propios montos mínimos y máximos para recaudo contraentrega en [NOMBRE_MUNICIPIO]. Aveonline te muestra los límites aplicables al momento de cotizar, para que elijas la transportadora que mejor se adapte al ticket promedio de tu tienda online."
+  },
+  {
+    "question": "¿Cómo reduzco el riesgo de fraude o rechazo contraentrega en [NOMBRE_MUNICIPIO]?",
+    "answer": "Para reducir rechazos en [NOMBRE_MUNICIPIO], Aveonline recomienda validar el pedido por WhatsApp o llamada antes del despacho, mantener actualizados los datos de contacto del cliente y revisar el historial de rechazos por zona en el panel. Puedes definir reglas de bloqueo automático para clientes con múltiples rechazos previos."
+  },
+  {
+    "question": "¿Cómo funciona el Servicio Contraentrega?",
+    "answer": "Nuestra operación de envíos contraentrega funciona de la siguiente manera:\nCuando generas una guía desde nuestra plataforma, tienes la opción de seleccionar si el destinatario pagará el envío y si deseas que la transportadora recoja el valor de tu producto en su entrega. Una vez que la transportadora completa la entrega y recauda los dineros, procedemos a realizar una consignación a tu cuenta. Esta consignación puede ocurrir de dos maneras:\nSi decides descontar el valor del envío de los dineros recaudados, te consignamos el saldo restante.\nSi el destinatario paga el envío por separado, te consignamos el monto total correspondiente a tu producto."
+  },
+  {
+    "question": "¿Qué pasa si un cliente no tiene el dinero al momento de la entrega?",
+    "answer": "Si la transportadora llega a realizar la entrega y el cliente no cuenta con el dinero, la guía se pone en novedad. Esto permite un nuevo intento de entrega, siempre y cuando el cliente notifique su interés en recibir el paquete y aún exista la posibilidad de solucionar la guía para un nuevo ofrecimiento. Nota: es importante informar a los destinatarios que lo ideal es que se tenga el dinero completo, ya que en ocasiones los operadores de las transportadoras no cuentan con cambio, tampoco es posible pagar con monedas,pues los operadores tienen un tiempo promedio para entregar y recibir el dinero y si es con monedas le tomará más tiempo contar para poder finalizar la entrega."
+  },
+  {
+    "question": "¿Puedo ofrecer pago contraentrega en todas las zonas de Colombia?",
+    "answer": "Esto depende de la transportadora, algunas tienen restricciones y prestan servicios de entrega solo a crédito, es importante validar el cubrimiento en el validador de trayectos de Aveonline, y si aun así se tiene duda validar con su asesor logístico el cubrimiento que se necesita validar en el momento."
+  },
+  {
+    "question": "¿Cómo se realiza el seguimiento de un envío con pago contra entrega?",
+    "answer": "En nuestra plataforma se encuentra la trazabilidad de la guía y el estado que presenta en el momento, desde mis envíos se puede visualizar esta información. o por el link <a href=\"https://aveonline.co/rastrear-guia/\"><span style=\"font-weight: 400\">https://aveonline.co/rastrear-guia/</span></a>"
+  },
+  {
+    "question": "¿Cuáles son los cortes de pago de recaudo?",
+    "answer": "Cada transportadora tiene un corte de pago, a continuación te mostramos qué días estarás recibiendo el dinero según la transportadora por la que hiciste los despachos.\n<ul>\n    <li>Envíos con TCC: Recibirás tu recaudo de 4 a 6 días hábiles.</li>\n    <li>Envíos con Envía, Servientrega, Saferbo e Interrapidisimo: Recibirás tu recaudo de 7 a 11 días hábiles.</li>\n    <li>Envíos con Domina: Recibirás tu recaudo de 4 a 6 días hábiles.</li>\n    <li>Envíos con Coordinadora: Recibirás tu recaudo de 5 a 11 días hábiles</li>\n</ul>\nEl reembolso de los recaudos se realizarán en los siguientes días de la semana según la\ntransportadora:\n<ul>\n    <li>TCC y Domina: Los días martes (en caso de que el lunes sea festivo, se pagará los miércoles) y los viernes según el corte correspondiente. Es decir los martes con corte al miércoles anterior y los viernes con corte al lunes de la misma semana.</li>\n    <li>Envía, servientrega, interrapidisimo, Saferbo : Los días viernes de cada semana según</li>\n</ul>\nel corte correspondiente, es decir, los viernes se paga con corte al miércoles de la\nsemana anterior.\n<ul>\n    <li>Coordinadora: Se paga 3 veces al mes, si es fin de semana, se paga el anterior día hábil, es decir con los siguientes cortes, del 1-10 el 15 de cada mes, del 11-20 el 25 de cada mes y del 21-31 el 5 del mes siguiente.</li>\n</ul>"
+  }
+]

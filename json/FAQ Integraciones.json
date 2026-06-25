@@ -1,0 +1,106 @@
+[
+  {
+    "question": "¿Con qué plataformas eCommerce se integra Aveonline?",
+    "answer": "Aveonline ofrece integraciones nativas con las principales plataformas eCommerce del mercado, incluyendo Shopify y WooCommerce. Adicionalmente, contamos con una API abierta para conectar tiendas construidas en plataformas no estándar o con desarrollos a la medida."
+  },
+  {
+    "question": "¿Cuánto tiempo toma integrar Aveonline con mi tienda online?",
+    "answer": "Las integraciones nativas suelen activarse en minutos, ya que solo requieren instalar el plugin o conectar las credenciales desde el panel de la plataforma. Para integraciones vía API, los tiempos dependen del alcance del desarrollo, pero contamos con documentación técnica detallada y soporte de nuestro equipo para reducir la curva de implementación."
+  },
+  {
+    "question": "¿Ofrece Aveonline una API abierta para desarrollos a la medida?",
+    "answer": "Sí. Aveonline cuenta con una API REST documentada que permite generar guías, cotizar envíos, gestionar contraentrega, consultar estados y administrar devoluciones de forma programática. Esto le da total flexibilidad a tu equipo de desarrollo para conectar la plataforma con cualquier sistema interno (ERP, OMS, WMS)."
+  },
+  {
+    "question": "¿Qué capacidades automatiza la integración con Aveonline?",
+    "answer": "La integración automatiza la cotización de envíos en el checkout, la generación de guías al confirmar el pedido, el envío de notificaciones de tracking al cliente, la sincronización del estado del envío con tu tienda, la activación de devoluciones, el recaudo contraentrega y la consolidación de reportes operativos en un solo panel."
+  },
+  {
+    "question": "¿Se puede integrar Aveonline con Shopify para envíos en Colombia?",
+    "answer": "Sí. Aveonline tiene una integración nativa con Shopify que permite cotizar tarifas en tiempo real durante el checkout, generar guías automáticamente, activar contraentrega como método de pago, sincronizar estados de envío y gestionar devoluciones, todo desde el panel de Shopify."
+  },
+  {
+    "question": "¿Tiene Aveonline documentación técnica disponible para los desarrolladores?",
+    "answer": "Sí. Contamos con documentación técnica completa que incluye guía de autenticación, endpoints, ejemplos de payload, códigos de error y SDKs en los lenguajes más comunes. Esta documentación está pensada como respaldo del proceso de integración, no como único punto de partida: nuestro equipo técnico acompaña la implementación."
+  },
+  {
+    "question": "¿La integración funciona para múltiples bodegas o solo para una?",
+    "answer": "Aveonline soporta operaciones multi-bodega, lo que te permite gestionar despachos desde diferentes orígenes según el inventario disponible, la ubicación del cliente final o reglas de negocio personalizadas. Esto es clave para eCommerce que operan con bodegas regionales o con fulfillment distribuido."
+  },
+  {
+    "question": "¿Hay soporte técnico durante el proceso de integración?",
+    "answer": "Sí. Durante la implementación, el equipo de Aveonline acompaña la integración con soporte técnico directo, sesiones de validación, ambiente de pruebas (sandbox) y revisión de los flujos críticos antes de pasar a producción. No te dejamos solo con la documentación."
+  },
+  {
+    "question": "¿Qué pasa si mi tienda está construida en una plataforma no estándar?",
+    "answer": "Si tu tienda usa una plataforma poco común o un desarrollo a la medida, puedes integrar a Aveonline mediante la API REST abierta. Adicionalmente, nuestro equipo puede acompañar el diseño de la arquitectura de integración para asegurar que los flujos críticos (guías, contraentrega, devoluciones) funcionen correctamente desde el día uno."
+  },
+  {
+    "question": "¿Qué incluye la automatización de Shopify con Aveonline?",
+    "answer": "Nuestra solución de automatización de Shopify incluye la gestión de inventarios, facturación, pagos contraentrega, y más, todo desde una sola plataforma para simplificar la operación de tu tienda."
+  },
+  {
+    "question": "¿Puedo personalizar las campañas de marketing con la automatización de Shopify?",
+    "answer": "Sí, puedes personalizar tus campañas de marketing, incluyendo notificaciones push y correos electrónicos, para maximizar el impacto de tus esfuerzos de marketing."
+  },
+  {
+    "question": "¿Puedo descargar Aveonline desde la APP de Shopify?",
+    "answer": "No, la integración se realiza mediante una API y es gestionada directamente por nuestro equipo técnico."
+  },
+  {
+    "question": "¿Qué tiendas puedo integrar con Aveonline?",
+    "answer": "Actualmente puedes integrar Tienda Nube y Shopify. Próximamente también será compatible con WooCommerce."
+  },
+  {
+    "question": "¿El inventario se actualiza automáticamente?",
+    "answer": "Por ahora, el inventario puede ser subido producto por producto o descargado desde tu ecommerce y luego subido masivamente a Aveonline. Próximamente, esta actualización será automática."
+  },
+  {
+    "question": "¿Dónde gestiono mi inventario con la integración de Aveonline?",
+    "answer": "Con la integración, tu inventario será gestionado a través de la plataforma de Aveonline."
+  },
+  {
+    "question": "Si tengo una integración con otra plataforma, ¿debo cancelarla para trabajar con Aveonline?",
+    "answer": "No, Aveonline permite mantener otras integraciones. Los pedidos ingresarán a ambas plataformas, y tú decides desde cuál enviarlos. Si eliges el otro operador, en Aveonline ese pedido aparecerá como \"despachado con otro operador\" para evitar envíos duplicados."
+  },
+  {
+    "question": "¿Puedo tener varias bodegas con Aveonline?",
+    "answer": "Sí, en Aveonline puedes gestionar múltiples bodegas."
+  },
+  {
+    "question": "¿Puedo tener varios usuarios con diferentes perfiles en Aveonline?",
+    "answer": "Sí, en Aveonline puedes crear diferentes usuarios con perfiles como logísticos, comerciales o administradores."
+  },
+  {
+    "question": "¿Puedo ver desde qué canal de venta está ingresando el pedido?",
+    "answer": "Sí, en Aveonline puedes validar desde qué canal de venta o agente proviene el pedido."
+  },
+  {
+    "question": "¿Puedo usar el CRM de Aveonline sin tener inventario propio?",
+    "answer": "Sí, puedes usar el sistema para generar o integrar tu ecommerce y que las órdenes lleguen directamente a tu proveedor, quien se encargará del despacho. El sistema puede configurarse para que, una vez entregado el producto, Aveonline gestione la dispersión del dinero."
+  },
+  {
+    "question": "Si soy proveedor, ¿puedo activar mis productos para que otros vendedores los ofrezcan?",
+    "answer": "Sí, puedes crear una lista de precios general o por vendedor para que ellos, una vez realizada la venta, puedan ingresar a su plataforma en Aveonline y ese pedido te llegue a ti como proveedor."
+  },
+  {
+    "question": "¿Qué ventajas ofrece el plugin de WooCommerce de Aveonline?",
+    "answer": "El plugin de WooCommerce te permite gestionar tus envíos directamente desde tu dashboard, eligiendo las mejores tarifas y servicios logísticos ajustados a tus necesidades, mejorando la eficiencia y reduciendo costos."
+  },
+  {
+    "question": "¿Cómo instalar el plugin de WooCommerce?",
+    "answer": "Instalarlo es muy fácil. Da clic en el siguiente enlace <a href=\"https://gitlab.com/franciscoblancojn/aveonline\"><span style=\"font-weight: 400\">https://gitlab.com/franciscoblancojn/aveonline</span></a>  para descargarlo, das clic en el boton “Code”  y clic en “zip”\nCuando lo hayas descargado sigue los pasos de instalación en este video tutorial: <a href=\"https://www.youtube.com/watch?v=TjcWCkQIzHk\"><span style=\"font-weight: 400\">https://www.youtube.com/watch?v=TjcWCkQIzHk</span></a>"
+  },
+  {
+    "question": "¿El plugin de WooCommerce es compatible con todas las versiones de WooCommerce?",
+    "answer": "Sí, nuestro plugin es compatible con todas las versiones actuales de WooCommerce. Recomendamos mantener tu plataforma actualizada para asegurar la mejor experiencia."
+  },
+  {
+    "question": "¿Puedo personalizar las opciones de envío con el plugin de WooCommerce?",
+    "answer": "Sí, puedes personalizar las opciones de envío para adaptarlas a las necesidades específicas de tu negocio y ofrecer a tus clientes las mejores tarifas y tiempos de entrega."
+  },
+  {
+    "question": "¿Cómo puedo obtener soporte técnico para el plugin de WooCommerce?",
+    "answer": "Ofrecemos soporte técnico a través de nuestra plataforma. Puedes contactar a nuestro equipo de analistas de servicio al cliente al número 3054202125."
+  }
+]
