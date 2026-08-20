@@ -1,0 +1,10 @@
+name: Núcleo del harness
+on:
+  pull_request:
+    paths: ['CLAUDE.md', 'AGENTS.md', '.github/workflows/nucleo-harness.yml']
+  push:
+    branches: [master]
+    paths: ['CLAUDE.md', 'AGENTS.md']
+jobs:
+  nucleo:
+    uses: Development-Aveonline/app-v2/.github/workflows/nucleo-harness.yml@main
