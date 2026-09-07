@@ -47,6 +47,35 @@ declara a qué proyecto y a qué tarea pertenece el trabajo**; si no existe, se 
 la BD y el sync **no lo pisa**, por diseño, para que reordenar un archivo no deshaga lo que alguien
 movió en el tablero. Para saber en qué va algo se mira el tablero, nunca el archivo.
 
+**2.1 · Antes de declarar el proyecto, traé el contexto del Brain.** *Recomendado, no obligatorio.*
+El `.yml` es el plan; el estado vivo, las capacidades reales y los permisos por rol están en el
+Brain. Declarar un proyecto leyendo solo los archivos del repo es planear a ciegas, y ya mordió:
+**el 19-ago-2026 se reportaron «14 tareas en revisión» leyendo el `.yml` mientras el tablero
+mostraba 7**. Los dos números eran correctos según su fuente, y con esos números se decidió a qué
+dedicarle el día.
+
+Se trae con `mcp__brain-aveonline__brain_load_context`. **Si el MCP no responde, se sigue con el
+catálogo del repo y se dice explícito** que el proyecto se declaró sin el contexto del Brain: eso
+no puede quedar invisible. *(En `app-v2` esto además tiene gate; en el resto es la recomendación.)*
+
+**2.2 · Todo proyecto apunta a un SPEC, y el SPEC vive en `app-v2`.** Antes de empezar se apunta a
+uno existente o **se crea uno nuevo** — no hay tercera opción.
+
+Los proyectos de AveOnline están centralizados en `app-v2/proyectos/<nodo>/<proyecto>/`, y ahí vive
+su `spec.md` junto al `proyecto.yml` y la `bitacora.md`. **Vale para el trabajo de cualquier repo:**
+la tarea se hace donde vive el código, pero el proyecto y su SPEC son únicos y están en un solo
+lugar. Cómo se escribe cada sección y con qué rúbrica se revisa:
+`app-v2/proyectos/_plantilla/GUIA-SPEC.md`.
+
+**Por qué el SPEC y no solo el `.yml`.** El `.yml` dice *qué* y *en qué orden*; el SPEC dice **por
+qué, hasta dónde, y cómo se sabe que terminó** — contexto, decisiones de arquitectura, alcance y
+definición de hecho. Sin él, seis semanas después nadie puede reconstruir por qué el alcance era ese,
+y la discusión se vuelve a dar desde cero.
+
+**Y apuntar a uno existente es la opción por defecto, no la excepción.** Crear un SPEC nuevo para
+trabajo que cae dentro de uno que ya existe fragmenta el porqué en dos documentos que después se
+contradicen. Antes de crear: buscar.
+
 ### 3. Commits
 
 - **En español**, con prefijo `Feat:` o `Fix:` (o `Docs:`, `Chore:`).
@@ -81,6 +110,49 @@ Si una superficie no se pudo verificar, **se dice cuál y por qué** — nunca s
 > cuando debe fallar**. Un verde que nunca se puso en rojo no protege nada, y se lee igual que uno
 > que sí protege.
 
+**4.1 · La etiqueta y el nivel de evidencia son dos ejes, no uno** (aceptado del buzón de mejoras,
+`mejora_harness_20260827.md`, M1/M1-bis). La categoría (CÓDIGO LISTO / DESPLEGADO / VERIFICADO
+END-TO-END) describe la **etapa**. El nivel de evidencia describe **qué tan buena es la prueba**, y
+son independientes: se puede estar en DESPLEGADO con evidencia apenas N1.
+
+| Nivel | Qué es |
+|---|---|
+| **N1** | Demostración — corrió una vez, en un ambiente controlado |
+| **N2** | Logueado con datos reales que persisten **y se releen del backend** — no solo se vieron en pantalla |
+| **N3** | Alguien con el rol real lo usó desde la interfaz real y firmó pasa o falla |
+
+**"Asegurado" a secas queda prohibido.** Todo reporte declara el nivel alcanzado **y qué no se
+probó**.
+
+**N2 se verifica, no se declara:** el cierre exige la relectura en forma reproducible — la consulta o
+el comando, y su resultado — y algo la vuelve a ejecutar antes de aceptar el cierre. Una captura de
+pantalla es una afirmación; el resultado de una consulta reproducible es un dato que se puede volver
+a producir.
+
+**La etiqueta VERIFICADO END-TO-END no se escribe a mano.** Se deriva: existe la prueba por rol de
+esa funcionalidad, corrió, pasó, y su relectura volvió con el dato. Mientras eso no se cumpla, la
+etiqueta no se puede declarar.
+
+**N3 es irreducible — ningún mecanismo verifica que una persona con el rol real miró una pantalla.**
+Se cubre con dos cosas, y ninguna es un gate:
+- **Auditoría por muestreo:** una tarea cerrada como VERIFICADO por semana, elegida al azar,
+  re-verificada por otra persona.
+- **Quién paga:** quien declaró VERIFICADO **recibe automáticamente asignado el issue** si se
+  reabre. No es sanción — el trabajo vuelve a donde salió.
+
+Las dos piezas de N3 se encienden **el mismo día**, nunca en secuencia (encenderlas por partes se lee
+como vigilancia que después castiga). Aplican sin excepción — Alejandro, Juan, el agente cuando
+cierra una tarea, y quien lo propuso. Se anuncian antes de encenderse, con el porqué.
+
+**4.2 · Un traspaso entre roles se prueba como traspaso, no como dos pantallas sueltas** (M2). Si una
+funcionalidad hace que el rol A actúe y el rol B tenga que verlo (una solicitud, una aprobación, una
+novedad), no cierra sin una prueba que cubra el traspaso completo: A actúa → B lo ve. Depende de 4.3.
+
+**4.3 · Cuentas canónicas por rol, con datos sembrados a su nombre** (M3, prerrequisito de 4.1, 4.2 y
+la regla 6.7). Cada rol real del sistema tiene una cuenta de prueba canónica, y el sembrado enlaza
+esa cuenta a su registro y siembra el flujo a su nombre — no una cuenta genérica. Un humo por rol:
+cada rol entra y su bandeja principal da más de cero filas, o queda escrita la razón de por qué no.
+
 ### 5. Seguridad y QA
 
 1. **Sin migración versionada no hay DDL.** Ninguna alteración de esquema por `ALTER`/`CREATE`/`DROP`
@@ -93,6 +165,24 @@ Si una superficie no se pudo verificar, **se dice cuál y por qué** — nunca s
    un cambio de esquema en producción.
 6. **Veracidad entre tablas:** un mismo hecho de negocio no puede tener valores distintos en tablas
    distintas. Todo dato replicado queda cubierto por una prueba de reconciliación.
+7. **Los errores nunca son silenciosos** (M5). El QA de navegador escucha `pageerror` y
+   `unhandledrejection` y **falla** si aparece cualquiera — no basta con afirmar que ciertos textos
+   están en pantalla, porque un error de JavaScript que no cambia el marcado visible pasa en verde.
+   Prohibido un `catch` vacío o un `return null` silencioso alrededor de una escritura de red **sin
+   mostrar el estado** al usuario.
+8. **Toda escritura con identidad deja rastro, y el rastro se verifica releyendo** (M7). Tras una
+   acción que registra quién la hizo, se relee para confirmar que las columnas de rastro (autor,
+   fecha) quedaron correctas — con el identificador de usuario **del token de sesión, nunca del
+   cuerpo de la petición**. Un `200` no es evidencia; la relectura sí.
+9. **Un gate no se acepta sin su rojo, y el rojo queda registrado** (M8). El rojo de prueba de un
+   gate es un artefacto registrado, no una afirmación en un comentario: qué mutación se inyectó, qué
+   código de salida dio, y en qué corrida. Un gate sin eso no se acepta como protección.
+10. **Un hallazgo de un agente de IA es un candidato, no una verdad** (M9, extiende
+    `restricciones-agente-ia.md` §3). Todo hallazgo automático lleva el campo **"reproducido en
+    vivo: sí/no"**, y solo un "sí" puede cerrar un issue. Toda regla basada en patrones (grep,
+    matcher) declara cómo se midió su cobertura — forzando la condición en vivo, no contando
+    coincidencias del propio patrón, porque un matcher falla de dos formas y el falso negativo se ve
+    exactamente igual que un verde legítimo.
 
 ### 6. Dónde vive cada cosa
 
@@ -130,6 +220,16 @@ Toda vista con **etiquetas (KPIs), tablas o indicadores** cumple el estándar ú
   eso se asevera en las pruebas.
 - **Un dato de ejemplo se declara como tal, al lado del número.** Un aviso global no acompaña al
   número: la persona hace scroll y ya no lo ve.
+- **Ningún dato de demostración es presentable como real** (M4, endurece el punto anterior). Al
+  arrancar con credenciales reales, falla si aparece cualquier centinela de demostración declarado.
+  Y se verifica el caso que de verdad importa: forzar en vivo que la llamada real devuelva nulo, por
+  vista, y afirmar que aparece un aviso de reintentar — **nunca** que la vista se quede mostrando el
+  dato de demostración como si fuera real (el patrón `if (api) VAR = api.map(...)`: si el endpoint
+  falla, `api` es nulo, no entra al `if`, y la demostración queda en pantalla sin decir que lo es).
+- **Lo que la interfaz ofrece coincide con la matriz de permisos** (M6, desbloquea las reglas A2/A6
+  del arnés de guardarraíles). Si una vista de un rol invoca un recurso que ese rol no tiene en la
+  matriz (rol × recurso), es rojo — no basta con que el backend rechace la llamada; la vista no debe
+  ofrecer el flujo en primer lugar.
 
 ### 9. Cómo se propone una mejora al harness
 
