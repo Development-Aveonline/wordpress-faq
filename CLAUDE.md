@@ -23,6 +23,81 @@ este repo va fuera de este bloque.
 bases de datos de AveOnline son de producción y compartidas entre sistemas; asumir un esquema, una
 columna o un comportamiento lleva a errores reales, no a un test rojo.
 
+**Inicio ágil.** Acepta instrucciones breves. Busca por tu cuenta el issue de
+Linear, el proyecto, el SPEC y los archivos pertinentes; lee solo lo necesario para esta tarea.
+No pidas que el usuario reformule su prompt ni presentes un plan previo por defecto. Si el resultado
+es verificable y se cumplen las puertas de seguridad de esta guía, ejecuta. Pregunta solo cuando
+falte una decisión que cambie la solución o impida avanzar; haz una pregunta concreta y propone
+una opción. No conviertas una preferencia menor en un bloqueo.
+
+Comunica avances solo ante un hallazgo, un bloqueo, una decisión o una tarea larga; no narres cada
+lectura o comando. La respuesta final por defecto ocupa 2–4 líneas: resultado, verificación y
+próximo paso o bloqueo real, con la categoría de evidencia de la sección 4. Omite antecedentes,
+planes ya ejecutados, detalles internos y advertencias hipotéticas. Amplía solo cuando el usuario
+lo pida o un riesgo o decisión real lo exija; enlaza el issue o PR para los detalles. Para trabajo
+paralelo, abre sesiones independientes solo si tienen alcance y archivos separables; identifica un
+responsable de integrar y revisar cada una. Reutiliza el contexto ya leído; no repitas búsquedas o
+pruebas sin un cambio o riesgo concreto.
+
+**Modelo:** usa el modelo configurado para la sesión. La selección automática del modelo principal
+requiere un lanzador o configuración externa; una instrucción en este archivo no lo cambia. Cuando
+la herramienta permita elegir modelos para subtareas, reserva el modelo más capaz para problemas
+complejos o de alto riesgo y usa uno más económico para tareas acotadas; no delegues por rutina.
+
+**Memoria viva sin trabajo extra para el usuario.** En el mismo turno, registra toda corrección o
+aclaración del usuario que cambie el trabajo: qué supuesto se corrigió, la decisión vigente, su
+alcance y el issue o PR de origen. No pidas «guárdalo» ni hagas otra llamada de IA para resumirlo.
+Guarda lo propio de la tarea en su issue o PR; lo estable del producto en el SPEC o documentación
+del repo; lo que cambie una regla compartida en `.harness/mejoras/` según la sección 9. Antes de
+escribir, busca el registro existente y actualízalo para evitar duplicados. Antes de una tarea nueva,
+recupera solo las decisiones pertinentes, no el historial entero. No copies transcripciones,
+secretos, datos personales ni suposiciones sin verificar. Una propuesta al núcleo no se convierte
+en regla general hasta su revisión. Agrupa la captura con la actualización normal del trabajo. Si
+el destino no está disponible, informa el registro pendiente.
+
+**Toda solicitud a terceros queda en Linear en el mismo turno** *(decisión de Andrés, 28-sep-2026;
+AVE-235, AVE-402)*. Cuando el agente redacta o envía un pedido a una persona, un equipo o un
+proveedor —mensaje, correo, pregunta, cambio—, lo registra en Linear **en el turno en que entrega
+el texto**, no al cerrar el tema ni cuando el usuario lo pida. Si hay issue, va como comentario ahí;
+si no, se crea uno. Cada registro dice a quién se pidió —el nombre de trabajo y la organización o el
+rol del destinatario interno o del proveedor, nunca su teléfono ni su correo—, qué, por qué canal y en
+qué estado está:
+`redactado — envío sin confirmar`, `enviado`, `respondido` o `cerrado`. Se actualiza en el turno en
+que llega la confirmación o la respuesta. Las solicitudes abiertas con un mismo proveedor se agrupan
+en un issue de seguimiento con casillas, enlazado a los issues de detalle. **Un issue nuevo se crea
+sin responsable** y pasa por la puerta de investigación (AVE-235): el agente no lo asigna, ni
+siquiera a quien lo pidió. No se registran secretos, datos de clientes (identidad, contacto o
+texto crudo de sus conversaciones) ni datos personales sensibles. Por qué: el 28-sep, nueve pedidos a Meteor y Starsco pasaron horas
+solo en el chat y se registraron todos juntos al final; mientras tanto, Linear mostraba un estado
+que no era el real.
+
+**Todo correo o mensaje de trabajo enviado abre un seguimiento hasta integrar la respuesta**
+*(decisión de Andrés, 29-sep-2026; AVE-410; excepción expresa a la revisión previa de Juan o
+Alejandro para esta regla)*. En el mismo turno del envío, el agente deja en el issue el canal, el
+hilo o vínculo seguro, qué respuesta espera, el responsable de revisarla y el criterio de cierre;
+no copia allí el texto crudo ni datos personales. Si cuenta con lectura autorizada y
+automatización, activa un monitor verificable del hilo. Mientras no haya una respuesta útil,
+permanece abierto y guarda silencio si no cambió nada. Al recibirla, contrasta lo respondido con
+lo pedido, distingue hechos de estimaciones y actualiza el issue, SPEC, bitácora, decisiones,
+código o producto que correspondan; verifica el efecto en cada consumidor afectado. Una
+respuesta parcial no cierra el seguimiento. Antes de cerrarlo, registra la evidencia integrada y
+comprueba que no quede un dato o decisión pendiente. No envía recordatorios adicionales sin la
+autorización correspondiente. Si no puede leer la respuesta, mantener un monitor o aplicar un
+cambio, informa la limitación y pide la intervención concreta; nunca promete seguimiento o
+actualización que no haya configurado y comprobado.
+
+**Recuperación verificable de aprendizajes y QA.**
+Al iniciar, retomar o compactar, recuperar el SPEC, las decisiones vigentes, la bitácora y la
+evidencia pertinente del proyecto. Consolidar cada corrección en el mismo turno con supuesto
+sustituido, decisión vigente, alcance, issue o PR y aceptación verificable; actualizar también
+los consumidores afectados. Conservar historia sin crear fuentes rivales. Al rediseñar,
+contrastar código y recorridos actuales antes de declarar paridad. Al cerrar, conciliar pedidos,
+cambios, pruebas y bloqueos. Los hooks solo recuerdan esta obligación; no demuestran por sí
+solos el cumplimiento. Vincular evidencia a versión, corte y población; probar fallos esperados
+e invalidar resultados obsoletos. Distinguir DEMO, verificación local, QA real y producción.
+No afirmar propagación a otros repos sin versión, PR y prueba; no copiar prompts, datos de
+clientes ni transcripciones como memoria.
+
 ### 1. Secretos
 
 - **NUNCA commitear `.env`** ni ningún archivo con credenciales, llaves o tokens.
@@ -31,28 +106,24 @@ columna o un comportamiento lleva a errores reales, no a un test rojo.
 - Si un secreto quedó expuesto, **decirlo de inmediato**. Rotarlo es del dueño del sistema; callarlo
   no es una opción, y esconderlo cuesta más que el error.
 
-### 2. Todo trabajo pertenece a un proyecto
+### 2. Todo trabajo pertenece a un proyecto, y todo proyecto a un SPEC
 
 En AveOnline no se desarrolla ni se resuelve un soporte "suelto". **Antes de escribir código se
-declara a qué proyecto y a qué tarea pertenece el trabajo**; si no existe, se crea.
+declara a qué proyecto pertenece el trabajo**; si no existe, se crea.
 
-- El mensaje del commit **lleva su token** entre corchetes: `[PROYECTO#Tn]`. Es lo único manual de
-  toda la cadena (webhook → señal → novedad → bitácora). **Sin el token, el avance no existe** para
-  el tablero ni para el histórico.
-- Un arreglo reactivo **también** es una tarea (`tipo: soporte`), no una excepción a la regla.
-- Si el usuario no lo declara, **se pregunta**. No se asume: un trabajo sin proyecto tiene que ser
-  una decisión consciente, no un olvido.
-
-**Y el `.yml` NO dice en qué estado está una tarea.** El `.yml` es el PLAN; el estado vivo lo lleva
-la BD y el sync **no lo pisa**, por diseño, para que reordenar un archivo no deshaga lo que alguien
-movió en el tablero. Para saber en qué va algo se mira el tablero, nunca el archivo.
+- Un arreglo reactivo **también** pertenece a un proyecto, no es una excepción a la regla.
+- Si el usuario no lo declara, busca primero el issue, el proyecto y el SPEC existentes. Vincula
+  el trabajo cuando haya una correspondencia clara. Si no la hay, registra o actualiza el issue en
+  Triage con la evidencia y una propuesta de clasificación; sigue investigando lo que no dependa
+  de esa decisión. El agente gestiona esta clasificación: no pidas al usuario el nombre del
+  proyecto. Pregunta solo por el resultado de negocio si tampoco puede inferirse.
 
 **2.1 · Antes de declarar el proyecto, traé el contexto del Brain.** *Recomendado, no obligatorio.*
-El `.yml` es el plan; el estado vivo, las capacidades reales y los permisos por rol están en el
-Brain. Declarar un proyecto leyendo solo los archivos del repo es planear a ciegas, y ya mordió:
-**el 19-ago-2026 se reportaron «14 tareas en revisión» leyendo el `.yml` mientras el tablero
-mostraba 7**. Los dos números eran correctos según su fuente, y con esos números se decidió a qué
-dedicarle el día.
+El repo dice qué se planeó; el estado vivo, las capacidades reales y los permisos por rol están en
+el Brain. Declarar un proyecto leyendo solo los archivos del repo es planear a ciegas, y ya mordió:
+**el 19-ago-2026 se reportaron «14 tareas en revisión» leyendo un archivo de plan mientras la
+fuente viva mostraba 7**. Los dos números eran correctos según su fuente, y con esos números se
+decidió a qué dedicarle el día.
 
 Se trae con `mcp__brain-aveonline__brain_load_context`. **Si el MCP no responde, se sigue con el
 catálogo del repo y se dice explícito** que el proyecto se declaró sin el contexto del Brain: eso
@@ -62,23 +133,44 @@ no puede quedar invisible. *(En `app-v2` esto además tiene gate; en el resto es
 uno existente o **se crea uno nuevo** — no hay tercera opción.
 
 Los proyectos de AveOnline están centralizados en `app-v2/proyectos/<nodo>/<proyecto>/`, y ahí vive
-su `spec.md` junto al `proyecto.yml` y la `bitacora.md`. **Vale para el trabajo de cualquier repo:**
-la tarea se hace donde vive el código, pero el proyecto y su SPEC son únicos y están en un solo
-lugar. Cómo se escribe cada sección y con qué rúbrica se revisa:
-`app-v2/proyectos/_plantilla/GUIA-SPEC.md`.
+su `spec.md` junto a su `bitacora.md`. **Vale para el trabajo de cualquier repo:** la tarea se hace
+donde vive el código, pero el proyecto y su SPEC son únicos y están en un solo lugar. Cómo se
+escribe cada sección y con qué rúbrica se revisa: `app-v2/proyectos/_plantilla/GUIA-SPEC.md`.
 
-**Por qué el SPEC y no solo el `.yml`.** El `.yml` dice *qué* y *en qué orden*; el SPEC dice **por
-qué, hasta dónde, y cómo se sabe que terminó** — contexto, decisiones de arquitectura, alcance y
-definición de hecho. Sin él, seis semanas después nadie puede reconstruir por qué el alcance era ese,
-y la discusión se vuelve a dar desde cero.
+**El SPEC es la fuente del alcance.** Dice **por qué, hasta dónde, y cómo se sabe que terminó** —
+contexto, decisiones de arquitectura, tareas con sus criterios y definición de hecho. Sin él, seis
+semanas después nadie puede reconstruir por qué el alcance era ese, y la discusión se vuelve a dar
+desde cero.
 
-**Y apuntar a uno existente es la opción por defecto, no la excepción.** Crear un SPEC nuevo para
-trabajo que cae dentro de uno que ya existe fragmenta el porqué en dos documentos que después se
-contradicen. Antes de crear: buscar.
+**2.3 · El SPEC se publica y revisa antes del código productivo.** No basta con que exista en la
+máquina de quien implementa. Antes de editar código de producto, el SPEC debe:
+
+- estar validado contra `proyectos/_plantilla/GUIA-SPEC.md`, sin placeholders ni secciones
+  obligatorias vacías;
+- tener un PR propio en `app-v2`, separado del PR de implementación, y estar enlazado desde la
+  incidencia canónica de Linear;
+- reconciliar trabajo previo en Linear, Azure, GitHub y producción, preservando lo ya resuelto y
+  declarando únicamente la brecha residual;
+- estar revisado antes de empezar implementación cuando el riesgo sea alto o crítico.
+
+El PR separado protege el orden de las decisiones: revisar alcance después de escribir código
+convierte cada corrección en retrabajo y facilita que dos personas resuelvan lo mismo. **Un merge del
+SPEC no autoriza por sí solo un despliegue ni cierra la acción.**
+
+La única excepción es un incidente productivo activo donde esperar agrava daño real. En ese caso se
+abre primero la incidencia, se registra alcance provisional y rollback, y el SPEC se publica en el
+mismo ciclo antes de declarar CÓDIGO LISTO. La urgencia no permite omitir evidencia ni reconciliación.
+
+> **El gestor de proyectos se retiró de `app-v2` el 12-sep-2026** (`[GESTOR#T23]`, PR #888): ya no
+> hay `proyecto.yml`, ni tablero, ni token de commit, ni señales. **El SPEC quedó como la única
+> fuente de verdad del alcance**, y por eso su lista de tareas dejó de ser un resumen del plan para
+> pasar a ser el plan. Si algún día vuelve a haber tablero, se alimenta del SPEC.
 
 ### 3. Commits
 
 - **En español**, con prefijo `Feat:` o `Fix:` (o `Docs:`, `Chore:`).
+- **Sin token de tarea.** El `[PROYECTO#Tn]` existía para alimentar el tablero del gestor; retirado
+  el gestor, no hay quién lo lea. Un commit que lo lleve no rompe nada, pero ya no significa nada.
 - **Doble co-autor** al final del mensaje:
   ```
   Co-authored-by: Aveonline Brain <brain@aveonline.co>
@@ -214,6 +306,18 @@ Toda vista con **etiquetas (KPIs), tablas o indicadores** cumple el estándar ú
 - **Tablas del sistema:** ordenables por encabezado, con filtro por columna, fila de TOTAL cuando
   hay algo real que sumar, export y drill al detalle. Nada de tablas crudas.
 - **KPIs** que abren el detalle que agrupan, comparan contra un período anterior y traen semáforo.
+- **Lectura visual y detalle universal (decisión de Andrés, 25-sep-2026; AVE-249).** En todo
+  AveOnline, la entrada permite interpretar situación, tendencia, riesgo y próxima decisión de
+  un vistazo. Cada KPI, insight, alerta y elemento de una gráfica abre un modal con el conjunto
+  exacto que lo sustenta; desde allí se llega a la ficha y evidencia autorizadas. Los niveles tienen
+  «Volver» y conservan período, filtros, selección, posición y foco. Filtros visibles y removibles;
+  tablas completas al profundizar. El modelo agéntico explica evidencia, incertidumbre, propuesta,
+  acción existente y verificación; no confunde recomendar con ejecutar. Si falta el detalle, se
+  declara pendiente: no se simula ni se presenta un agregado como registros individuales.
+  Revisión obligatoria: recorrido con teclado, conciliación indicador/detalle, regreso con contexto,
+  permisos en cada nivel y conservación de funciones anteriores. Registrar brechas en trabajo
+  existente; no declarar cumplimiento global porque una pantalla pase. Contrato completo:
+  `app-v2/BrainAve/ESTANDARES-AVEONLINE.md`, sección 4.1.
 - **Período por defecto = mes en curso.**
 - **Filtro visible y removible:** al filtrar debe verse qué filtro está activo y cómo quitarlo.
 - **Antirregresión:** al portar o reescribir una pantalla no se pierden funciones del original, y
