@@ -1,10 +1,310 @@
+# Núcleo del harness de AveOnline — gate LOCAL y AUTOCONTENIDO.
+#
+# ╔══════════════════════════════════════════════════════════════════════════════════════════╗
+# ║  ESTE ARCHIVO SE GENERA. No lo edites a mano en el repo destino.                          ║
+# ║  Sale de `php spark harness:nucleo` en app-v2, desde                                      ║
+# ║  `.ai/nucleo/plantillas/nucleo-harness-local.yml.plantilla`.                              ║
+# ╚══════════════════════════════════════════════════════════════════════════════════════════╝
+#
+# POR QUÉ ES AUTOCONTENIDO (y por qué el anterior nunca corrió)
+# ------------------------------------------------------------
+# La versión anterior de este archivo era un llamador:
+#
+#     jobs:
+#       nucleo:
+#         uses: Development-Aveonline/app-v2/.github/workflows/nucleo-harness.yml@main
+#
+# y el cuerpo de allá se bajaba el núcleo canónico con `gh api repos/app-v2/contents/...`
+# usando `${{ github.token }}`. Las dos cosas cruzan el límite del repo, y las dos fallan:
+#
+#   1. `app-v2` es PRIVADO. Un workflow reutilizable de un repo privado no se resuelve desde
+#      otro repo salvo que la política de la organización lo permita. Medido el 06-sep-2026:
+#      TODAS las corridas en `crones-transportadoras`, `api-analitics`, `api-envios`,
+#      `avestock`, `aveila`, `api-detalle-cliente`, `aveprofit`, `api-recaudos` y
+#      `api-auditoria` dieron `startup_failure` — el workflow ni siquiera arrancaba.
+#   2. Aunque resolviera, `${{ github.token }}` es el token DEL REPO QUE LLAMA y no tiene
+#      acceso a `app-v2`: el `gh api` daría 404.
+#
+# Por eso acá no hay `uses:` a otro repo y no se descarga nada. Corre con lo que hay en este
+# mismo repo, y por eso puede correr en cualquiera.
+#
+# QUÉ COMPRUEBA
+# -------------
+#   1. `CLAUDE.md` y `AGENTS.md` existen y traen las marcas del núcleo, una vez cada una.
+#   2. INTEGRIDAD — el bloque de cada archivo coincide con el hash sha256 embebido más abajo,
+#      que escribió la propagación desde el núcleo canónico. Eso caza que alguien edite las
+#      reglas acá, que es exactamente lo que el núcleo entero existe para impedir.
+#      LO QUE CAZA Y LO QUE **NO** DISTINGUE: con un solo hash, «el bloque quedó viejo» y
+#      «alguien lo editó acá» dan la misma desigualdad. Distinguirlas exigiría leer app-v2 —
+#      la dependencia cruzada que rompía la versión anterior— así que el mensaje de error NO
+#      acusa: nombra las DOS salidas y pone primero la que la medición dice que es (26 repos
+#      con el bloque viejo contra 0 editados, 06-sep-2026). Ver el comentario del paso 3.
+#   3. PARIDAD — el bloque de los dos es byte a byte idéntico, y si no, imprime el diff.
+#      DICHO CON HONESTIDAD: la paridad NO agrega cobertura sobre el punto 2 — si los dos
+#      bloques difieren entre sí, al menos uno difiere del hash y el punto 2 ya está rojo. Lo
+#      que agrega es el DIAGNÓSTICO: el hash dice «este archivo cambió» y no dice en qué; la
+#      paridad nombra la deriva más común (alguien editó uno y se olvidó del otro) y muestra
+#      las líneas. Y si mañana alguien vacía el hash, es lo único que queda en pie.
+#   4. El hash embebido ES un sha256 (64 hex). Un workflow propagado sin hash pasaría en verde
+#      comprobando la mitad, y un gate que se ve puesto y no comprueba lo que la gente cree es
+#      peor que no tenerlo.
+#   5. `.harness/mejoras/` existe — regla 9 del núcleo. Sin buzón, la única salida de quien
+#      encuentra un problema es editar el bloque, que es lo que el punto 3 prohíbe.
+#
+# QUÉ **NO** COMPRUEBA — Y ESTO NO ES UN DEFECTO DE LA IMPLEMENTACIÓN
+# -------------------------------------------------------------------
+# **No comprueba que este repo esté al día con el núcleo canónico de app-v2.** El hash de acá
+# dice «el bloque es el que se propagó»; NO dice «lo que se propagó sigue siendo lo último».
+# Si el núcleo cambia en app-v2, este gate sigue en verde con el bloque viejo.
+#
+# Eso es INHERENTE a un gate que corre sin acceso al repo fuente: comprobarlo requeriría leer
+# `app-v2`, que es justo la dependencia cruzada que rompió la versión anterior.
+#
+# Esa comprobación tiene que ser un EMPUJE desde app-v2, no un JALÓN desde acá: un job en
+# app-v2 que recorra los repos, compare el `HASH_NUCLEO` de este archivo contra el canónico de
+# hoy y abra PR donde esté viejo. Corre con una credencial que SÍ ve los dos lados y falla en
+# UN lugar visible en vez de en 30 repos ajenos. Está propuesto en
+# `app-v2/.ai/nucleo/RECETA-PROPAGACION.md` («El empuje desde app-v2»); a la fecha de este
+# archivo NO está construido, y mientras no exista, la frescura del núcleo NO está vigilada
+# por ninguna máquina.
+
 name: Núcleo del harness
+
 on:
+  # SIN `paths:` A PROPÓSITO, ni acá ni por job.
+  #
+  # A nivel de workflow, un `paths:` hace que el workflow NO ARRANQUE cuando el PR no toca esos
+  # archivos; si además es un required status check, el PR queda bloqueado para siempre esperando
+  # un reporte que nunca llega (decidido por Juan y Alejandro el 2-sep-2026; ver
+  # https://github.com/orgs/community/discussions/44490).
+  #
+  # A nivel de job se puede filtrar con `dorny/paths-filter`, que es lo que hacía la versión
+  # anterior — pero eso agrega una acción de terceros y necesita `pull-requests: read`, que el
+  # GITHUB_TOKEN por defecto de esta organización no trae. Dos formas más de fallar, en 30 repos
+  # ajenos, para ahorrarse un job de segundos que no descarga nada. No vale la pena.
   pull_request:
-    paths: ['CLAUDE.md', 'AGENTS.md', '.github/workflows/nucleo-harness.yml']
   push:
-    branches: [master]
-    paths: ['CLAUDE.md', 'AGENTS.md']
+    branches: [main, master]
+
+# AVE-461: sustituir solo ejecuciones obsoletas del mismo PR; cada push conserva su ejecución.
+concurrency:
+  group: nucleo-local-${{ github.workflow }}-${{ github.event.pull_request.number || github.run_id }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
+
+permissions:
+  contents: read
+
+env:
+  # ─── Lo escribe la propagación, no una persona ────────────────────────────────────────────
+  # sha256 del bloque del núcleo, normalizado (cada línea sin espacios al final, sin líneas
+  # vacías al principio ni al final, terminado en un salto de línea).
+  HASH_NUCLEO: '3eba9df937d6fc825bf7c306012bd6bf17b1590fa266f06ce318f20e20301555'
+  # Informativa: sirve para leer de un vistazo qué versión trae este repo. La comprobación es el
+  # hash — una versión se puede dejar quieta mientras se edita el texto, un hash no.
+  VERSION_NUCLEO: 'local-preservado-3eba9df937d6'
+
 jobs:
-  nucleo:
-    uses: Development-Aveonline/app-v2/.github/workflows/nucleo-harness.yml@main
+  nucleo-local:
+    name: El núcleo compartido no fue editado acá
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Este gate solo lee los dos arneses y el buzón; no necesita el producto completo.
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /AGENTS.md
+            /CLAUDE.md
+            /.harness/
+
+      - name: Paridad, integridad y buzón
+        run: |
+          # ---8<--- CUERPO:INICIO — `docs/harness/probar-gate-nucleo-local.sh` (en app-v2)
+          # extrae LITERALMENTE lo que hay entre estas dos marcas y lo corre. Si el cuerpo se
+          # mueve fuera de acá, la prueba deja de probar lo que la CI ejecuta.
+          set -uo pipefail
+          # `set -e` NO: hace falta juntar TODAS las fallas y reportarlas de una, no morir en la
+          # primera y esconder las otras dos.
+
+          INICIO='<!-- NUCLEO-AVEONLINE:INICIO'
+          FIN='<!-- NUCLEO-AVEONLINE:FIN -->'
+          TMP="$(mktemp -d)"
+          FALLAS=0
+
+          sha() { sha256sum "$1" | cut -d' ' -f1; }
+
+          # ── 0. El hash embebido tiene que ser un hash ──────────────────────────────────────
+          # Si esto no estuviera, un workflow propagado a mano —sin pasar por el generador—
+          # dejaría `HASH_NUCLEO` vacío, la comprobación de integridad no tendría contra qué
+          # comparar y el gate pasaría en verde comprobando la mitad. Un gate que se ve puesto
+          # y no comprueba lo que la gente cree que comprueba es peor que no tener gate.
+          if ! printf '%s' "${HASH_NUCLEO:-}" | grep -Eq '^[0-9a-f]{64}$'; then
+            echo "::error::HASH_NUCLEO no es un sha256 de 64 hex: '${HASH_NUCLEO:-<vacío>}'."
+            echo "::error::Este workflow se GENERA con 'php spark harness:nucleo' en app-v2 y se"
+            echo "::error::copia tal cual. Escrito a mano queda sin la mitad de la comprobación."
+            exit 1
+          fi
+
+          # ── 1 y 2. Cada archivo: existe, tiene las marcas UNA vez, y su bloque no está vacío ─
+          for ARCHIVO in CLAUDE.md AGENTS.md; do
+            DEST="$TMP/$(printf '%s' "$ARCHIVO" | tr '/.' '__')"
+
+            if [ ! -f "$ARCHIVO" ]; then
+              echo "::error file=$ARCHIVO::Falta $ARCHIVO. Todo repo de AveOnline lleva los dos."
+              FALLAS=1
+              continue
+            fi
+
+            N_INI=$(grep -cF "$INICIO" "$ARCHIVO")
+            N_FIN=$(grep -cF "$FIN" "$ARCHIVO")
+
+            if [ "$N_INI" -ne 1 ] || [ "$N_FIN" -ne 1 ]; then
+              echo "::error file=$ARCHIVO::$ARCHIVO tiene $N_INI marca(s) de inicio y $N_FIN de fin;"
+              echo "::error file=$ARCHIVO::se espera exactamente una de cada una. Sin las marcas no"
+              echo "::error file=$ARCHIVO::hay bloque que comparar, y el núcleo de este repo no está"
+              echo "::error file=$ARCHIVO::vigilado por nadie."
+              FALLAS=1
+              continue
+            fi
+
+            L_INI=$(grep -nF "$INICIO" "$ARCHIVO" | cut -d: -f1)
+            L_FIN=$(grep -nF "$FIN"    "$ARCHIVO" | cut -d: -f1)
+            if [ "$L_FIN" -le "$L_INI" ]; then
+              echo "::error file=$ARCHIVO::La marca de fin (línea $L_FIN) va antes que la de inicio"
+              echo "::error file=$ARCHIVO::(línea $L_INI). El bloque quedó al revés."
+              FALLAS=1
+              continue
+            fi
+
+            # Normalización — la MISMA que usa el generador para calcular el hash:
+            # lo de entre marcas, cada línea sin espacios al final, sin vacías al principio ni
+            # al final, terminado en un salto de línea.
+            awk -v i="$INICIO" -v f="$FIN" '
+              index($0, i) { dentro=1; next }
+              index($0, f) { dentro=0 }
+              dentro       { print }
+            ' "$ARCHIVO" | sed -e 's/[[:space:]]*$//' -e '/./,$!d' > "$DEST.crudo"
+            printf '%s\n' "$(cat "$DEST.crudo")" > "$DEST"
+
+            if [ ! -s "$DEST" ] || [ -z "$(tr -d '[:space:]' < "$DEST")" ]; then
+              echo "::error file=$ARCHIVO::El bloque del núcleo en $ARCHIVO está vacío. Las marcas"
+              echo "::error file=$ARCHIVO::están pero no hay reglas entre ellas."
+              FALLAS=1
+              continue
+            fi
+
+            # ── 3. Integridad: el bloque es el que se propagó ────────────────────────────────
+            # EL MENSAJE NOMBRA LAS DOS SALIDAS, Y LA PRIMERA ES «QUEDÓ VIEJO».
+            # La versión anterior decía «fue editado en este repo», y eso es FALSO en el caso
+            # que de verdad se da. Medido el 06-sep-2026: en `brain-test-` (corrida
+            # 34071126208) el bloque estaba INTACTO, solo viejo — nadie había editado nada; y
+            # ese mismo día había 26 repos exactamente así contra 0 con ediciones a mano. O
+            # sea que la acusación iba a estar equivocada casi siempre, y mandaba a la persona
+            # a buscar durante media hora una edición que no existe.
+            #
+            # NO SE PUEDE DISTINGUIR, Y NO SE INTENTA. Este gate tiene UN hash: el que le tocó
+            # en su propagación. Con un solo hash, «el bloque quedó viejo» y «alguien lo editó»
+            # producen exactamente la misma desigualdad. Saberlo exigiría leer app-v2, que es
+            # la dependencia cruzada que hacía que la versión anterior de este workflow ni
+            # arrancara. Así que el mensaje dice LO QUE SÍ SABE —el bloque no es el que se
+            # propagó— y pone las dos salidas en el orden de su probabilidad medida.
+            #
+            # SIN BACKTICKS en las líneas de abajo: van entre comillas dobles porque necesitan
+            # expandir $ARCHIVO, y entre dobles un backtick es sustitución de comandos.
+            HASH_ARCHIVO="$(sha "$DEST")"
+            if [ "$HASH_ARCHIVO" != "$HASH_NUCLEO" ]; then
+              echo "::error file=$ARCHIVO::El bloque del núcleo de $ARCHIVO NO es el que se propagó a este repo."
+              echo "::error file=$ARCHIVO::  esperado: $HASH_NUCLEO (versión declarada ${VERSION_NUCLEO:-desconocida})"
+              echo "::error file=$ARCHIVO::  acá:      $HASH_ARCHIVO"
+              echo "::error file=$ARCHIVO::"
+              echo "::error file=$ARCHIVO::Este gate tiene UN solo hash, así que NO puede decirte cuál de las dos"
+              echo "::error file=$ARCHIVO::causas es. Son dos, y lo que hay que hacer en cada una es lo contrario:"
+              echo "::error file=$ARCHIVO::"
+              echo "::error file=$ARCHIVO::SALIDA 1 — EL BLOQUE QUEDÓ VIEJO. Empezá por acá: es la causa habitual,"
+              echo "::error file=$ARCHIVO::  no la rara. Medido el 06-sep-2026 sobre la organización, 26 repos"
+              echo "::error file=$ARCHIVO::  estaban así y 0 tenían el bloque editado a mano. Quiere decir que nadie"
+              echo "::error file=$ARCHIVO::  tocó nada acá: el núcleo cambió en app-v2 y este repo se quedó con la"
+              echo "::error file=$ARCHIVO::  propagación anterior."
+              echo "::error file=$ARCHIVO::  QUÉ HACER: no edites $ARCHIVO. Volvé a propagar desde app-v2 (ver"
+              echo "::error file=$ARCHIVO::  .ai/nucleo/RECETA-PROPAGACION.md), que reescribe el bloque Y este"
+              echo "::error file=$ARCHIVO::  workflow con su hash nuevo, en el mismo PR. Sale verde solo."
+              echo "::error file=$ARCHIVO::"
+              echo "::error file=$ARCHIVO::SALIDA 2 — SE EDITÓ EL BLOQUE ACÁ. Solo si el cambio de tu rama toca las"
+              echo "::error file=$ARCHIVO::  líneas de entre las marcas NUCLEO-AVEONLINE. Las reglas de la casa se"
+              echo "::error file=$ARCHIVO::  editan SOLO en la fuente (app-v2, .ai/nucleo/NUCLEO.md); editarlas acá"
+              echo "::error file=$ARCHIVO::  crea una versión que solo existe en este repo."
+              echo "::error file=$ARCHIVO::  QUÉ HACER: revertí el bloque y proponé el cambio dejando un archivo en"
+              echo "::error file=$ARCHIVO::  .harness/mejoras/ (regla 9 del núcleo). Lo revisan Juan o Alejandro."
+              echo "::error file=$ARCHIVO::"
+              echo "::error file=$ARCHIVO::CÓMO SABER CUÁL ES, sin adivinar: mirá si el diff de este PR toca"
+              echo "::error file=$ARCHIVO::$ARCHIVO entre las marcas NUCLEO-AVEONLINE. Si no lo toca —y casi nunca"
+              echo "::error file=$ARCHIVO::lo toca— es la SALIDA 1, y no hay ninguna edición que buscar."
+              FALLAS=1
+            else
+              echo "  ✔ $ARCHIVO — bloque íntegro (sha256 $HASH_ARCHIVO)"
+            fi
+          done
+
+          # ── 4. Paridad: los dos archivos dicen EXACTAMENTE lo mismo ────────────────────────
+          # No agrega cobertura sobre el hash —si difieren entre sí, alguno ya falló arriba— y
+          # está acá igual por dos razones concretas: nombra la deriva más común («se editó uno
+          # solo») y muestra QUÉ líneas, que es lo que hace falta para arreglarlo; el hash solo
+          # dice que algo cambió. Y si alguien vacía el hash, es lo único que queda en pie.
+          A="$TMP/CLAUDE_md"
+          B="$TMP/AGENTS_md"
+          if [ -f "$A" ] && [ -f "$B" ]; then
+            if ! cmp -s "$A" "$B"; then
+              echo "::error::CLAUDE.md y AGENTS.md NO traen el mismo núcleo. Se editó uno solo."
+              echo "--- diferencias (< CLAUDE.md , > AGENTS.md), primeras 40 líneas ---"
+              diff "$A" "$B" | head -40
+              FALLAS=1
+            else
+              echo "  ✔ CLAUDE.md y AGENTS.md traen el mismo bloque, byte a byte"
+            fi
+          fi
+
+          # ── 5. El buzón de mejoras existe (regla 9 del núcleo) ─────────────────────────────
+          if [ ! -d .harness/mejoras ]; then
+            # Comillas SIMPLES: entre dobles, los backticks son sustitución de comandos y bash
+            # intentaría ejecutar lo que hay dentro.
+            echo '::error::Falta .harness/mejoras/ — la regla 9 del núcleo manda dejar ahí las'
+            echo '::error::propuestas de mejora al harness. Sin la carpeta, la única salida de'
+            echo '::error::quien detecta un problema es editar el bloque generado, que es lo que'
+            echo '::error::este mismo gate prohíbe. Una regla sin su buzón empuja a romper otra.'
+            echo '::error::Copiá .harness/mejoras/ desde app-v2.'
+            FALLAS=1
+          else
+            echo "  ✔ .harness/mejoras/ existe"
+          fi
+
+          # ── Lo que este gate NO dice, dicho en su propia salida ────────────────────────────
+          # Va SIEMPRE, en verde también: quien lee un check verde y cree que cubre la frescura
+          # del núcleo se equivoca, y esa creencia es justo lo que este trabajo existe para
+          # impedir. Un aviso que solo aparece en rojo no lo lee nadie.
+          echo ""
+          echo "NOTA — ESTE GATE NO COMPRUEBA QUE EL NÚCLEO ESTÉ AL DÍA."
+          echo "  Comprueba que el bloque de este repo sea el que se propagó (hash $HASH_NUCLEO,"
+          echo "  versión declarada ${VERSION_NUCLEO:-desconocida}) y que los dos archivos digan lo"
+          echo "  mismo. Si el núcleo cambió en app-v2 después de esa propagación, este check sigue"
+          echo "  en VERDE con el bloque viejo — y eso es inherente: comprobarlo exige leer app-v2,"
+          echo "  que es la dependencia cruzada que hacía fallar la versión anterior de este"
+          echo "  workflow. La frescura la vigila un empuje DESDE app-v2, no un jalón desde acá."
+
+          if [ "$FALLAS" -ne 0 ]; then
+            # Este cierre NO acusa a nadie: se imprime para CUALQUIER falla —falta un archivo,
+            # falta el buzón, sobran marcas— y decir «editaste el núcleo» en todas ellas es
+            # cómo el mensaje anterior mandaba a buscar lo que no había. Recuerda dónde vive
+            # la fuente, que es cierto en todos los casos, y remite al detalle de arriba.
+            echo ""
+            echo "Las reglas de la casa se editan SOLO en la fuente del núcleo"
+            echo "(Development-Aveonline/app-v2 → .ai/nucleo/NUCLEO.md) y se proponen por"
+            echo ".harness/mejoras/ (regla 9). Cuál es tu caso concreto —y qué hacer— está en"
+            echo "el detalle de cada error de arriba."
+            exit 1
+          fi
+
+          echo ""
+          echo "✔ El núcleo compartido de este repo está íntegro y en paridad."
+          # ---8<--- CUERPO:FIN
