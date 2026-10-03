@@ -99,7 +99,9 @@ Léelo **cuando la tarea toque esa sección**, no por rutina.
 
 1. **Sin migración versionada no hay DDL**, ni con confirmación del usuario.
 2. **Sin blindaje de tests no se toca facturación, cartera, billetera ni transportadoras.**
-3. **Mapa de dependencias (con herramienta) antes de tocar un módulo core.**
+3. **Mapa de dependencias (con herramienta) antes de tocar un módulo core.** Si el cambio toca una tabla,
+   un endpoint o una variable que otro repo usa, lee antes la ficha del repo: `gh api
+   repos/Development-Aveonline/app-v2/contents/.ai/grafos/impacto/<repo>.md -H "Accept: application/vnd.github.raw"`.
 4. **Gates de CI/CD bloqueantes**, sin excepción "por esta vez".
 5. **Human-in-the-loop** en módulos core y prueba de rollback antes de un cambio de esquema en producción.
 6. **Un mismo hecho de negocio no tiene valores distintos en tablas distintas**: todo dato replicado
