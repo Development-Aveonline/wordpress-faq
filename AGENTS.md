@@ -14,268 +14,138 @@ aplicación con runtime, servidor ni base de datos propia.
 
 ## Reglas de AveOnline (núcleo compartido)
 
-Estas reglas valen en **todos** los repos, sin importar el lenguaje o el stack. Lo específico de
-este repo va fuera de este bloque.
+Valen en **todos** los repos, sin importar el stack. Lo propio de este repo va fuera de este bloque.
+Este bloque es compacto a propósito: sus reglas son de cumplimiento obligatorio; el **detalle** (por
+qué, casos, tablas completas) está en `app-v2/.ai/nucleo/detalle/`. Fuera de app-v2 se lee con
+`gh api repos/Development-Aveonline/app-v2/contents/.ai/nucleo/detalle/<archivo> -H "Accept: application/vnd.github.raw"`.
+Léelo **cuando la tarea toque esa sección**, no por rutina.
 
-### 0. La regla de oro
+### 0. La regla de oro — detalle: `00-regla-de-oro.md`
 
-**Si algo no está en el código o en el harness, NO lo asumas — verifícalo o pregúntalo.** Varias
-bases de datos de AveOnline son de producción y compartidas entre sistemas; asumir un esquema, una
-columna o un comportamiento lleva a errores reales, no a un test rojo.
+- **Si algo no está en el código o en el harness, NO lo asumas: verifícalo o pregúntalo.** Varias
+  bases de datos son de producción y compartidas; asumir un esquema o una columna rompe cosas reales.
+- **Inicio ágil:** acepta instrucciones breves; busca tú el issue de Linear, el proyecto, el SPEC y
+  los archivos; lee solo lo necesario. Pregunta solo si falta una decisión que cambie la solución,
+  con una opción propuesta. Si es verificable y cumple las puertas de seguridad, ejecuta.
+- **Comunicación breve:** avisa solo hallazgos, bloqueos, decisiones o tareas largas. Respuesta
+  final de 2–4 líneas: resultado, verificación (categoría de la sección 4) y próximo paso o bloqueo.
+- **Modelo:** el más capaz para lo complejo o de alto riesgo; uno económico para subtareas acotadas.
+  No delegues por rutina; reutiliza el contexto ya leído y no repitas búsquedas sin motivo.
+- **Memoria viva:** en el mismo turno registra toda corrección del usuario (supuesto corregido,
+  decisión vigente, alcance, issue/PR): lo de la tarea en su issue/PR, lo estable en el SPEC o docs,
+  lo que cambie una regla compartida en `.harness/mejoras/`. Actualiza en vez de duplicar. Nunca
+  guardes secretos, datos personales, transcripciones ni suposiciones sin verificar.
+- **Toda solicitud a terceros queda en Linear en el mismo turno** en que se entrega el texto: a quién
+  (nombre de trabajo y organización o rol, nunca teléfono ni correo), qué, canal y estado
+  (`redactado — envío sin confirmar`, `enviado`, `respondido`, `cerrado`). Un issue nuevo se crea
+  **sin responsable**. Sin secretos ni datos de clientes.
+- **Todo mensaje de trabajo enviado abre un seguimiento** hasta integrar la respuesta (canal, qué se
+  espera, responsable, criterio de cierre). Una respuesta parcial no lo cierra. Nunca prometas un
+  seguimiento que no configuraste y comprobaste; no envíes recordatorios sin autorización.
+- **Recuperación verificable de aprendizajes y QA.** Al iniciar, retomar o compactar, recupera SPEC,
+  decisiones vigentes, bitácora y evidencia. Al rediseñar, contrasta código y recorridos actuales
+  antes de declarar paridad. Al cerrar, concilia pedidos, cambios, pruebas y bloqueos. Vincula la
+  evidencia a versión, corte y población; prueba fallos esperados e invalida resultados obsoletos.
+  Los hooks solo recuerdan esto; no prueban cumplimiento. No afirmes propagación a otros repos sin
+  versión, PR y prueba. Distingue DEMO, local, QA y producción.
 
 ### 1. Secretos
 
-- **NUNCA commitear `.env`** ni ningún archivo con credenciales, llaves o tokens.
-- **No reproducir secretos** en respuestas, mensajes de commit, logs ni capturas — ni siquiera
-  parcialmente, ni "para verificar".
-- Si un secreto quedó expuesto, **decirlo de inmediato**. Rotarlo es del dueño del sistema; callarlo
-  no es una opción, y esconderlo cuesta más que el error.
+- **NUNCA commitear `.env`** ni archivos con credenciales, llaves o tokens.
+- **No reproducir secretos** en respuestas, commits, logs ni capturas, ni siquiera parcialmente.
+- Si un secreto quedó expuesto, **dilo de inmediato**. Rotarlo es del dueño; callarlo no es opción.
 
-### 2. Todo trabajo pertenece a un proyecto
+### 2. Proyecto y SPEC — detalle: `02-proyecto-y-spec.md`
 
-En AveOnline no se desarrolla ni se resuelve un soporte "suelto". **Antes de escribir código se
-declara a qué proyecto y a qué tarea pertenece el trabajo**; si no existe, se crea.
-
-- El mensaje del commit **lleva su token** entre corchetes: `[PROYECTO#Tn]`. Es lo único manual de
-  toda la cadena (webhook → señal → novedad → bitácora). **Sin el token, el avance no existe** para
-  el tablero ni para el histórico.
-- Un arreglo reactivo **también** es una tarea (`tipo: soporte`), no una excepción a la regla.
-- Si el usuario no lo declara, **se pregunta**. No se asume: un trabajo sin proyecto tiene que ser
-  una decisión consciente, no un olvido.
-
-**Y el `.yml` NO dice en qué estado está una tarea.** El `.yml` es el PLAN; el estado vivo lo lleva
-la BD y el sync **no lo pisa**, por diseño, para que reordenar un archivo no deshaga lo que alguien
-movió en el tablero. Para saber en qué va algo se mira el tablero, nunca el archivo.
-
-**2.1 · Antes de declarar el proyecto, traé el contexto del Brain.** *Recomendado, no obligatorio.*
-El `.yml` es el plan; el estado vivo, las capacidades reales y los permisos por rol están en el
-Brain. Declarar un proyecto leyendo solo los archivos del repo es planear a ciegas, y ya mordió:
-**el 19-ago-2026 se reportaron «14 tareas en revisión» leyendo el `.yml` mientras el tablero
-mostraba 7**. Los dos números eran correctos según su fuente, y con esos números se decidió a qué
-dedicarle el día.
-
-Se trae con `mcp__brain-aveonline__brain_load_context`. **Si el MCP no responde, se sigue con el
-catálogo del repo y se dice explícito** que el proyecto se declaró sin el contexto del Brain: eso
-no puede quedar invisible. *(En `app-v2` esto además tiene gate; en el resto es la recomendación.)*
-
-**2.2 · Todo proyecto apunta a un SPEC, y el SPEC vive en `app-v2`.** Antes de empezar se apunta a
-uno existente o **se crea uno nuevo** — no hay tercera opción.
-
-Los proyectos de AveOnline están centralizados en `app-v2/proyectos/<nodo>/<proyecto>/`, y ahí vive
-su `spec.md` junto al `proyecto.yml` y la `bitacora.md`. **Vale para el trabajo de cualquier repo:**
-la tarea se hace donde vive el código, pero el proyecto y su SPEC son únicos y están en un solo
-lugar. Cómo se escribe cada sección y con qué rúbrica se revisa:
-`app-v2/proyectos/_plantilla/GUIA-SPEC.md`.
-
-**Por qué el SPEC y no solo el `.yml`.** El `.yml` dice *qué* y *en qué orden*; el SPEC dice **por
-qué, hasta dónde, y cómo se sabe que terminó** — contexto, decisiones de arquitectura, alcance y
-definición de hecho. Sin él, seis semanas después nadie puede reconstruir por qué el alcance era ese,
-y la discusión se vuelve a dar desde cero.
-
-**Y apuntar a uno existente es la opción por defecto, no la excepción.** Crear un SPEC nuevo para
-trabajo que cae dentro de uno que ya existe fragmenta el porqué en dos documentos que después se
-contradicen. Antes de crear: buscar.
+- **Antes de escribir código se declara a qué proyecto pertenece el trabajo** (un arreglo reactivo
+  también). Búscalo tú; si no hay correspondencia clara, registra el issue en Triage con evidencia.
+- **2.1 · Contexto del Brain** (recomendado): trae el estado vivo (`brain_load_context`) antes de
+  declarar el proyecto; si no responde, sigue con el catálogo del repo **y dilo explícito**.
+- **2.2 · Todo proyecto apunta a un SPEC en `app-v2/proyectos/<nodo>/<proyecto>/spec.md`** (con su
+  `bitacora.md`), sea cual sea el repo del código. Guía: `app-v2/proyectos/_plantilla/GUIA-SPEC.md`.
+- **2.3 · El SPEC se publica y revisa antes del código productivo.** Antes de editar código de producto, el SPEC debe:
+  - estar validado contra la guía, sin placeholders ni secciones obligatorias vacías;
+  - tener un PR propio en `app-v2`, separado del PR de implementación, y estar enlazado desde la
+    incidencia canónica de Linear;
+  - reconciliar trabajo previo en Linear, Azure, GitHub y producción, declarando solo la brecha residual;
+  - estar revisado antes de empezar implementación cuando el riesgo sea alto o crítico.
+- Un merge del SPEC no autoriza un despliegue. Única excepción al orden: incidente productivo activo
+  (incidencia, alcance provisional y rollback primero; el SPEC se publica en el mismo ciclo).
 
 ### 3. Commits
 
-- **En español**, con prefijo `Feat:` o `Fix:` (o `Docs:`, `Chore:`).
-- **Doble co-autor** al final del mensaje:
+- **En español**, con prefijo `Feat:`, `Fix:`, `Docs:` o `Chore:`. Sin token de tarea. Explica el **por qué**.
+- **Doble co-autor**: el Brain y el modelo que **de verdad** corrió la sesión (no un nombre fijo):
   ```
   Co-authored-by: Aveonline Brain <brain@aveonline.co>
-  Co-authored-by: Claude Opus 4.8 <noreply@anthropic.com>
+  Co-authored-by: <nombre del modelo de la sesión> <noreply@anthropic.com>
   ```
-- **Nada de `git add -A` a ciegas.** Se agrega solo lo que se cambió a propósito.
-- El mensaje explica **por qué**, no solo qué. Un commit que dice "arregla el bug" obliga a alguien,
-  meses después, a reconstruir el razonamiento desde el diff.
+- **Nada de `git add -A` a ciegas.** Se agrega solo lo cambiado a propósito.
 
-### 4. Cómo se reporta el avance (regla 11 del arnés)
+### 4. Reporte de avance — detalle: `04-reporte-de-avance.md`
 
-**Prohibido decir "listo" o "funcional" sin verificación end-to-end.** Todo reporte usa una de tres
-categorías, explícitamente:
+- **Prohibido "listo", "funcional" o "asegurado" a secas.** La etapa se declara como **CÓDIGO
+  LISTO** (pasa lint y pruebas) · **DESPLEGADO** (en producción, deploy verificado) · **VERIFICADO
+  END-TO-END** (alguien con el rol real lo usó desde la interfaz real).
+- Y aparte, el **nivel de evidencia**: **N1** demo · **N2** datos reales que persisten y se
+  **releen del backend** con una consulta reproducible · **N3** persona con el rol real firmó.
+  Declara siempre el nivel y **qué no se probó**, y por qué.
+- Antes de VERIFICADO END-TO-END confirma: (a) el frontend invoca el endpoint; (b) la migración
+  corrió en el ambiente real; (c) sesión, rol y permiso confirmados. Esa etiqueta se deriva de una
+  prueba por rol que pasó; no se escribe a mano. Un traspaso entre roles (A actúa → B lo ve) se prueba completo.
+- **El verde del CI no es evidencia** si el gate nunca se vio fallar cuando debía.
 
-| Categoría | Qué significa | Qué NO significa |
-|---|---|---|
-| **CÓDIGO LISTO** | Escrito, pasa lint y pruebas | Que alguien pueda usarlo |
-| **DESPLEGADO** | En producción, deploy verificado | Que la interfaz lo invoque |
-| **VERIFICADO END-TO-END** | Alguien con el rol real lo usó desde la interfaz real | — |
+### 5. Seguridad y QA — detalle: `05-seguridad-y-qa.md`
 
-Antes de usar la tercera, confirmar las tres dependencias que más fallan **en silencio**:
-**(a)** el frontend invoca el endpoint nuevo, no solo existe en el backend; **(b)** la migración de
-esquema ya corrió en el ambiente real, no "está lista para correr"; **(c)** la sesión, el rol y el
-permiso están confirmados, no asumidos.
-
-Si una superficie no se pudo verificar, **se dice cuál y por qué** — nunca se omite.
-
-> **El verde del CI no es evidencia.** Un gate solo prueba algo si además se verificó que **falla
-> cuando debe fallar**. Un verde que nunca se puso en rojo no protege nada, y se lee igual que uno
-> que sí protege.
-
-**4.1 · La etiqueta y el nivel de evidencia son dos ejes, no uno** (aceptado del buzón de mejoras,
-`mejora_harness_20260827.md`, M1/M1-bis). La categoría (CÓDIGO LISTO / DESPLEGADO / VERIFICADO
-END-TO-END) describe la **etapa**. El nivel de evidencia describe **qué tan buena es la prueba**, y
-son independientes: se puede estar en DESPLEGADO con evidencia apenas N1.
-
-| Nivel | Qué es |
-|---|---|
-| **N1** | Demostración — corrió una vez, en un ambiente controlado |
-| **N2** | Logueado con datos reales que persisten **y se releen del backend** — no solo se vieron en pantalla |
-| **N3** | Alguien con el rol real lo usó desde la interfaz real y firmó pasa o falla |
-
-**"Asegurado" a secas queda prohibido.** Todo reporte declara el nivel alcanzado **y qué no se
-probó**.
-
-**N2 se verifica, no se declara:** el cierre exige la relectura en forma reproducible — la consulta o
-el comando, y su resultado — y algo la vuelve a ejecutar antes de aceptar el cierre. Una captura de
-pantalla es una afirmación; el resultado de una consulta reproducible es un dato que se puede volver
-a producir.
-
-**La etiqueta VERIFICADO END-TO-END no se escribe a mano.** Se deriva: existe la prueba por rol de
-esa funcionalidad, corrió, pasó, y su relectura volvió con el dato. Mientras eso no se cumpla, la
-etiqueta no se puede declarar.
-
-**N3 es irreducible — ningún mecanismo verifica que una persona con el rol real miró una pantalla.**
-Se cubre con dos cosas, y ninguna es un gate:
-- **Auditoría por muestreo:** una tarea cerrada como VERIFICADO por semana, elegida al azar,
-  re-verificada por otra persona.
-- **Quién paga:** quien declaró VERIFICADO **recibe automáticamente asignado el issue** si se
-  reabre. No es sanción — el trabajo vuelve a donde salió.
-
-Las dos piezas de N3 se encienden **el mismo día**, nunca en secuencia (encenderlas por partes se lee
-como vigilancia que después castiga). Aplican sin excepción — Alejandro, Juan, el agente cuando
-cierra una tarea, y quien lo propuso. Se anuncian antes de encenderse, con el porqué.
-
-**4.2 · Un traspaso entre roles se prueba como traspaso, no como dos pantallas sueltas** (M2). Si una
-funcionalidad hace que el rol A actúe y el rol B tenga que verlo (una solicitud, una aprobación, una
-novedad), no cierra sin una prueba que cubra el traspaso completo: A actúa → B lo ve. Depende de 4.3.
-
-**4.3 · Cuentas canónicas por rol, con datos sembrados a su nombre** (M3, prerrequisito de 4.1, 4.2 y
-la regla 6.7). Cada rol real del sistema tiene una cuenta de prueba canónica, y el sembrado enlaza
-esa cuenta a su registro y siembra el flujo a su nombre — no una cuenta genérica. Un humo por rol:
-cada rol entra y su bandeja principal da más de cero filas, o queda escrita la razón de por qué no.
-
-### 5. Seguridad y QA
-
-1. **Sin migración versionada no hay DDL.** Ninguna alteración de esquema por `ALTER`/`CREATE`/`DROP`
-   suelto, ni con confirmación del usuario: la confirmación no reemplaza la migración.
+1. **Sin migración versionada no hay DDL**, ni con confirmación del usuario.
 2. **Sin blindaje de tests no se toca facturación, cartera, billetera ni transportadoras.**
-3. **Mapa de dependencias antes de tocar un módulo core.** Con herramienta, no con "creo que nada
-   más lo usa".
+3. **Mapa de dependencias (con herramienta) antes de tocar un módulo core.** Si el cambio toca una tabla,
+   un endpoint o una variable que otro repo usa, lee antes la ficha del repo: `gh api
+   repos/Development-Aveonline/app-v2/contents/.ai/grafos/impacto/<repo>.md -H "Accept: application/vnd.github.raw"`.
 4. **Gates de CI/CD bloqueantes**, sin excepción "por esta vez".
-5. **Human-in-the-loop** en módulos core: revisión línea por línea, y prueba de rollback antes de
-   un cambio de esquema en producción.
-6. **Veracidad entre tablas:** un mismo hecho de negocio no puede tener valores distintos en tablas
-   distintas. Todo dato replicado queda cubierto por una prueba de reconciliación.
-7. **Los errores nunca son silenciosos** (M5). El QA de navegador escucha `pageerror` y
-   `unhandledrejection` y **falla** si aparece cualquiera — no basta con afirmar que ciertos textos
-   están en pantalla, porque un error de JavaScript que no cambia el marcado visible pasa en verde.
-   Prohibido un `catch` vacío o un `return null` silencioso alrededor de una escritura de red **sin
-   mostrar el estado** al usuario.
-8. **Toda escritura con identidad deja rastro, y el rastro se verifica releyendo** (M7). Tras una
-   acción que registra quién la hizo, se relee para confirmar que las columnas de rastro (autor,
-   fecha) quedaron correctas — con el identificador de usuario **del token de sesión, nunca del
-   cuerpo de la petición**. Un `200` no es evidencia; la relectura sí.
-9. **Un gate no se acepta sin su rojo, y el rojo queda registrado** (M8). El rojo de prueba de un
-   gate es un artefacto registrado, no una afirmación en un comentario: qué mutación se inyectó, qué
-   código de salida dio, y en qué corrida. Un gate sin eso no se acepta como protección.
-10. **Un hallazgo de un agente de IA es un candidato, no una verdad** (M9, extiende
-    `restricciones-agente-ia.md` §3). Todo hallazgo automático lleva el campo **"reproducido en
-    vivo: sí/no"**, y solo un "sí" puede cerrar un issue. Toda regla basada en patrones (grep,
-    matcher) declara cómo se midió su cobertura — forzando la condición en vivo, no contando
-    coincidencias del propio patrón, porque un matcher falla de dos formas y el falso negativo se ve
-    exactamente igual que un verde legítimo.
+5. **Human-in-the-loop** en módulos core y prueba de rollback antes de un cambio de esquema en producción.
+6. **Un mismo hecho de negocio no tiene valores distintos en tablas distintas**: todo dato replicado
+   tiene prueba de reconciliación.
+7. **Errores nunca silenciosos:** prohibido un `catch` vacío o `return null` mudo en una escritura de red;
+   el QA de navegador falla ante `pageerror` o `unhandledrejection`.
+8. **Toda escritura con identidad se relee** (autor y fecha, con el usuario del token de sesión,
+   nunca del cuerpo de la petición). Un `200` no es evidencia.
+9. **Un gate no se acepta sin su rojo, y el rojo queda registrado** (mutación inyectada, código de
+   salida y corrida).
+10. **Un hallazgo de un agente de IA es un candidato:** lleva "reproducido en vivo: sí/no"; solo "sí"
+    cierra. Toda regla por patrones declara cómo se midió su cobertura forzando la condición en vivo.
 
 ### 6. Dónde vive cada cosa
 
-- **Investigación y el "por qué"** → el monorepo de investigación (`Brain_Avemetrics_Aveonline`).
-- **Estado operativo de un sistema** → junto a su código.
-- **Toda tarea = issue/tarea en el repo real**, nunca en el repo de investigación.
-- **Sin fechas de calendario** en las tareas: se etiqueta por fase lógica.
-- **Antes de abrir una tarea, verificar que no exista ya una equivalente.**
+- Investigación y el "por qué" → `Brain_Avemetrics_Aveonline`. Estado operativo → junto a su código.
+- Toda tarea = issue en el repo real, por fase lógica, sin fechas. Antes de abrirla, verifica que no exista.
 
-### 7. La documentación es parte del cambio
+### 7. Documentación
 
-Tras un cambio significativo se actualiza **en el mismo flujo de trabajo**, no después: el
-`CHANGELOG.md`, la doc del área afectada y el estado del proyecto. **No dejar el código adelantado
-a los docs.**
+Se actualiza **en el mismo flujo** que el cambio (`CHANGELOG.md`, doc del área, estado del proyecto).
+Un doc **no puede afirmar cifras o estados que el código desmiente**; si es verificable, que lo vigile un gate.
 
-Y un doc **no puede afirmar cifras o estados que el código desmiente**. Cuando una afirmación es
-verificable (cuántos comandos hay, cuántas pruebas corren, qué está encendido), lo durable es un
-gate que la compare contra la realidad — corregir el número a mano se vuelve a desfasar en el
-siguiente cambio.
+### 8. Interfaz y datos — detalle: `08-interfaz-y-datos.md`
 
-### 8. Interfaz y datos
+- Estándar único: `ESTANDARES-AVEONLINE.md`. **Tokens de [AveDS](https://github.com/Development-Aveonline/AveDS)**,
+  nada hardcodeado; si falta un token, no se inventa: se toma de AveDS.
+- Tablas ordenables, con filtro por columna, TOTAL real, export y drill. KPIs que abren su detalle,
+  comparan con el período anterior y traen semáforo. Período por defecto = mes en curso.
+- Todo KPI, alerta o elemento de gráfica abre el conjunto exacto que lo sustenta, con «Volver» que
+  conserva el contexto. Filtro activo visible y removible. Antirregresión al portar una pantalla.
+- **Ningún dato de demostración es presentable como real**; un dato de ejemplo se marca junto al número.
+- Lo que la interfaz ofrece coincide con la matriz de permisos del rol.
 
-Toda vista con **etiquetas (KPIs), tablas o indicadores** cumple el estándar único de AveOnline
-(`ESTANDARES-AVEONLINE.md`). Lo esencial:
+### 9. Mejoras al harness — detalle: `09-mejoras-al-harness.md`
 
-- **Sistema de diseño único: [AveDS](https://github.com/Development-Aveonline/AveDS).** Se usan
-  **tokens**, nunca colores, sombras o tipografías hardcodeadas. **Si falta un token, NO se inventa
-  — se toma de AveDS.**
-- **Tablas del sistema:** ordenables por encabezado, con filtro por columna, fila de TOTAL cuando
-  hay algo real que sumar, export y drill al detalle. Nada de tablas crudas.
-- **KPIs** que abren el detalle que agrupan, comparan contra un período anterior y traen semáforo.
-- **Período por defecto = mes en curso.**
-- **Filtro visible y removible:** al filtrar debe verse qué filtro está activo y cómo quitarlo.
-- **Antirregresión:** al portar o reescribir una pantalla no se pierden funciones del original, y
-  eso se asevera en las pruebas.
-- **Un dato de ejemplo se declara como tal, al lado del número.** Un aviso global no acompaña al
-  número: la persona hace scroll y ya no lo ve.
-- **Ningún dato de demostración es presentable como real** (M4, endurece el punto anterior). Al
-  arrancar con credenciales reales, falla si aparece cualquier centinela de demostración declarado.
-  Y se verifica el caso que de verdad importa: forzar en vivo que la llamada real devuelva nulo, por
-  vista, y afirmar que aparece un aviso de reintentar — **nunca** que la vista se quede mostrando el
-  dato de demostración como si fuera real (el patrón `if (api) VAR = api.map(...)`: si el endpoint
-  falla, `api` es nulo, no entra al `if`, y la demostración queda en pantalla sin decir que lo es).
-- **Lo que la interfaz ofrece coincide con la matriz de permisos** (M6, desbloquea las reglas A2/A6
-  del arnés de guardarraíles). Si una vista de un rol invoca un recurso que ese rol no tiene en la
-  matriz (rol × recurso), es rojo — no basta con que el backend rechace la llamada; la vista no debe
-  ofrecer el flujo en primer lugar.
-
-### 9. Cómo se propone una mejora al harness
-
-**El núcleo no se edita donde lo leés.** Está entre marcas y se regenera desde una fuente única, así
-que un cambio hecho ahí se pierde en la siguiente corrida y el gate de la CI lo marca en rojo. Eso
-es a propósito: es lo que impide que existan cuarenta versiones distintas de la misma regla.
-
-Pero una regla equivocada tiene que poder corregirse, y quien la detecta casi nunca es quien
-mantiene el harness. **Para eso está el buzón:**
-
-```
-.harness/mejoras/mejora_harness_AAAAMMDD.md
-```
-
-Se crea en **el repo donde apareció la necesidad**, sin pedir permiso y sin abrir una discusión.
-Si ya hay uno con esa fecha, se agrega un sufijo: `mejora_harness_20260820_2.md`.
-
-Cada archivo dice, sin adornos:
-
-- **Qué regla** — la del núcleo que estorba, falta o está mal.
-- **Qué pasó** — el caso concreto que lo destapó. Sin un caso real es una opinión, y las opiniones
-  no cambian una regla que aplica a toda la organización.
-- **Qué proponés** — el texto nuevo, si lo tenés.
-- **Qué se rompe si se aplica** — a quién le cambia el trabajo. Si no se te ocurre nada, decilo:
-  esa respuesta también informa.
-
-**Los revisan Juan o Alejandro** —cualquiera de los dos—, deciden y actualizan la fuente. Proponer
-no es aplicar: que un archivo exista no cambia ninguna regla hasta que se acepta y se regenera.
-
-Que sean dos y no uno es deliberado: un buzón con un solo dueño se atasca la primera semana que esa
-persona está ocupada, y a partir de ahí la gente deja de escribir. Y **se responde también cuando se
-rechaza, con el motivo** — un buzón donde las cosas entran y nunca sale nada deja de usarse a la
-tercera vez.
-
-Escribirlo en el momento es la mitad del valor. Una mejora que se posterga "para cuando haya
-tiempo" se pierde, y la siguiente persona vuelve a chocarse con lo mismo sin saber que ya le pasó a
-alguien.
+**El núcleo no se edita donde lo lees** (se regenera y el gate lo marca en rojo). Para proponer un
+cambio: `.harness/mejoras/mejora_harness_AAAAMMDD.md` en el repo donde surgió, con qué regla, qué
+pasó (caso real), qué propones y qué se rompe. Proponer no es aplicar.
 
 ### 10. Paridad `CLAUDE.md` / `AGENTS.md`
 
-Los dos archivos dicen **las mismas reglas**: `AGENTS.md` existe para las herramientas de
-codificación que no leen el otro. **Se generan del mismo fuente y reciben texto idéntico**, así que
-la paridad no depende de que alguien se acuerde de replicar un cambio.
-
-Por eso este núcleo está escrito **sin nombrar ninguna herramienta**: dice "el agente". Lo
-específico de una (sus comandos, sus atajos) va en la parte local de cada archivo, nunca acá.
+Los dos se generan del mismo fuente con texto idéntico; por eso este núcleo no nombra ninguna
+herramienta. Lo específico de una herramienta va en la parte local de cada archivo.
 
 <!-- NUCLEO-AVEONLINE:FIN -->
 

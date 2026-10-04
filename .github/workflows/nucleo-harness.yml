@@ -98,10 +98,10 @@ env:
   # ─── Lo escribe la propagación, no una persona ────────────────────────────────────────────
   # sha256 del bloque del núcleo, normalizado (cada línea sin espacios al final, sin líneas
   # vacías al principio ni al final, terminado en un salto de línea).
-  HASH_NUCLEO: '3eba9df937d6fc825bf7c306012bd6bf17b1590fa266f06ce318f20e20301555'
+  HASH_NUCLEO: 'cc47183538dde9cf11eb43471683055381d5b5ca8fa1138290dad6caf39d5837'
   # Informativa: sirve para leer de un vistazo qué versión trae este repo. La comprobación es el
   # hash — una versión se puede dejar quieta mientras se edita el texto, un hash no.
-  VERSION_NUCLEO: 'local-preservado-3eba9df937d6'
+  VERSION_NUCLEO: '2.1.0'
 
 jobs:
   nucleo-local:
