@@ -18,7 +18,10 @@ Valen en **todos** los repos, sin importar el stack. Lo propio de este repo va f
 Este bloque es compacto a propósito: sus reglas son de cumplimiento obligatorio; el **detalle** (por
 qué, casos, tablas completas) está en `app-v2/.ai/nucleo/detalle/`. Fuera de app-v2 se lee con
 `gh api repos/Development-Aveonline/app-v2/contents/.ai/nucleo/detalle/<archivo> -H "Accept: application/vnd.github.raw"`.
-Léelo **cuando la tarea toque esa sección**, no por rutina.
+Léelo **cuando la tarea toque esa sección**, no por rutina. **Si no puedes leerlo** (sin `gh`
+autenticado o sin acceso a app-v2, que es privado): las reglas de este bloque se cumplen igual,
+porque el detalle explica y no agrega obligaciones; dilo en tu reporte y, si la tarea es de riesgo
+alto (secciones 2 y 5), pide el detalle a una persona del equipo antes de seguir. No lo reconstruyas de memoria.
 
 ### 0. La regla de oro — detalle: `00-regla-de-oro.md`
 
@@ -75,10 +78,14 @@ Léelo **cuando la tarea toque esa sección**, no por rutina.
 ### 3. Commits
 
 - **En español**, con prefijo `Feat:`, `Fix:`, `Docs:` o `Chore:`. Sin token de tarea. Explica el **por qué**.
-- **Doble co-autor**: el Brain y el modelo que **de verdad** corrió la sesión (no un nombre fijo):
+- **Doble co-autor**: el Brain y el modelo que **de verdad** corrió la sesión (no un nombre fijo),
+  con el correo **de su proveedor**; si el proveedor no publica uno, `noreply@aveonline.co`. Nunca
+  atribuyas un modelo a un proveedor que no es el suyo. Un commit que hace un script, sin modelo,
+  lleva solo al Brain.
   ```
   Co-authored-by: Aveonline Brain <brain@aveonline.co>
-  Co-authored-by: <nombre del modelo de la sesión> <noreply@anthropic.com>
+  Co-authored-by: <modelo real de la sesión> <correo noreply de su proveedor>
+  # ejemplo, sesión de un modelo de Anthropic: Co-authored-by: Claude Opus 5.5 <noreply@anthropic.com>
   ```
 - **Nada de `git add -A` a ciegas.** Se agrega solo lo cambiado a propósito.
 
