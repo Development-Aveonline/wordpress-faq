@@ -98,7 +98,7 @@ env:
   # ─── Lo escribe la propagación, no una persona ────────────────────────────────────────────
   # sha256 del bloque del núcleo, normalizado (cada línea sin espacios al final, sin líneas
   # vacías al principio ni al final, terminado en un salto de línea).
-  HASH_NUCLEO: '12c41e40500d24fc5a337b2719330709331722e8d001e03b1a3210cb284156f7'
+  HASH_NUCLEO: '606b563f56e18ed70ebad700d31a709a6c0c8942fc72525b62239056063c467e'
   # Informativa: sirve para leer de un vistazo qué versión trae este repo. La comprobación es el
   # hash — una versión se puede dejar quieta mientras se edita el texto, un hash no.
   VERSION_NUCLEO: '2.2.0'

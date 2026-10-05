@@ -114,11 +114,13 @@ alto (secciones 2 y 5), pide el detalle a una persona del equipo antes de seguir
 6. **Un mismo hecho de negocio no tiene valores distintos en tablas distintas**: todo dato replicado
    tiene prueba de reconciliación.
 7. **Errores nunca silenciosos:** prohibido un `catch` vacío o `return null` mudo en una escritura de red;
-   el QA de navegador falla ante `pageerror` o `unhandledrejection`.
+   el QA de navegador falla ante `pageerror` o `unhandledrejection`. Si la base rechaza una escritura
+   dentro de una transacción, la respuesta nunca es de éxito: se verifica que la capa de datos lance
+   el error o se revisa el estado de la transacción y las filas afectadas antes de confirmar.
 8. **Toda escritura con identidad se relee** (autor y fecha, con el usuario del token de sesión,
    nunca del cuerpo de la petición). Un `200` no es evidencia.
-9. **Un gate no se acepta sin su rojo, y el rojo queda registrado** (mutación inyectada, código de
-   salida y corrida).
+9. **Un gate no se acepta sin su rojo, y el rojo queda registrado** (mutación inyectada, prueba de
+   que quedó aplicada, código de salida y corrida). Una mutación sin diff no es un resultado.
 10. **Un hallazgo de un agente de IA es un candidato:** lleva "reproducido en vivo: sí/no"; solo "sí"
     cierra. Toda regla por patrones declara cómo se midió su cobertura forzando la condición en vivo.
 
